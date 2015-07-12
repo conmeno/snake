@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
                BuildableName = "Stupid Snake Classic.app"
-               BlueprintName = "Stupid Snake Classic"
-               ReferencedContainer = "container:Stupid Snake Classic.xcodeproj">
+               BlueprintName = "Stupid Snake Pro"
+               ReferencedContainer = "container:Stupid Snake Pro.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,8 +30,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4F3B151193F777800D11DE2"
                BuildableName = "Stupid Snake ClassicTests.xctest"
-               BlueprintName = "Stupid Snake ClassicTests"
-               ReferencedContainer = "container:Stupid Snake Classic.xcodeproj">
+               BlueprintName = "Stupid Snake ProTests"
+               ReferencedContainer = "container:Stupid Snake Pro.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,8 +48,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4F3B151193F777800D11DE2"
                BuildableName = "Stupid Snake ClassicTests.xctest"
-               BlueprintName = "Stupid Snake ClassicTests"
-               ReferencedContainer = "container:Stupid Snake Classic.xcodeproj">
+               BlueprintName = "Stupid Snake ProTests"
+               ReferencedContainer = "container:Stupid Snake Pro.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -58,8 +58,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
             BuildableName = "Stupid Snake Classic.app"
-            BlueprintName = "Stupid Snake Classic"
-            ReferencedContainer = "container:Stupid Snake Classic.xcodeproj">
+            BlueprintName = "Stupid Snake Pro"
+            ReferencedContainer = "container:Stupid Snake Pro.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,8 +77,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
             BuildableName = "Stupid Snake Classic.app"
-            BlueprintName = "Stupid Snake Classic"
-            ReferencedContainer = "container:Stupid Snake Classic.xcodeproj">
+            BlueprintName = "Stupid Snake Pro"
+            ReferencedContainer = "container:Stupid Snake Pro.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,8 +95,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
             BuildableName = "Stupid Snake Classic.app"
-            BlueprintName = "Stupid Snake Classic"
-            ReferencedContainer = "container:Stupid Snake Classic.xcodeproj">
+            BlueprintName = "Stupid Snake Pro"
+            ReferencedContainer = "container:Stupid Snake Pro.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
@@ -105,7 +105,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
-      customArchiveName = "Stupid Snake Classic"
+      customArchiveName = "Stupid Snake Pro"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

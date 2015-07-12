@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Stupid Snake Classic.xcodeproj">
+      location = "self:Stupid Snake Pro.xcodeproj">
    </FileRef>
 </Workspace>

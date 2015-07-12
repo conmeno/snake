@@ -52,13 +52,13 @@
 		96F1292B1B4F887400ADAA87 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		96F1292C1B4F887400ADAA87 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		D4429BE4193FDB7A00F1E910 /* SnakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeView.swift; sourceTree = "<group>"; };
-		D4F3B140193F777800D11DE2 /* Stupid Snake Classic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stupid Snake Classic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F3B140193F777800D11DE2 /* Stupid Snake Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stupid Snake Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F3B144193F777800D11DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F3B145193F777800D11DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4F3B147193F777800D11DE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D4F3B14A193F777800D11DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4F3B14C193F777800D11DE2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D4F3B152193F777800D11DE2 /* Stupid Snake ClassicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stupid Snake ClassicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F3B152193F777800D11DE2 /* Stupid Snake ProTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stupid Snake ProTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F3B157193F777800D11DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F3B162193F780C00D11DE2 /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,8 +119,8 @@
 		D4F3B141193F777800D11DE2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4F3B140193F777800D11DE2 /* Stupid Snake Classic.app */,
-				D4F3B152193F777800D11DE2 /* Stupid Snake ClassicTests.xctest */,
+				D4F3B140193F777800D11DE2 /* Stupid Snake Pro.app */,
+				D4F3B152193F777800D11DE2 /* Stupid Snake ProTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,9 +168,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4F3B13F193F777800D11DE2 /* Stupid Snake Classic */ = {
+		D4F3B13F193F777800D11DE2 /* Stupid Snake Pro */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4F3B15C193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Stupid Snake Classic" */;
+			buildConfigurationList = D4F3B15C193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Stupid Snake Pro" */;
 			buildPhases = (
 				D4F3B13C193F777800D11DE2 /* Sources */,
 				D4F3B13D193F777800D11DE2 /* Frameworks */,
@@ -180,14 +180,14 @@
 			);
 			dependencies = (
 			);
-			name = "Stupid Snake Classic";
+			name = "Stupid Snake Pro";
 			productName = SwiftSnake;
-			productReference = D4F3B140193F777800D11DE2 /* Stupid Snake Classic.app */;
+			productReference = D4F3B140193F777800D11DE2 /* Stupid Snake Pro.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D4F3B151193F777800D11DE2 /* Stupid Snake ClassicTests */ = {
+		D4F3B151193F777800D11DE2 /* Stupid Snake ProTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4F3B15F193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Stupid Snake ClassicTests" */;
+			buildConfigurationList = D4F3B15F193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Stupid Snake ProTests" */;
 			buildPhases = (
 				D4F3B14E193F777800D11DE2 /* Sources */,
 				D4F3B14F193F777800D11DE2 /* Frameworks */,
@@ -198,9 +198,9 @@
 			dependencies = (
 				D4F3B154193F777800D11DE2 /* PBXTargetDependency */,
 			);
-			name = "Stupid Snake ClassicTests";
+			name = "Stupid Snake ProTests";
 			productName = SwiftSnakeTests;
-			productReference = D4F3B152193F777800D11DE2 /* Stupid Snake ClassicTests.xctest */;
+			productReference = D4F3B152193F777800D11DE2 /* Stupid Snake ProTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D4F3B13B193F777800D11DE2 /* Build configuration list for PBXProject "Stupid Snake Classic" */;
+			buildConfigurationList = D4F3B13B193F777800D11DE2 /* Build configuration list for PBXProject "Stupid Snake Pro" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -235,8 +235,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4F3B13F193F777800D11DE2 /* Stupid Snake Classic */,
-				D4F3B151193F777800D11DE2 /* Stupid Snake ClassicTests */,
+				D4F3B13F193F777800D11DE2 /* Stupid Snake Pro */,
+				D4F3B151193F777800D11DE2 /* Stupid Snake ProTests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,7 +297,7 @@
 /* Begin PBXTargetDependency section */
 		D4F3B154193F777800D11DE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4F3B13F193F777800D11DE2 /* Stupid Snake Classic */;
+			target = D4F3B13F193F777800D11DE2 /* Stupid Snake Pro */;
 			targetProxy = D4F3B153193F777800D11DE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -401,7 +401,7 @@
 				INFOPLIST_FILE = SwiftSnake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "Stupid Snake Classic";
+				PRODUCT_NAME = "Stupid Snake Pro";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -417,7 +417,7 @@
 				INFOPLIST_FILE = SwiftSnake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "Stupid Snake Classic";
+				PRODUCT_NAME = "Stupid Snake Pro";
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -437,8 +437,8 @@
 				INFOPLIST_FILE = SwiftSnakeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "Stupid Snake ClassicTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftSnake.app/SwiftSnake";
+				PRODUCT_NAME = "Stupid Snake ProTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stupid Snake Pro.app/Stupid Snake Pro";
 			};
 			name = Debug;
 		};
@@ -452,15 +452,15 @@
 				INFOPLIST_FILE = SwiftSnakeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "Stupid Snake ClassicTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftSnake.app/SwiftSnake";
+				PRODUCT_NAME = "Stupid Snake ProTests";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stupid Snake Pro.app/Stupid Snake Pro";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4F3B13B193F777800D11DE2 /* Build configuration list for PBXProject "Stupid Snake Classic" */ = {
+		D4F3B13B193F777800D11DE2 /* Build configuration list for PBXProject "Stupid Snake Pro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4F3B15A193F777800D11DE2 /* Debug */,
@@ -469,7 +469,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4F3B15C193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Stupid Snake Classic" */ = {
+		D4F3B15C193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Stupid Snake Pro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4F3B15D193F777800D11DE2 /* Debug */,
@@ -478,7 +478,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4F3B15F193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Stupid Snake ClassicTests" */ = {
+		D4F3B15F193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Stupid Snake ProTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4F3B160193F777800D11DE2 /* Debug */,
