@@ -88,6 +88,7 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
         lbScore.text = "0"
         lbLevel.text = "1"
         UIiAd.alpha = 0
+        UIiAd.backgroundColor = UIColor.lightTextColor()
         let size1 = 260
         let screenWidth = self.view.frame.size.width
         let screenHeight = self.view.frame.size.height
@@ -171,7 +172,7 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
             isPauseGame = true
             self.startButton!.hidden = false
             self.btPause!.hidden = true
-       audioPlayer?.pause()
+            audioPlayer?.pause()
         
     }
 
@@ -182,6 +183,7 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
         {
             self.timer = NSTimer.scheduledTimerWithTimeInterval(0.09, target: self, selector: "timerMethod:", userInfo: nil, repeats: true)
             isPauseGame = false
+            audioPlayer?.play()
         }else
         {
             RandomThemeMusic("1")
@@ -247,7 +249,7 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
 		let head = self.snake?.points[0]
 		if head?.x == self.fruit?.x &&
 			head?.y == self.fruit?.y {
-                self.snake!.increaseLength(3)
+                self.snake!.increaseLength(1)
                 score1 = (self.snake!.points.count - 3)*10
                 var myScore = String(score1)
                 lbScore.text = myScore
@@ -334,6 +336,7 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
         UIiAd.frame = CGRectMake(0, 20, 0, 0)
         self.view.addSubview(UIiAd)
         UIiAd.delegate = self
+        UIiAd.backgroundColor = UIColor.lightTextColor()
         println("khoi tao ")
     }
     
