@@ -17,7 +17,6 @@
 		96AA6EE51B525AC300F43F29 /* 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AA6EDF1B525AC300F43F29 /* 5.mp3 */; };
 		96AA6EE61B525AC300F43F29 /* 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AA6EE01B525AC300F43F29 /* 6.mp3 */; };
 		96B841261B5158CC00DD532B /* buzz2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96B841251B5158CC00DD532B /* buzz2.mp3 */; };
-		96F0ACFA1B4D269C003EEB5B /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F0ACF91B4D269C003EEB5B /* iAd.framework */; };
 		96F1292D1B4F887400ADAA87 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F1292B1B4F887400ADAA87 /* pause.png */; };
 		96F1292E1B4F887400ADAA87 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F1292C1B4F887400ADAA87 /* play.png */; };
 		D4429BE5193FDB7A00F1E910 /* SnakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4429BE4193FDB7A00F1E910 /* SnakeView.swift */; };
@@ -50,7 +49,6 @@
 		96AA6EDF1B525AC300F43F29 /* 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 5.mp3; path = Sounds/5.mp3; sourceTree = "<group>"; };
 		96AA6EE01B525AC300F43F29 /* 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 6.mp3; path = Sounds/6.mp3; sourceTree = "<group>"; };
 		96B841251B5158CC00DD532B /* buzz2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = buzz2.mp3; path = Sounds/buzz2.mp3; sourceTree = "<group>"; };
-		96F0ACF91B4D269C003EEB5B /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		96F1292B1B4F887400ADAA87 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		96F1292C1B4F887400ADAA87 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		D4429BE4193FDB7A00F1E910 /* SnakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeView.swift; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96F0ACFA1B4D269C003EEB5B /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +110,6 @@
 		D4F3B137193F777800D11DE2 = {
 			isa = PBXGroup;
 			children = (
-				96F0ACF91B4D269C003EEB5B /* iAd.framework */,
 				D4F3B142193F777800D11DE2 /* SwiftSnake */,
 				D4F3B155193F777800D11DE2 /* SwiftSnakeTests */,
 				D4F3B141193F777800D11DE2 /* Products */,

@@ -1,14 +1,14 @@
 import UIKit
-import iAd
+//import iAd
 import AVFoundation
 
 
-class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
+class ViewController: UIViewController, SnakeViewDelegate {
 	@IBOutlet var startButton:UIButton?
 	var snakeView:SnakeView?
 	var timer:NSTimer?
     var timerMove:NSTimer?
-    var UIiAd: ADBannerView = ADBannerView()
+    //var UIiAd: ADBannerView = ADBannerView()
      var savedScore: Int = 0
     @IBOutlet weak var lbScore: UILabel!
     
@@ -87,7 +87,7 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
         lbHightest.text = String(savedScore)
         lbScore.text = "0"
         lbLevel.text = "1"
-        UIiAd.alpha = 0
+        //UIiAd.alpha = 0
         let size1 = 260
         let screenWidth = self.view.frame.size.width
         let screenHeight = self.view.frame.size.height
@@ -315,72 +315,72 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
 	}
     //begin iad
     // 1
-    func appdelegate() -> AppDelegate {
-        return UIApplication.sharedApplication().delegate as AppDelegate
-    }
-    
-    // 2
-    override func viewWillAppear(animated: Bool) {
-        showAdd()
-    }
-    func showAdd()
-    {
-        var SH = UIScreen.mainScreen().bounds.height
-        var BV: CGFloat = 0
-        
-        BV = UIiAd.bounds.height
-        UIiAd = self.appdelegate().UIiAd
-        UIiAd.alpha = 1
-        UIiAd.frame = CGRectMake(0, 20, 0, 0)
-        self.view.addSubview(UIiAd)
-        UIiAd.delegate = self
-        println("khoi tao ")
-    }
-    
-    // 3
-    override func viewWillDisappear(animated: Bool) {
-        UIiAd.delegate = nil
-        UIiAd.removeFromSuperview()
-    }
-    
-    //   bannerViewWillLoadAd
-    func bannerViewWillLoadAd(banner: ADBannerView!) {
-        println("will load ")
-        UIiAd.alpha = 1
-    }
-    
-    
-    // 4
-    func bannerViewDidLoadAd(banner: ADBannerView!) {
-        var SH = UIScreen.mainScreen().bounds.height
-        var BV: CGFloat = 0
-        
-        UIiAd.frame = CGRectMake(0, -70, 0, 0)
-        UIView.beginAnimations(nil, context: nil)
-        UIView.setAnimationDuration(1)
-        UIiAd.alpha = 1
-        UIiAd.frame = CGRectMake(0, 20, 0, 0)
-        UIView.commitAnimations()
-        adStatusBar!.backgroundColor = UIColor.blueColor()
-        println("da load ")
-    }
-    
-    // 5
-    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
-        UIView.beginAnimations(nil, context: nil)
-        UIView.setAnimationDuration(0)
-        UIiAd.alpha = 1
-        UIView.commitAnimations()
-        println("fail load ")
-        
-    }
-    
-    func bannerViewActionShouldBegin(banner: ADBannerView!, willLeaveApplication willLeave: Bool) -> Bool {
-        println("ad press ")
-        PauseGame()
-        
-        adStatusBar!.backgroundColor = UIColor.whiteColor()
-        return true
-    }
+//    func appdelegate() -> AppDelegate {
+//        return UIApplication.sharedApplication().delegate as AppDelegate
+//    }
+//    
+//    // 2
+//    override func viewWillAppear(animated: Bool) {
+//        showAdd()
+//    }
+//    func showAdd()
+//    {
+//        var SH = UIScreen.mainScreen().bounds.height
+//        var BV: CGFloat = 0
+//        
+//        BV = UIiAd.bounds.height
+//        UIiAd = self.appdelegate().UIiAd
+//        UIiAd.alpha = 1
+//        UIiAd.frame = CGRectMake(0, 20, 0, 0)
+//        self.view.addSubview(UIiAd)
+//        UIiAd.delegate = self
+//        println("khoi tao ")
+//    }
+//    
+//    // 3
+//    override func viewWillDisappear(animated: Bool) {
+//        UIiAd.delegate = nil
+//        UIiAd.removeFromSuperview()
+//    }
+//    
+//    //   bannerViewWillLoadAd
+//    func bannerViewWillLoadAd(banner: ADBannerView!) {
+//        println("will load ")
+//        UIiAd.alpha = 1
+//    }
+//    
+//    
+//    // 4
+//    func bannerViewDidLoadAd(banner: ADBannerView!) {
+//        var SH = UIScreen.mainScreen().bounds.height
+//        var BV: CGFloat = 0
+//        
+//        UIiAd.frame = CGRectMake(0, -70, 0, 0)
+//        UIView.beginAnimations(nil, context: nil)
+//        UIView.setAnimationDuration(1)
+//        UIiAd.alpha = 1
+//        UIiAd.frame = CGRectMake(0, 20, 0, 0)
+//        UIView.commitAnimations()
+//        adStatusBar!.backgroundColor = UIColor.blueColor()
+//        println("da load ")
+//    }
+//    
+//    // 5
+//    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
+//        UIView.beginAnimations(nil, context: nil)
+//        UIView.setAnimationDuration(0)
+//        UIiAd.alpha = 1
+//        UIView.commitAnimations()
+//        println("fail load ")
+//        
+//    }
+//    
+//    func bannerViewActionShouldBegin(banner: ADBannerView!, willLeaveApplication willLeave: Bool) -> Bool {
+//        println("ad press ")
+//        PauseGame()
+//        
+//        adStatusBar!.backgroundColor = UIColor.whiteColor()
+//        return true
+//    }
     //end iad
 }
