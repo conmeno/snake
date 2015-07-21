@@ -89,12 +89,12 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
         lbLevel.text = "1"
         UIiAd.alpha = 0
         UIiAd.backgroundColor = UIColor.lightTextColor()
-        let size1 = 260
-        let screenWidth = self.view.frame.size.width
-        let screenHeight = self.view.frame.size.height
-        let x1 = (screenWidth / 2) - (260 / 2)
+        let size1: CGFloat     = self.view.frame.size.width - 50
+        //let screenWidth = self.view.frame.size.width
+        //let screenHeight = self.view.frame.size.height
+        let x1: CGFloat = 25 //(screenWidth / 2) - (260 / 2)
         
-        let frame1 = CGRectMake(x1, 150, 260, 260)
+        let frame1 = CGRectMake(x1, 150, size1, size1)
         
         
         self.snakeView = SnakeView(frame: frame1)//CGRectMake(50, 50, 50, 50))
