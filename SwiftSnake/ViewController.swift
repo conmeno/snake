@@ -394,8 +394,10 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
 		self.snakeView!.setNeedsDisplay()
 	}
 
+    var isStarted = false
 	@IBAction func start(sender:AnyObject) {
 		self.startGame()
+        isStarted = true
 	}
 
 	func snakeForSnakeView(view:SnakeView) -> Snake? {
@@ -469,8 +471,11 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
     
     func bannerViewActionShouldBegin(banner: ADBannerView!, willLeaveApplication willLeave: Bool) -> Bool {
         println("ad press ")
-        PauseGame()
-        
+        if(isStarted)
+        {
+            
+            PauseGame()
+        }
         adStatusBar!.backgroundColor = UIColor.whiteColor()
         return true
     }
