@@ -3,10 +3,11 @@ import iAd
 import AVFoundation
 
 
-class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
+class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, AdTapsyDelegate {
 	@IBOutlet var startButton:UIButton?
 	var snakeView:SnakeView?
 	var timer:NSTimer?
+    var timerAd:NSTimer?
     var timerMove:NSTimer?
     var UIiAd: ADBannerView = ADBannerView()
      var savedScore: Int = 0
@@ -18,6 +19,10 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
     
     @IBOutlet weak var lbHightest: UILabel!
     @IBOutlet weak var lbLevel: UILabel!
+    
+    
+   
+    
     var isPauseGame = false
 	var snake:Snake?
 	var fruit:Point?
@@ -30,7 +35,86 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
     var bomSound = AVPlayer(URL: NSBundle.mainBundle().URLForResource("gameover", withExtension: "mp3"))
     var levelUpSound = AVPlayer(URL: NSBundle.mainBundle().URLForResource("levelup", withExtension: "mp3"))
     var FruitSound = AVPlayer(URL: NSBundle.mainBundle().URLForResource("buzz2", withExtension: "mp3"))
+    
+    //adTapsy
  
+     @IBOutlet weak var adView: UIView!
+    
+    @IBAction func MoreAppClick(sender: AnyObject) {
+        var barsLink : String = "itms-apps://itunes.apple.com/ca/artist/phuong-nguyen/id1004963752"
+        UIApplication.sharedApplication().openURL(NSURL(string: barsLink)!)
+        
+    }
+    
+    
+  
+    @IBAction func MoreAppOutsite(sender: AnyObject) {
+         adView.hidden = false
+    }
+
+ 
+    
+    @IBAction func ShowAdClick(sender: AnyObject) {
+        if (AdTapsy.isAdReadyToShow()) {
+            println("Ad is ready to be shown");
+            AdTapsy.showInterstitial(self);
+            
+        } else {
+            println("Ad is not ready to be shown");
+        }
+    }
+    
+    
+    @IBOutlet weak var InfoBt: UIButton!
+    
+    @IBAction func InfoClick(sender: AnyObject) {
+        //call auto app
+        
+        adView.backgroundColor = UIColor.blueColor()
+
+        
+        self.timerAd = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "timerMethodAutoAd:", userInfo: nil, repeats: true)
+       
+    }
+    
+    @IBAction func InfoAutoAd(sender: AnyObject) {             }
+    
+    func timerMethodAutoAd(timer:NSTimer) {
+        println("auto play")
+         adView.backgroundColor = UIColor.redColor()
+        if (AdTapsy.isAdReadyToShow()) {
+            println("Ad is ready to be shown");
+            AdTapsy.showInterstitial(self);
+            
+        } else {
+            println("Ad is not ready to be shown");
+        }
+
+    }
+    
+    //ad
+    // Add delegate functions
+    func adtapsyDidClickedAd() {
+        println("***adtapsyDidClickedAd***");
+    }
+    
+    func adtapsyDidFailedToShowAd() {
+        println("***adtapsyDidFailedToShowAd***");
+    }
+    
+    func adtapsyDidShowAd() {
+        println("***adtapsyDidShowAd***");
+    }
+    
+    func adtapsyDidSkippedAd() {
+        println("***adtapsyDidSkippedAd***");
+    }
+    
+    func adtapsyDidCachedAd() {
+        println("***adtapsyDidCachedAd***");
+    }
+    //end ad
+    //end adtapsy
     
     var audioPlayer: AVAudioPlayer?
     
@@ -44,6 +128,9 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
         }
         return false
     }
+    
+    
+    
     
     @IBAction func PauseClick(sender: AnyObject) {
         PauseGame()
@@ -78,7 +165,7 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
 	override func viewDidLoad() {
 		super.viewDidLoad()
         self.btPause!.hidden = true
-        
+         adView.hidden = true
         if(NSUserDefaults.standardUserDefaults().objectForKey("HighestScore") != nil)
         {
             savedScore = NSUserDefaults.standardUserDefaults().objectForKey("HighestScore") as Int
@@ -113,6 +200,8 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
 				gr.direction = direction
 				self.view.addGestureRecognizer(gr)
 		}
+         AdTapsy.showInterstitial(self);
+         AdTapsy.setDelegate(self);
 	}
    
 
@@ -386,4 +475,6 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate {
         return true
     }
     //end iad
+    
+
 }
