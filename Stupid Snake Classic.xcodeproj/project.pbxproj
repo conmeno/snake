@@ -14,16 +14,6 @@
 		8418E8AD1B6E504A00792274 /* vg_mute_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8418E8A61B6E504A00792274 /* vg_mute_on.png */; };
 		8418E8AE1B6E504A00792274 /* vg_privacy.png in Resources */ = {isa = PBXBuildFile; fileRef = 8418E8A71B6E504A00792274 /* vg_privacy.png */; };
 		8418E8AF1B6E504A00792274 /* VungleSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8418E8A81B6E504A00792274 /* VungleSDK.framework */; };
-		84A43D451B6CD91700182E19 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D1A1B6CD91700182E19 /* AdColony.framework */; };
-		84A43D461B6CD91700182E19 /* libAppLovinSdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D2E1B6CD91700182E19 /* libAppLovinSdk.a */; };
-		84A43D471B6CD91700182E19 /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D2F1B6CD91700182E19 /* Chartboost.framework */; };
-		84A43D481B6CD91700182E19 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D301B6CD91700182E19 /* GoogleMobileAds.framework */; };
-		84A43D491B6CD91700182E19 /* libInMobi-4.5.3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D3E1B6CD91700182E19 /* libInMobi-4.5.3.a */; };
-		84A43D4A1B6CD91700182E19 /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D3F1B6CD91700182E19 /* RevMobAds.framework */; };
-		84A43D4B1B6CD91700182E19 /* AdNetworks.txt in Resources */ = {isa = PBXBuildFile; fileRef = 84A43D401B6CD91700182E19 /* AdNetworks.txt */; };
-		84A43D4C1B6CD91700182E19 /* Changelog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 84A43D421B6CD91700182E19 /* Changelog.txt */; };
-		84A43D4D1B6CD91700182E19 /* libAdTapsy_device.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D431B6CD91700182E19 /* libAdTapsy_device.a */; };
-		84A43D4E1B6CD91700182E19 /* libAdTapsy_simulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D441B6CD91700182E19 /* libAdTapsy_simulator.a */; };
 		84A43D511B6CDA8F00182E19 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D501B6CDA8F00182E19 /* AdSupport.framework */; };
 		84A43D531B6CDD7600182E19 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D521B6CDD7600182E19 /* WebKit.framework */; };
 		84A43D551B6CDD7C00182E19 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D541B6CDD7C00182E19 /* StoreKit.framework */; };
@@ -43,6 +33,8 @@
 		84A43D711B6CDE2500182E19 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D701B6CDE2500182E19 /* CoreAudio.framework */; };
 		84A43D731B6CDE2E00182E19 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D721B6CDE2E00182E19 /* CFNetwork.framework */; };
 		84A43D751B6CDE3500182E19 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D741B6CDE3500182E19 /* AVFoundation.framework */; };
+		84A4DFFE1B775FBA00BA21C5 /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A4DFFD1B775FBA00BA21C5 /* Chartboost.framework */; };
+		84A4E0001B775FEF00BA21C5 /* AdColony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A4DFFF1B775FEF00BA21C5 /* AdColony.framework */; };
 		84B82B311B6CE1050019B1DD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B82B301B6CE1050019B1DD /* AudioToolbox.framework */; };
 		84B82B331B6CE1190019B1DD /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B82B321B6CE1190019B1DD /* CoreMedia.framework */; };
 		84B82B351B6CE12C0019B1DD /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B82B341B6CE12C0019B1DD /* CoreData.framework */; };
@@ -88,45 +80,6 @@
 		8418E8A61B6E504A00792274 /* vg_mute_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_mute_on.png; sourceTree = "<group>"; };
 		8418E8A71B6E504A00792274 /* vg_privacy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_privacy.png; sourceTree = "<group>"; };
 		8418E8A81B6E504A00792274 /* VungleSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VungleSDK.framework; sourceTree = "<group>"; };
-		84A43D1A1B6CD91700182E19 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
-		84A43D1D1B6CD91700182E19 /* ALAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAd.h; sourceTree = "<group>"; };
-		84A43D1E1B6CD91700182E19 /* ALAdDisplayDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdDisplayDelegate.h; sourceTree = "<group>"; };
-		84A43D1F1B6CD91700182E19 /* ALAdLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdLoadDelegate.h; sourceTree = "<group>"; };
-		84A43D201B6CD91700182E19 /* ALAdRewardDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdRewardDelegate.h; sourceTree = "<group>"; };
-		84A43D211B6CD91700182E19 /* ALAdService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdService.h; sourceTree = "<group>"; };
-		84A43D221B6CD91700182E19 /* ALAdSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdSize.h; sourceTree = "<group>"; };
-		84A43D231B6CD91700182E19 /* ALAdType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdType.h; sourceTree = "<group>"; };
-		84A43D241B6CD91700182E19 /* ALAdUpdateDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdUpdateDelegate.h; sourceTree = "<group>"; };
-		84A43D251B6CD91700182E19 /* ALAdVideoPlaybackDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdVideoPlaybackDelegate.h; sourceTree = "<group>"; };
-		84A43D261B6CD91700182E19 /* ALAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAdView.h; sourceTree = "<group>"; };
-		84A43D271B6CD91700182E19 /* ALErrorCodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALErrorCodes.h; sourceTree = "<group>"; };
-		84A43D281B6CD91700182E19 /* ALIncentivizedInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALIncentivizedInterstitialAd.h; sourceTree = "<group>"; };
-		84A43D291B6CD91700182E19 /* ALInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALInterstitialAd.h; sourceTree = "<group>"; };
-		84A43D2A1B6CD91700182E19 /* ALSdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSdk.h; sourceTree = "<group>"; };
-		84A43D2B1B6CD91700182E19 /* ALSdkSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSdkSettings.h; sourceTree = "<group>"; };
-		84A43D2C1B6CD91700182E19 /* ALSwiftHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSwiftHeaders.h; sourceTree = "<group>"; };
-		84A43D2D1B6CD91700182E19 /* ALTargetingData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTargetingData.h; sourceTree = "<group>"; };
-		84A43D2E1B6CD91700182E19 /* libAppLovinSdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAppLovinSdk.a; sourceTree = "<group>"; };
-		84A43D2F1B6CD91700182E19 /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
-		84A43D301B6CD91700182E19 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
-		84A43D331B6CD91700182E19 /* IMBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMBanner.h; sourceTree = "<group>"; };
-		84A43D341B6CD91700182E19 /* IMBannerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMBannerDelegate.h; sourceTree = "<group>"; };
-		84A43D351B6CD91700182E19 /* IMConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMConstants.h; sourceTree = "<group>"; };
-		84A43D361B6CD91700182E19 /* IMError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMError.h; sourceTree = "<group>"; };
-		84A43D371B6CD91700182E19 /* IMIncentivisedDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMIncentivisedDelegate.h; sourceTree = "<group>"; };
-		84A43D381B6CD91700182E19 /* IMInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMInterstitial.h; sourceTree = "<group>"; };
-		84A43D391B6CD91700182E19 /* IMInterstitialDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMInterstitialDelegate.h; sourceTree = "<group>"; };
-		84A43D3A1B6CD91700182E19 /* IMNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMNative.h; sourceTree = "<group>"; };
-		84A43D3B1B6CD91700182E19 /* IMNativeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMNativeDelegate.h; sourceTree = "<group>"; };
-		84A43D3C1B6CD91700182E19 /* InMobi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InMobi.h; sourceTree = "<group>"; };
-		84A43D3D1B6CD91700182E19 /* InMobiAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InMobiAnalytics.h; sourceTree = "<group>"; };
-		84A43D3E1B6CD91700182E19 /* libInMobi-4.5.3.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libInMobi-4.5.3.a"; sourceTree = "<group>"; };
-		84A43D3F1B6CD91700182E19 /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevMobAds.framework; sourceTree = "<group>"; };
-		84A43D401B6CD91700182E19 /* AdNetworks.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AdNetworks.txt; sourceTree = "<group>"; };
-		84A43D411B6CD91700182E19 /* AdTapsy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdTapsy.h; sourceTree = "<group>"; };
-		84A43D421B6CD91700182E19 /* Changelog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Changelog.txt; sourceTree = "<group>"; };
-		84A43D431B6CD91700182E19 /* libAdTapsy_device.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdTapsy_device.a; sourceTree = "<group>"; };
-		84A43D441B6CD91700182E19 /* libAdTapsy_simulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libAdTapsy_simulator.a; sourceTree = "<group>"; };
 		84A43D4F1B6CD91A00182E19 /* vuonhoa-Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "vuonhoa-Bridging-header.h"; sourceTree = "<group>"; };
 		84A43D501B6CDA8F00182E19 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		84A43D521B6CDD7600182E19 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
@@ -147,6 +100,8 @@
 		84A43D701B6CDE2500182E19 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		84A43D721B6CDE2E00182E19 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		84A43D741B6CDE3500182E19 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		84A4DFFD1B775FBA00BA21C5 /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
+		84A4DFFF1B775FEF00BA21C5 /* AdColony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AdColony.framework; sourceTree = "<group>"; };
 		84B82B301B6CE1050019B1DD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		84B82B321B6CE1190019B1DD /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		84B82B341B6CE12C0019B1DD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -194,6 +149,7 @@
 				84A43D6D1B6CDE0600182E19 /* CoreTelephony.framework in Frameworks */,
 				8418E8AF1B6E504A00792274 /* VungleSDK.framework in Frameworks */,
 				84A43D6B1B6CDDFC00182E19 /* MediaPlayer.framework in Frameworks */,
+				84A4DFFE1B775FBA00BA21C5 /* Chartboost.framework in Frameworks */,
 				84A43D691B6CDDD700182E19 /* MessageUI.framework in Frameworks */,
 				84A43D671B6CDDD000182E19 /* QuartzCore.framework in Frameworks */,
 				84A43D651B6CDDC500182E19 /* Security.framework in Frameworks */,
@@ -204,18 +160,11 @@
 				84A43D5B1B6CDD9200182E19 /* libsqlite3.0.dylib in Frameworks */,
 				84A43D591B6CDD8A00182E19 /* libz.dylib in Frameworks */,
 				84A43D571B6CDD8400182E19 /* Social.framework in Frameworks */,
+				84A4E0001B775FEF00BA21C5 /* AdColony.framework in Frameworks */,
 				84A43D551B6CDD7C00182E19 /* StoreKit.framework in Frameworks */,
 				84A43D531B6CDD7600182E19 /* WebKit.framework in Frameworks */,
 				84A43D511B6CDA8F00182E19 /* AdSupport.framework in Frameworks */,
-				84A43D491B6CD91700182E19 /* libInMobi-4.5.3.a in Frameworks */,
-				84A43D4A1B6CD91700182E19 /* RevMobAds.framework in Frameworks */,
-				84A43D461B6CD91700182E19 /* libAppLovinSdk.a in Frameworks */,
-				84A43D4E1B6CD91700182E19 /* libAdTapsy_simulator.a in Frameworks */,
-				84A43D471B6CD91700182E19 /* Chartboost.framework in Frameworks */,
-				84A43D481B6CD91700182E19 /* GoogleMobileAds.framework in Frameworks */,
 				96F0ACFA1B4D269C003EEB5B /* iAd.framework in Frameworks */,
-				84A43D4D1B6CD91700182E19 /* libAdTapsy_device.a in Frameworks */,
-				84A43D451B6CD91700182E19 /* AdColony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,92 +200,6 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		84A43D181B6CD91700182E19 /* AdTapsy */ = {
-			isa = PBXGroup;
-			children = (
-				84A43D191B6CD91700182E19 /* AdNetworks */,
-				84A43D401B6CD91700182E19 /* AdNetworks.txt */,
-				84A43D411B6CD91700182E19 /* AdTapsy.h */,
-				84A43D421B6CD91700182E19 /* Changelog.txt */,
-				84A43D431B6CD91700182E19 /* libAdTapsy_device.a */,
-				84A43D441B6CD91700182E19 /* libAdTapsy_simulator.a */,
-			);
-			path = AdTapsy;
-			sourceTree = "<group>";
-		};
-		84A43D191B6CD91700182E19 /* AdNetworks */ = {
-			isa = PBXGroup;
-			children = (
-				84A43D1A1B6CD91700182E19 /* AdColony.framework */,
-				84A43D1B1B6CD91700182E19 /* applovin-ios-sdk */,
-				84A43D2F1B6CD91700182E19 /* Chartboost.framework */,
-				84A43D301B6CD91700182E19 /* GoogleMobileAds.framework */,
-				84A43D311B6CD91700182E19 /* InMobi-iOS-SDK */,
-				84A43D3F1B6CD91700182E19 /* RevMobAds.framework */,
-			);
-			path = AdNetworks;
-			sourceTree = "<group>";
-		};
-		84A43D1B1B6CD91700182E19 /* applovin-ios-sdk */ = {
-			isa = PBXGroup;
-			children = (
-				84A43D1C1B6CD91700182E19 /* headers */,
-				84A43D2E1B6CD91700182E19 /* libAppLovinSdk.a */,
-			);
-			path = "applovin-ios-sdk";
-			sourceTree = "<group>";
-		};
-		84A43D1C1B6CD91700182E19 /* headers */ = {
-			isa = PBXGroup;
-			children = (
-				84A43D1D1B6CD91700182E19 /* ALAd.h */,
-				84A43D1E1B6CD91700182E19 /* ALAdDisplayDelegate.h */,
-				84A43D1F1B6CD91700182E19 /* ALAdLoadDelegate.h */,
-				84A43D201B6CD91700182E19 /* ALAdRewardDelegate.h */,
-				84A43D211B6CD91700182E19 /* ALAdService.h */,
-				84A43D221B6CD91700182E19 /* ALAdSize.h */,
-				84A43D231B6CD91700182E19 /* ALAdType.h */,
-				84A43D241B6CD91700182E19 /* ALAdUpdateDelegate.h */,
-				84A43D251B6CD91700182E19 /* ALAdVideoPlaybackDelegate.h */,
-				84A43D261B6CD91700182E19 /* ALAdView.h */,
-				84A43D271B6CD91700182E19 /* ALErrorCodes.h */,
-				84A43D281B6CD91700182E19 /* ALIncentivizedInterstitialAd.h */,
-				84A43D291B6CD91700182E19 /* ALInterstitialAd.h */,
-				84A43D2A1B6CD91700182E19 /* ALSdk.h */,
-				84A43D2B1B6CD91700182E19 /* ALSdkSettings.h */,
-				84A43D2C1B6CD91700182E19 /* ALSwiftHeaders.h */,
-				84A43D2D1B6CD91700182E19 /* ALTargetingData.h */,
-			);
-			path = headers;
-			sourceTree = "<group>";
-		};
-		84A43D311B6CD91700182E19 /* InMobi-iOS-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				84A43D321B6CD91700182E19 /* Libs */,
-			);
-			path = "InMobi-iOS-SDK";
-			sourceTree = "<group>";
-		};
-		84A43D321B6CD91700182E19 /* Libs */ = {
-			isa = PBXGroup;
-			children = (
-				84A43D331B6CD91700182E19 /* IMBanner.h */,
-				84A43D341B6CD91700182E19 /* IMBannerDelegate.h */,
-				84A43D351B6CD91700182E19 /* IMConstants.h */,
-				84A43D361B6CD91700182E19 /* IMError.h */,
-				84A43D371B6CD91700182E19 /* IMIncentivisedDelegate.h */,
-				84A43D381B6CD91700182E19 /* IMInterstitial.h */,
-				84A43D391B6CD91700182E19 /* IMInterstitialDelegate.h */,
-				84A43D3A1B6CD91700182E19 /* IMNative.h */,
-				84A43D3B1B6CD91700182E19 /* IMNativeDelegate.h */,
-				84A43D3C1B6CD91700182E19 /* InMobi.h */,
-				84A43D3D1B6CD91700182E19 /* InMobiAnalytics.h */,
-				84A43D3E1B6CD91700182E19 /* libInMobi-4.5.3.a */,
-			);
-			path = Libs;
-			sourceTree = "<group>";
-		};
 		96A00EB71B4FB50400ED6D42 /* mp3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +229,8 @@
 		D4F3B137193F777800D11DE2 = {
 			isa = PBXGroup;
 			children = (
+				84A4DFFF1B775FEF00BA21C5 /* AdColony.framework */,
+				84A4DFFD1B775FBA00BA21C5 /* Chartboost.framework */,
 				8418E8A01B6E504A00792274 /* VungleSDK.embeddedframework */,
 				84B82B361B6CE1360019B1DD /* EventKit.framework */,
 				84B82B371B6CE1360019B1DD /* EventKitUI.framework */,
@@ -392,7 +257,6 @@
 				84A43D521B6CDD7600182E19 /* WebKit.framework */,
 				84A43D501B6CDA8F00182E19 /* AdSupport.framework */,
 				84A43D4F1B6CD91A00182E19 /* vuonhoa-Bridging-header.h */,
-				84A43D181B6CD91700182E19 /* AdTapsy */,
 				96F0ACF91B4D269C003EEB5B /* iAd.framework */,
 				D4F3B142193F777800D11DE2 /* SwiftSnake */,
 				D4F3B155193F777800D11DE2 /* SwiftSnakeTests */,
@@ -535,13 +399,11 @@
 				96AA6EE21B525AC300F43F29 /* 2.mp3 in Resources */,
 				8418E8AC1B6E504A00792274 /* vg_mute_off.png in Resources */,
 				96A00EBF1B4FB51C00ED6D42 /* gameover.mp3 in Resources */,
-				84A43D4C1B6CD91700182E19 /* Changelog.txt in Resources */,
 				D4F3B14B193F777800D11DE2 /* Main.storyboard in Resources */,
 				96F1292E1B4F887400ADAA87 /* play.png in Resources */,
 				8418E8AD1B6E504A00792274 /* vg_mute_on.png in Resources */,
 				8418E8AB1B6E504A00792274 /* vg_cta.png in Resources */,
 				96AA6EE11B525AC300F43F29 /* 1.mp3 in Resources */,
-				84A43D4B1B6CD91700182E19 /* AdNetworks.txt in Resources */,
 				96AA6EE41B525AC300F43F29 /* 4.mp3 in Resources */,
 				96AA6EE31B525AC300F43F29 /* 3.mp3 in Resources */,
 				96AA6EE61B525AC300F43F29 /* 6.mp3 in Resources */,
@@ -694,6 +556,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AdTapsy/AdNetworks",
 					"$(PROJECT_DIR)/VungleSDK.embeddedframework",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SwiftSnake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -726,6 +589,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AdTapsy/AdNetworks",
 					"$(PROJECT_DIR)/VungleSDK.embeddedframework",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SwiftSnake/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

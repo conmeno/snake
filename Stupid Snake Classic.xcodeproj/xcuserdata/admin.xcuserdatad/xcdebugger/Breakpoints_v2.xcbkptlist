@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftSnake/ViewController.swift"
-            timestampString = "460136462.607714"
+            timestampString = "460812095.234467"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
-            landmarkName = "timerMethodAutoAd(_:)"
-            landmarkType = "5">
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "ViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftSnake/ViewController.swift"
-            timestampString = "460136462.607714"
+            timestampString = "460812095.234467"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "timerMethodAutoAd(_:)"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "InfoClick(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

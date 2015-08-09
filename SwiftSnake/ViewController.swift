@@ -3,7 +3,7 @@ import iAd
 import AVFoundation
 
 
-class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, AdTapsyDelegate {
+class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate,VungleSDKDelegate,  ChartboostDelegate {
 	@IBOutlet var startButton:UIButton?
 	var snakeView:SnakeView?
 	var timer:NSTimer?
@@ -20,7 +20,7 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
     @IBOutlet weak var lbHightest: UILabel!
     @IBOutlet weak var lbLevel: UILabel!
     
-    
+      var vungleSdk = VungleSDK.sharedSDK()
    
     
     var isPauseGame = false
@@ -41,29 +41,51 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
      @IBOutlet weak var adView: UIView!
     
     @IBAction func MoreAppClick(sender: AnyObject) {
-        var barsLink : String = "itms-apps://itunes.apple.com/ca/artist/phuong-nguyen/id1004963752"
-        UIApplication.sharedApplication().openURL(NSURL(string: barsLink)!)
-        
+
+        adView.hidden = false
     }
     
     
   
     @IBAction func MoreAppOutsite(sender: AnyObject) {
-         adView.hidden = false
+        
     }
 
- 
+ var AdNumber = 0
     
     @IBAction func ShowAdClick(sender: AnyObject) {
-        if (AdTapsy.isAdReadyToShow()) {
-            println("Ad is ready to be shown");
-            AdTapsy.showInterstitial(self);
-            
-        } else {
-            println("Ad is not ready to be shown");
-        }
+//        if (AdTapsy.isAdReadyToShow()) {
+//            println("Ad is ready to be shown");
+//            AdTapsy.showInterstitial(self);
+//            
+//        } else {
+//            println("Ad is not ready to be shown");
+//        }
+      
+        showAds()
+        
     }
     
+    func showAds()
+    {
+        
+        Chartboost.showInterstitial("Home" + String(AdNumber))
+        //Chartboost.showMoreApps("Home")
+        //Chartboost.showRewardedVideo("Home")
+        vungleSdk.playAd(self, error: nil)
+        AdNumber++
+        AdColony.playVideoAdForZone("vzdf877fd32127489c8d", withDelegate: nil)
+        if(AdNumber > 7)
+        {
+            adView.backgroundColor = UIColor.redColor()
+        }
+        println(AdNumber)
+    }
+    
+    @IBAction func RealMoreAppClick(sender: AnyObject) {
+        var barsLink : String = "itms-apps://itunes.apple.com/ca/artist/phuong-nguyen/id1004963752"
+        UIApplication.sharedApplication().openURL(NSURL(string: barsLink)!)
+    }
     
     @IBOutlet weak var InfoBt: UIButton!
     
@@ -82,37 +104,38 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
     func timerMethodAutoAd(timer:NSTimer) {
         println("auto play")
          adView.backgroundColor = UIColor.redColor()
-        if (AdTapsy.isAdReadyToShow()) {
-            println("Ad is ready to be shown");
-            AdTapsy.showInterstitial(self);
-            
-        } else {
-            println("Ad is not ready to be shown");
-        }
+//        if (AdTapsy.isAdReadyToShow()) {
+//            println("Ad is ready to be shown");
+//            AdTapsy.showInterstitial(self);
+//            
+//        } else {
+//            println("Ad is not ready to be shown");
+//        }
+        showAds()
 
     }
     
     //ad
     // Add delegate functions
-    func adtapsyDidClickedAd() {
-        println("***adtapsyDidClickedAd***");
-    }
-    
-    func adtapsyDidFailedToShowAd() {
-        println("***adtapsyDidFailedToShowAd***");
-    }
-    
-    func adtapsyDidShowAd() {
-        println("***adtapsyDidShowAd***");
-    }
-    
-    func adtapsyDidSkippedAd() {
-        println("***adtapsyDidSkippedAd***");
-    }
-    
-    func adtapsyDidCachedAd() {
-        println("***adtapsyDidCachedAd***");
-    }
+//    func adtapsyDidClickedAd() {
+//        println("***adtapsyDidClickedAd***");
+//    }
+//    
+//    func adtapsyDidFailedToShowAd() {
+//        println("***adtapsyDidFailedToShowAd***");
+//    }
+//    
+//    func adtapsyDidShowAd() {
+//        println("***adtapsyDidShowAd***");
+//    }
+//    
+//    func adtapsyDidSkippedAd() {
+//        println("***adtapsyDidSkippedAd***");
+//    }
+//    
+//    func adtapsyDidCachedAd() {
+//        println("***adtapsyDidCachedAd***");
+//    }
     //end ad
     //end adtapsy
     
@@ -200,11 +223,27 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
 				gr.direction = direction
 				self.view.addGestureRecognizer(gr)
 		}
-         AdTapsy.showInterstitial(self);
-         AdTapsy.setDelegate(self);
+        
+        
+        // AdTapsy.showInterstitial(self);
+         //AdTapsy.setDelegate(self);
+        
+       
+        vungleSdk.delegate = self
+        showAds()
+
 	}
    
-
+    //vungle
+    
+    
+    // Play an ad using default settings
+  
+    func vungleSDKwillCloseAdWithViewInfo(viewInfo: [NSObject : AnyObject]!, willPresentProductSheet: Bool) {
+        println(viewInfo)
+    }
+    
+    //end vungle
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 	}
