@@ -1,17 +1,19 @@
 import UIKit
 import iAd
 import AVFoundation
+import GoogleMobileAds
 
-
-class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate,VungleSDKDelegate,  ChartboostDelegate {
+class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate,  ChartboostDelegate,GADBannerViewDelegate {
 	@IBOutlet var startButton:UIButton?
 	var snakeView:SnakeView?
 	var timer:NSTimer?
     var timerAd:NSTimer?
     var timerMove:NSTimer?
-    var UIiAd: ADBannerView = ADBannerView()
+    //var UIiAd: ADBannerView = ADBannerView()
+     var bannerView:GADBannerView?
      var savedScore: Int = 0
     @IBOutlet weak var lbScore: UILabel!
+    
     
     @IBOutlet weak var btPause: UIButton!
     //@IBOutlet weak var btPause: UIButton!
@@ -20,7 +22,7 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate,V
     @IBOutlet weak var lbHightest: UILabel!
     @IBOutlet weak var lbLevel: UILabel!
     
-      var vungleSdk = VungleSDK.sharedSDK()
+      //var vungleSdk = VungleSDK.sharedSDK()
    
     
     var isPauseGame = false
@@ -39,13 +41,41 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate,V
     //adTapsy
  
      @IBOutlet weak var adView: UIView!
+    var interstitial: GADInterstitial!
+    
+    func createAndLoadAd() -> GADInterstitial
+    {
+        var ad = GADInterstitial(adUnitID: "ca-app-pub-7800586925586997/1419886062")
+        
+        var request = GADRequest()
+        
+        request.testDevices = ["kGADSimulatorID", "8c5c2bcfed6ce10d63a11d9a591e15c2"]
+        
+        ad.loadRequest(request)
+        
+        return ad
+    }
+
     
     @IBAction func MoreAppClick(sender: AnyObject) {
 
         adView.hidden = false
     }
     
+    @IBAction func adMobClick(sender: AnyObject) {
+        
+        showAdmob()
+    }
     
+    @IBAction func mobileCoreClick(sender: AnyObject) {
+        showMobilecore()
+        showMobilecore2()
+    }
+    
+    
+    @IBAction func closeClick(sender: AnyObject) {
+        adView.hidden = true
+    }
   
     @IBAction func MoreAppOutsite(sender: AnyObject) {
         
@@ -53,34 +83,62 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate,V
 
  var AdNumber = 0
     
+    
+    
     @IBAction func ShowAdClick(sender: AnyObject) {
-//        if (AdTapsy.isAdReadyToShow()) {
-//            println("Ad is ready to be shown");
-//            AdTapsy.showInterstitial(self);
-//            
-//        } else {
-//            println("Ad is not ready to be shown");
-//        }
-      
         showAds()
         
     }
     
+    func showMobilecore()
+    {
+        
+        MobileCore.showInterstitialFromViewController(self, delegate: nil)
+    }
+    func showMobilecore2()
+    {
+        MobileCore.showStickeeFromViewController(self)
+    }
+
+    func showAdmob()
+    {
+        if (self.interstitial.isReady)
+        {
+            self.interstitial.presentFromRootViewController(self)
+            self.interstitial = self.createAndLoadAd()
+        }
+    }
+    func ShowAdmobBanner()
+    {
+        bannerView = GADBannerView(frame: CGRectMake(0, 20 , 320, 50))
+        bannerView?.adUnitID = "ca-app-pub-7800586925586997/8943152862"
+        bannerView?.delegate = self
+        bannerView?.rootViewController = self
+        self.view.addSubview(bannerView!)
+        //adViewHeight = bannerView!.frame.size.height
+        var request = GADRequest()
+        request.testDevices = ["kGADSimulatorID", "8c5c2bcfed6ce10d63a11d9a591e15c2"];
+        bannerView?.loadRequest(request)
+        bannerView?.hidden = true
+        
+    }
     func showAds()
     {
         
         Chartboost.showInterstitial("Home" + String(AdNumber))
         //Chartboost.showMoreApps("Home")
         //Chartboost.showRewardedVideo("Home")
-        vungleSdk.playAd(self, error: nil)
+        //vungleSdk.playAd(self, error: nil)
         AdNumber++
-        AdColony.playVideoAdForZone("vzdf877fd32127489c8d", withDelegate: nil)
+        //AdColony.playVideoAdForZone("vzdf877fd32127489c8d", withDelegate: nil)
         if(AdNumber > 7)
         {
             adView.backgroundColor = UIColor.redColor()
         }
         println(AdNumber)
     }
+    
+    
     
     @IBAction func RealMoreAppClick(sender: AnyObject) {
         var barsLink : String = "itms-apps://itunes.apple.com/ca/artist/phuong-nguyen/id1004963752"
@@ -94,7 +152,7 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate,V
         
         adView.backgroundColor = UIColor.blueColor()
 
-        
+        showAdmob()
         self.timerAd = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "timerMethodAutoAd:", userInfo: nil, repeats: true)
        
     }
@@ -187,6 +245,9 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate,V
     }
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        
+        self.interstitial = self.createAndLoadAd()
+        ShowAdmobBanner()
         self.btPause!.hidden = true
          adView.hidden = true
         if(NSUserDefaults.standardUserDefaults().objectForKey("HighestScore") != nil)
@@ -197,8 +258,7 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate,V
         lbHightest.text = String(savedScore)
         lbScore.text = "0"
         lbLevel.text = "1"
-        UIiAd.alpha = 0
-        UIiAd.backgroundColor = UIColor.lightTextColor()
+        
         let size1: CGFloat     = self.view.frame.size.width - 50
         //let screenWidth = self.view.frame.size.width
         //let screenHeight = self.view.frame.size.height
@@ -227,10 +287,10 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate,V
         
         // AdTapsy.showInterstitial(self);
          //AdTapsy.setDelegate(self);
-        
        
-        vungleSdk.delegate = self
+        //vungleSdk.delegate = self
         showAds()
+        showAdmob()
 
 	}
    
@@ -445,80 +505,39 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate,V
 	func pointOfFruitForSnakeView(view:SnakeView) -> Point? {
 		return self.fruit
 	}
-    //begin iad
-    // 1
-    func appdelegate() -> AppDelegate {
-        return UIApplication.sharedApplication().delegate as AppDelegate
-    }
+
     
-    // 2
-    override func viewWillAppear(animated: Bool) {
-        showAdd()
-    }
-    func showAdd()
-    {
-        var SH = UIScreen.mainScreen().bounds.height
-        var BV: CGFloat = 0
+    //admob delegate
+    //GADBannerViewDelegate
+    func adViewDidReceiveAd(view: GADBannerView!) {
+        println("adViewDidReceiveAd:\(view)");
+        bannerView?.hidden = false
         
-        BV = UIiAd.bounds.height
-        UIiAd = self.appdelegate().UIiAd
-        UIiAd.alpha = 1
-        UIiAd.frame = CGRectMake(0, 20, 0, 0)
-        self.view.addSubview(UIiAd)
-        UIiAd.delegate = self
-        UIiAd.backgroundColor = UIColor.lightTextColor()
-        println("khoi tao ")
+        //relayoutViews()
     }
     
-    // 3
-    override func viewWillDisappear(animated: Bool) {
-        UIiAd.delegate = nil
-        UIiAd.removeFromSuperview()
+    func adView(view: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
+        println("\(view) error:\(error)")
+        bannerView?.hidden = false
+        //relayoutViews()
     }
     
-    //   bannerViewWillLoadAd
-    func bannerViewWillLoadAd(banner: ADBannerView!) {
-        println("will load ")
-        UIiAd.alpha = 1
-    }
-    
-    
-    // 4
-    func bannerViewDidLoadAd(banner: ADBannerView!) {
-        var SH = UIScreen.mainScreen().bounds.height
-        var BV: CGFloat = 0
+    func adViewWillPresentScreen(adView: GADBannerView!) {
+        println("adViewWillPresentScreen:\(adView)")
+        bannerView?.hidden = false
         
-        UIiAd.frame = CGRectMake(0, -70, 0, 0)
-        UIView.beginAnimations(nil, context: nil)
-        UIView.setAnimationDuration(1)
-        UIiAd.alpha = 1
-        UIiAd.frame = CGRectMake(0, 20, 0, 0)
-        UIView.commitAnimations()
-        adStatusBar!.backgroundColor = UIColor.blueColor()
-        println("da load ")
+        //relayoutViews()
     }
     
-    // 5
-    func bannerView(banner: ADBannerView!, didFailToReceiveAdWithError error: NSError!) {
-        UIView.beginAnimations(nil, context: nil)
-        UIView.setAnimationDuration(0)
-        UIiAd.alpha = 1
-        UIView.commitAnimations()
-        println("fail load ")
+    func adViewWillLeaveApplication(adView: GADBannerView!) {
+        println("adViewWillLeaveApplication:\(adView)")
+    }
+    
+    func adViewWillDismissScreen(adView: GADBannerView!) {
+        println("adViewWillDismissScreen:\(adView)")
         
+        // relayoutViews()
     }
-    
-    func bannerViewActionShouldBegin(banner: ADBannerView!, willLeaveApplication willLeave: Bool) -> Bool {
-        println("ad press ")
-        if(isStarted)
-        {
-            
-            PauseGame()
-        }
-        adStatusBar!.backgroundColor = UIColor.whiteColor()
-        return true
-    }
-    //end iad
     
 
 }
