@@ -252,6 +252,13 @@
                                     <constraint firstItem="VgN-cM-QxD" firstAttribute="leading" secondItem="4B8-R4-M9a" secondAttribute="leading" constant="8" id="y0Z-DB-A8B"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oc8-VZ-wIG" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wnw-Hm-2wb"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <constraints>
@@ -262,10 +269,14 @@
                             <constraint firstItem="4B8-R4-M9a" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="QUt-GC-a8u"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4B8-R4-M9a" secondAttribute="trailing" constant="-16" id="WmU-rS-TC5"/>
                             <constraint firstItem="4B8-R4-M9a" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="55" id="b59-K0-sCB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oc8-VZ-wIG" secondAttribute="trailing" constant="-16" id="dQC-OR-IJV"/>
+                            <constraint firstItem="oc8-VZ-wIG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="ekv-Wu-MBU"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="hel-ZO-9L1" secondAttribute="bottom" constant="51" id="hmA-q6-9eQ"/>
                             <constraint firstItem="cIb-Na-JlN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="ixd-fj-DqW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hel-ZO-9L1" secondAttribute="trailing" constant="-16" id="klN-zw-XFf"/>
+                            <constraint firstItem="oc8-VZ-wIG" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="o8Q-SB-BPJ"/>
                             <constraint firstAttribute="centerX" secondItem="a4p-Ws-SZG" secondAttribute="centerX" id="qz9-fe-Sif"/>
+                            <constraint firstAttribute="centerX" secondItem="oc8-VZ-wIG" secondAttribute="centerX" id="xIl-lS-HWq"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
@@ -274,6 +285,7 @@
                         <outlet property="InfoBt" destination="fmR-lj-ERp" id="yKL-OA-ICw"/>
                         <outlet property="adView" destination="hel-ZO-9L1" id="XhP-9g-3sN"/>
                         <outlet property="btPause" destination="dTa-pJ-kCi" id="HM6-Fe-fiy"/>
+                        <outlet property="gBannerView" destination="oc8-VZ-wIG" id="2eP-J8-Hmt"/>
                         <outlet property="lbHightest" destination="Yap-wI-R0k" id="tiJ-GC-0el"/>
                         <outlet property="lbLevel" destination="zj5-WA-W3e" id="q7x-4V-BNa"/>
                         <outlet property="lbScore" destination="MxA-1k-Gzf" id="jJx-wR-8WK"/>

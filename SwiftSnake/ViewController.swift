@@ -10,10 +10,11 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
     var timerAd:NSTimer?
     var timerMove:NSTimer?
     //var UIiAd: ADBannerView = ADBannerView()
-     var bannerView:GADBannerView?
+    // var bannerView:GADBannerView?
      var savedScore: Int = 0
     @IBOutlet weak var lbScore: UILabel!
     
+    @IBOutlet weak var gBannerView: GADBannerView!
     
     @IBOutlet weak var btPause: UIButton!
     //@IBOutlet weak var btPause: UIButton!
@@ -49,7 +50,7 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
         
         var request = GADRequest()
         
-        request.testDevices = ["kGADSimulatorID", "8c5c2bcfed6ce10d63a11d9a591e15c2"]
+        request.testDevices = [kGADSimulatorID, "8c5c2bcfed6ce10d63a11d9a591e15c2"]
         
         ad.loadRequest(request)
         
@@ -110,16 +111,16 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
     }
     func ShowAdmobBanner()
     {
-        bannerView = GADBannerView(frame: CGRectMake(0, 20 , 320, 50))
-        bannerView?.adUnitID = "ca-app-pub-7800586925586997/8943152862"
-        bannerView?.delegate = self
-        bannerView?.rootViewController = self
-        self.view.addSubview(bannerView!)
+        //gBannerView = GADBannerView(frame: CGRectMake(0, 20 , 320, 50))
+        gBannerView?.adUnitID = "ca-app-pub-7800586925586997/8943152862"
+        gBannerView?.delegate = self
+        gBannerView?.rootViewController = self
+        //self.view.addSubview(bannerView!)
         //adViewHeight = bannerView!.frame.size.height
         var request = GADRequest()
-        request.testDevices = ["kGADSimulatorID", "8c5c2bcfed6ce10d63a11d9a591e15c2"];
-        bannerView?.loadRequest(request)
-        bannerView?.hidden = true
+        request.testDevices = [kGADSimulatorID , "8c5c2bcfed6ce10d63a11d9a591e15c2"];
+        gBannerView?.loadRequest(request)
+        gBannerView?.hidden = true
         
     }
     func showAds()
@@ -511,20 +512,20 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
     //GADBannerViewDelegate
     func adViewDidReceiveAd(view: GADBannerView!) {
         println("adViewDidReceiveAd:\(view)");
-        bannerView?.hidden = false
+        gBannerView?.hidden = false
         
         //relayoutViews()
     }
     
     func adView(view: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
         println("\(view) error:\(error)")
-        bannerView?.hidden = false
+        gBannerView?.hidden = false
         //relayoutViews()
     }
     
     func adViewWillPresentScreen(adView: GADBannerView!) {
         println("adViewWillPresentScreen:\(adView)")
-        bannerView?.hidden = false
+        gBannerView?.hidden = false
         
         //relayoutViews()
     }
