@@ -14,7 +14,9 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
      var savedScore: Int = 0
     @IBOutlet weak var lbScore: UILabel!
     
-    @IBOutlet weak var gBannerView: GADBannerView!
+    var gBannerView: GADBannerView!
+    var timerVPN:NSTimer?
+    var isStopAD = true
     
     @IBOutlet weak var btPause: UIButton!
     //@IBOutlet weak var btPause: UIButton!
@@ -69,8 +71,8 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
     }
     
     @IBAction func mobileCoreClick(sender: AnyObject) {
-        showMobilecore()
-        showMobilecore2()
+//        showMobilecore()
+//        showMobilecore2()
     }
     
     
@@ -91,15 +93,15 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
         
     }
     
-    func showMobilecore()
-    {
-        
-        MobileCore.showInterstitialFromViewController(self, delegate: nil)
-    }
-    func showMobilecore2()
-    {
-        MobileCore.showStickeeFromViewController(self)
-    }
+//    func showMobilecore()
+//    {
+//        
+//        MobileCore.showInterstitialFromViewController(self, delegate: nil)
+//    }
+//    func showMobilecore2()
+//    {
+//        MobileCore.showStickeeFromViewController(self)
+//    }
 
     func showAdmob()
     {
@@ -112,9 +114,13 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
     func ShowAdmobBanner()
     {
         //gBannerView = GADBannerView(frame: CGRectMake(0, 20 , 320, 50))
+        var w = view?.bounds.width
+        
+        gBannerView = GADBannerView(frame: CGRectMake(0, 20 , w!, 50))
         gBannerView?.adUnitID = "ca-app-pub-7800586925586997/8943152862"
         gBannerView?.delegate = self
         gBannerView?.rootViewController = self
+        self.view.addSubview(gBannerView)
         //self.view.addSubview(bannerView!)
         //adViewHeight = bannerView!.frame.size.height
         var request = GADRequest()
@@ -163,40 +169,11 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
     func timerMethodAutoAd(timer:NSTimer) {
         println("auto play")
          adView.backgroundColor = UIColor.redColor()
-//        if (AdTapsy.isAdReadyToShow()) {
-//            println("Ad is ready to be shown");
-//            AdTapsy.showInterstitial(self);
-//            
-//        } else {
-//            println("Ad is not ready to be shown");
-//        }
-        showAds()
+         showAds()
 
     }
     
-    //ad
-    // Add delegate functions
-//    func adtapsyDidClickedAd() {
-//        println("***adtapsyDidClickedAd***");
-//    }
-//    
-//    func adtapsyDidFailedToShowAd() {
-//        println("***adtapsyDidFailedToShowAd***");
-//    }
-//    
-//    func adtapsyDidShowAd() {
-//        println("***adtapsyDidShowAd***");
-//    }
-//    
-//    func adtapsyDidSkippedAd() {
-//        println("***adtapsyDidSkippedAd***");
-//    }
-//    
-//    func adtapsyDidCachedAd() {
-//        println("***adtapsyDidCachedAd***");
-//    }
-    //end ad
-    //end adtapsy
+ 
     
     var audioPlayer: AVAudioPlayer?
     
@@ -248,9 +225,18 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
 		super.viewDidLoad()
         
         self.interstitial = self.createAndLoadAd()
-        ShowAdmobBanner()
         self.btPause!.hidden = true
          adView.hidden = true
+        
+        self.timerVPN = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: "timerVPNMethodAutoAd:", userInfo: nil, repeats: true)
+        
+        
+        if(showAd())
+        {
+            ShowAdmobBanner()
+            isStopAD = false
+        }
+        
         if(NSUserDefaults.standardUserDefaults().objectForKey("HighestScore") != nil)
         {
             savedScore = NSUserDefaults.standardUserDefaults().objectForKey("HighestScore") as Int
@@ -295,6 +281,25 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
 
 	}
    
+    func timerVPNMethodAutoAd(timer:NSTimer) {
+        println("VPN Checking....")
+        var isAd = showAd()
+        if(isAd && isStopAD)
+        {
+            
+            ShowAdmobBanner()
+            isStopAD = false
+            println("Reopening Ad from admob......")
+        }
+        
+        if(isAd == false && isStopAD == false)
+        {
+            gBannerView.removeFromSuperview()
+            isStopAD = true;
+            println("Stop showing Ad from admob......")
+        }
+    }
+
     //vungle
     
     
@@ -538,6 +543,21 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
         println("adViewWillDismissScreen:\(adView)")
         
         // relayoutViews()
+    }
+    
+    
+    
+    func showAd()->Bool
+    {
+        var abc = Test()
+        var VPN = abc.isVPNConnected()
+        var Version = abc.platformNiceString()
+        if(VPN == false && Version == "CDMA")
+        {
+            return false
+        }
+        
+        return true
     }
     
 

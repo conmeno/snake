@@ -9,8 +9,12 @@
 //#import <AdColony/AdColony.h>
 //#import <VungleSDK/VungleSDK.h>
 #import <CommonCrypto/CommonDigest.h>
-#import <AdSupport/AdSupport.h>
-#import <MobileCore/MobileCore.h>
+#import <AdSupport/AdSupport.h> 
+
+
+
+#include <ifaddrs.h>
+#import "Test.h"
 #ifndef vuonhoaphatgiao_vuonhoa_Bridging_header_h
 #define vuonhoaphatgiao_vuonhoa_Bridging_header_h
 

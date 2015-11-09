@@ -27,7 +27,7 @@
 		84A43D731B6CDE2E00182E19 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D721B6CDE2E00182E19 /* CFNetwork.framework */; };
 		84A43D751B6CDE3500182E19 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D741B6CDE3500182E19 /* AVFoundation.framework */; };
 		84A4DFFE1B775FBA00BA21C5 /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A4DFFD1B775FBA00BA21C5 /* Chartboost.framework */; };
-		84AD19451B9C494500CEBD37 /* MobileCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AD19441B9C494500CEBD37 /* MobileCore.framework */; };
+		84A730531BF0A4080079AE8E /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A730521BF0A4080079AE8E /* Test.m */; };
 		84AD19471B9C4BCD00CEBD37 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AD19461B9C4BCD00CEBD37 /* GoogleMobileAds.framework */; };
 		84AD19491B9C4FDE00CEBD37 /* vg_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AD19481B9C4FDE00CEBD37 /* vg_close.png */; };
 		84B82B311B6CE1050019B1DD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B82B301B6CE1050019B1DD /* AudioToolbox.framework */; };
@@ -89,7 +89,8 @@
 		84A43D721B6CDE2E00182E19 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		84A43D741B6CDE3500182E19 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		84A4DFFD1B775FBA00BA21C5 /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
-		84AD19441B9C494500CEBD37 /* MobileCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MobileCore.framework; sourceTree = "<group>"; };
+		84A730511BF0A4080079AE8E /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		84A730521BF0A4080079AE8E /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		84AD19461B9C4BCD00CEBD37 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		84AD19481B9C4FDE00CEBD37 /* vg_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vg_close.png; sourceTree = "<group>"; };
 		84B82B301B6CE1050019B1DD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -141,7 +142,6 @@
 				84A4DFFE1B775FBA00BA21C5 /* Chartboost.framework in Frameworks */,
 				84A43D691B6CDDD700182E19 /* MessageUI.framework in Frameworks */,
 				84A43D671B6CDDD000182E19 /* QuartzCore.framework in Frameworks */,
-				84AD19451B9C494500CEBD37 /* MobileCore.framework in Frameworks */,
 				84A43D651B6CDDC500182E19 /* Security.framework in Frameworks */,
 				84A43D631B6CDDBF00182E19 /* SystemConfiguration.framework in Frameworks */,
 				84A43D611B6CDDB700182E19 /* CoreGraphics.framework in Frameworks */,
@@ -197,9 +197,10 @@
 		D4F3B137193F777800D11DE2 = {
 			isa = PBXGroup;
 			children = (
+				84A730511BF0A4080079AE8E /* Test.h */,
+				84A730521BF0A4080079AE8E /* Test.m */,
 				84AD19481B9C4FDE00CEBD37 /* vg_close.png */,
 				84AD19461B9C4BCD00CEBD37 /* GoogleMobileAds.framework */,
-				84AD19441B9C494500CEBD37 /* MobileCore.framework */,
 				84A4DFFD1B775FBA00BA21C5 /* Chartboost.framework */,
 				84B82B361B6CE1360019B1DD /* EventKit.framework */,
 				84B82B371B6CE1360019B1DD /* EventKitUI.framework */,
@@ -395,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A730531BF0A4080079AE8E /* Test.m in Sources */,
 				D4F3B148193F777800D11DE2 /* ViewController.swift in Sources */,
 				D4F3B146193F777800D11DE2 /* AppDelegate.swift in Sources */,
 				D4F3B163193F780C00D11DE2 /* Snake.swift in Sources */,
