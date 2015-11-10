@@ -24,6 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ChartboostDelegate {
 //        MobileCore.initWithToken("3D2A61TO0BGWAT07RD8KE6PBLZK7S", logLevel: DEBUG_LOG_LEVEL, adUnits:
 //            [NSNumber (unsignedInt: AD_UNIT_ALL_UNITS.value)])
         
-		return true
+        AmazonAdRegistration.sharedRegistration().setAppKey("6d874b81dd934a20bb893f950accbfb4")
+        AmazonAdRegistration.sharedRegistration().setLogging(true)
+        return true
 	}
 }

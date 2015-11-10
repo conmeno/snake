@@ -3,7 +3,11 @@ import iAd
 import AVFoundation
 import GoogleMobileAds
 
-class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate,  ChartboostDelegate,GADBannerViewDelegate {
+class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,GADBannerViewDelegate,AmazonAdInterstitialDelegate {
+    
+    var interstitialAmazon: AmazonAdInterstitial!
+
+    
 	@IBOutlet var startButton:UIButton?
 	var snakeView:SnakeView?
 	var timer:NSTimer?
@@ -73,6 +77,8 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
     @IBAction func mobileCoreClick(sender: AnyObject) {
 //        showMobilecore()
 //        showMobilecore2()
+        
+        showAmazonFull()
     }
     
     
@@ -124,7 +130,7 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
         //self.view.addSubview(bannerView!)
         //adViewHeight = bannerView!.frame.size.height
         var request = GADRequest()
-        request.testDevices = [kGADSimulatorID , "8c5c2bcfed6ce10d63a11d9a591e15c2"];
+        request.testDevices = [kGADSimulatorID , "6765961dace61de84e2b78a0136a4116"];
         gBannerView?.loadRequest(request)
         gBannerView?.hidden = true
         
@@ -228,7 +234,13 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
         self.btPause!.hidden = true
          adView.hidden = true
         
-        self.timerVPN = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: "timerVPNMethodAutoAd:", userInfo: nil, repeats: true)
+        interstitialAmazon = AmazonAdInterstitial()
+        
+        interstitialAmazon.delegate = self
+
+        
+        LoadAmazon()
+        self.timerVPN = NSTimer.scheduledTimerWithTimeInterval(20, target: self, selector: "timerVPNMethodAutoAd:", userInfo: nil, repeats: true)
         
         
         if(showAd())
@@ -304,10 +316,10 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
     
     
     // Play an ad using default settings
-  
-    func vungleSDKwillCloseAdWithViewInfo(viewInfo: [NSObject : AnyObject]!, willPresentProductSheet: Bool) {
-        println(viewInfo)
-    }
+//  
+//    func vungleSDKwillCloseAdWithViewInfo(viewInfo: [NSObject : AnyObject]!, willPresentProductSheet: Bool) {
+//        println(viewInfo)
+//    }
     
     //end vungle
 	override func didReceiveMemoryWarning() {
@@ -558,6 +570,53 @@ class ViewController: UIViewController, SnakeViewDelegate,ADBannerViewDelegate, 
         }
         
         return true
+    }
+    
+    
+    //amaazon
+    func LoadAmazon()
+    {
+        var options = AmazonAdOptions()
+        
+        options.isTestRequest = true
+        
+        interstitialAmazon.load(options)
+    }
+    
+    func showAmazonFull()
+    {
+        interstitialAmazon.presentFromViewController(self)
+        
+    }
+    
+    
+    // Mark: - AmazonAdInterstitialDelegate
+    func interstitialDidLoad(interstitial: AmazonAdInterstitial!) {
+        Swift.print("Interstitial loaded.")
+        //loadStatusLabel.text = "Interstitial loaded."
+    }
+    
+    func interstitialDidFailToLoad(interstitial: AmazonAdInterstitial!, withError: AmazonAdError!) {
+        Swift.print("Interstitial failed to load.")
+        //loadStatusLabel.text = "Interstitial failed to load."
+    }
+    
+    func interstitialWillPresent(interstitial: AmazonAdInterstitial!) {
+        Swift.print("Interstitial will be presented.")
+    }
+    
+    func interstitialDidPresent(interstitial: AmazonAdInterstitial!) {
+        Swift.print("Interstitial has been presented.")
+    }
+    
+    func interstitialWillDismiss(interstitial: AmazonAdInterstitial!) {
+        Swift.print("Interstitial will be dismissed.")
+    }
+    
+    func interstitialDidDismiss(interstitial: AmazonAdInterstitial!) {
+        Swift.print("Interstitial has been dismissed.");
+        //self.loadStatusLabel.text = "No interstitial loaded.";
+        LoadAmazon()
     }
     
 
