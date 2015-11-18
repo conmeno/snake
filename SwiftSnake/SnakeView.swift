@@ -27,7 +27,7 @@ class SnakeView : UIView {
 
     override init(frame: CGRect) {
 		super.init(frame: frame)
-		self.backgroundColor = UIColor(netHex:0xd4edc7)
+		self.backgroundColor = UIColor(netHex:0xd4edc7)//#6A97FC
         
        
     }
@@ -57,14 +57,14 @@ class SnakeView : UIView {
                    isHead = false
                 }else
                 {
-                    UIColor.blackColor().set()
+                    UIColor.purpleColor().set()
                    
                 }
 				UIBezierPath(rect: rect).fill()
 			}
 
 			if let fruit = delegate?.pointOfFruitForSnakeView(self) {
-				UIColor.redColor().set()
+				UIColor.orangeColor().set()
 				let rect = CGRect(x: fruit.x * w, y: fruit.y * h, width: w, height: h)
 				UIBezierPath(ovalInRect: rect).fill()
 			}

@@ -8,8 +8,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ChartboostDelegate {
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         
         //AdTapsy.startSession("55bc9f40e4b0a1b5eb3de2d6");
-        Chartboost.startWithAppId("5640665f2fdf347c6ceddf17", appSignature: "132b0b0a693dea3ac08eec4670ae941378f6c4b5", delegate: self)
-        
+        Chartboost.startWithAppId("564bf766da15272b4080dfc7", appSignature: "8a02d3ca0696dd85a8b3f4d4f53b78b73542649a", delegate: self)
+        Chartboost.setShouldRequestInterstitialsInFirstSession(false)
         //vungle
         // Override point for customization after application launch.
 //        var appID = "1018638464"
@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ChartboostDelegate {
 //        MobileCore.initWithToken("3D2A61TO0BGWAT07RD8KE6PBLZK7S", logLevel: DEBUG_LOG_LEVEL, adUnits:
 //            [NSNumber (unsignedInt: AD_UNIT_ALL_UNITS.value)])
         
-        AmazonAdRegistration.sharedRegistration().setAppKey("6d874b81dd934a20bb893f950accbfb4")
+        AmazonAdRegistration.sharedRegistration().setAppKey("729491e1690143fdaed868d15f3b7bbf")
         AmazonAdRegistration.sharedRegistration().setLogging(true)
         return true
 	}

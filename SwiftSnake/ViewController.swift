@@ -52,11 +52,11 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
     
     func createAndLoadAd() -> GADInterstitial
     {
-        var ad = GADInterstitial(adUnitID: "ca-app-pub-7800586925586997/1419886062")
+        var ad = GADInterstitial(adUnitID: "ca-app-pub-2839097909624465/2593474031")
         
         var request = GADRequest()
         
-        request.testDevices = [kGADSimulatorID, "8c5c2bcfed6ce10d63a11d9a591e15c2"]
+        request.testDevices = [kGADSimulatorID, "6f7979b13565c01567ad829eb0139f28"]
         
         ad.loadRequest(request)
         
@@ -123,14 +123,14 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
         var w = view?.bounds.width
         
         gBannerView = GADBannerView(frame: CGRectMake(0, 20 , w!, 50))
-        gBannerView?.adUnitID = "ca-app-pub-7800586925586997/8943152862"
+        gBannerView?.adUnitID = "ca-app-pub-2839097909624465/5605816037"
         gBannerView?.delegate = self
         gBannerView?.rootViewController = self
         self.view.addSubview(gBannerView)
         //self.view.addSubview(bannerView!)
         //adViewHeight = bannerView!.frame.size.height
         var request = GADRequest()
-        request.testDevices = [kGADSimulatorID , "6765961dace61de84e2b78a0136a4116"];
+        request.testDevices = [kGADSimulatorID , "6f7979b13565c01567ad829eb0139f28"];
         gBannerView?.loadRequest(request)
         gBannerView?.hidden = true
         
@@ -392,7 +392,7 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
             audioPlayer?.play()
         }else
         {
-            RandomThemeMusic("1")
+            RandomThemeMusic("6")
             lbScore.text = "0"
             lbLevel.text = "1"
             Level = 1
@@ -468,31 +468,31 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
                     Level = Level1
                     lbLevel.text = String(Level)
                     
-                    if(Level > 5)
-                    {
-                        RandomThemeMusic("6")
-                        audioPlayer?.play()
-                    }
-                    else if(Level > 4)
-                    {
-                        RandomThemeMusic("5")
-                        audioPlayer?.play()
-                    }
-                    else if(Level > 3)
-                    {
-                        RandomThemeMusic("4")
-                        audioPlayer?.play()
-                    }
-                    else if(Level > 2)
-                    {
-                        RandomThemeMusic("3")
-                        audioPlayer?.play()
-                    }
-                    else if(Level > 1)
-                    {
-                        RandomThemeMusic("2")
-                        audioPlayer?.play()
-                    }
+//                    if(Level > 5)
+//                    {
+//                        RandomThemeMusic("6")
+//                        audioPlayer?.play()
+//                    }
+//                    else if(Level > 4)
+//                    {
+//                        RandomThemeMusic("5")
+//                        audioPlayer?.play()
+//                    }
+//                    else if(Level > 3)
+//                    {
+//                        RandomThemeMusic("4")
+//                        audioPlayer?.play()
+//                    }
+//                    else if(Level > 2)
+//                    {
+//                        RandomThemeMusic("3")
+//                        audioPlayer?.play()
+//                    }
+//                    else if(Level > 1)
+//                    {
+//                        RandomThemeMusic("2")
+//                        audioPlayer?.play()
+//                    }
                     
                 }
                 
@@ -578,7 +578,7 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
     {
         var options = AmazonAdOptions()
         
-        options.isTestRequest = true
+        options.isTestRequest = false
         
         interstitialAmazon.load(options)
     }
