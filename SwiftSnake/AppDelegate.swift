@@ -9,7 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ChartboostDelegate {
         
         //AdTapsy.startSession("55bc9f40e4b0a1b5eb3de2d6");
         Chartboost.startWithAppId("564bf766da15272b4080dfc7", appSignature: "8a02d3ca0696dd85a8b3f4d4f53b78b73542649a", delegate: self)
-        Chartboost.setShouldRequestInterstitialsInFirstSession(false)
+        //Chartboost.setShouldRequestInterstitialsInFirstSession(false)
         //vungle
         // Override point for customization after application launch.
 //        var appID = "1018638464"
