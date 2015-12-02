@@ -7,6 +7,7 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
     
     var interstitialAmazon: AmazonAdInterstitial!
 
+    @IBOutlet weak var vendorID: UITextView!
     
 	@IBOutlet var startButton:UIButton?
 	var snakeView:SnakeView?
@@ -93,11 +94,16 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
  var AdNumber = 0
     
     
+    @IBAction func MoreGameDrag(sender: AnyObject) {
+        vendorID.hidden = false
+    }
     
     @IBAction func ShowAdClick(sender: AnyObject) {
         showAds()
         
     }
+    
+    
     
 //    func showMobilecore()
 //    {
@@ -229,11 +235,12 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
     }
 	override func viewDidLoad() {
 		super.viewDidLoad()
-        
+        vendorID.hidden = true;
         self.interstitial = self.createAndLoadAd()
         self.btPause!.hidden = true
          adView.hidden = true
-        
+        var venderID = UIDevice.currentDevice().identifierForVendor!.UUIDString
+        vendorID.text = venderID
         interstitialAmazon = AmazonAdInterstitial()
         
         interstitialAmazon.delegate = self

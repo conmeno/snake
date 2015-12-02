@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Stupid_Snake_Classic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Snake_1998" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -83,21 +83,6 @@
                                             <action selector="closeClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tt2-Ot-6Xw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5d-lv-L6F">
-                                        <rect key="frame" x="14" y="46" width="129" height="30"/>
-                                        <color key="backgroundColor" red="0.96751868206521741" green="0.41186521494690204" blue="0.47887714262341441" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="ZSi-tY-yza"/>
-                                            <constraint firstAttribute="width" constant="129" id="zjf-B9-rRm"/>
-                                        </constraints>
-                                        <state key="normal" title="More games">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="adMobClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HN9-tj-SQD"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oau-Vw-0eK">
                                         <rect key="frame" x="14" y="97" width="129" height="30"/>
                                         <color key="backgroundColor" red="0.96751868210000003" green="0.4118652149" blue="0.47887714260000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -113,6 +98,32 @@
                                             <action selector="mobileCoreClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6zn-Nk-uqa"/>
                                         </connections>
                                     </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAR-VP-h1F">
+                                        <rect key="frame" x="14" y="135" width="292" height="125"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="125" id="PJN-qi-tjs"/>
+                                        </constraints>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5d-lv-L6F">
+                                        <rect key="frame" x="14" y="46" width="129" height="30"/>
+                                        <color key="backgroundColor" red="0.96751868206521741" green="0.41186521494690204" blue="0.47887714262341441" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ZSi-tY-yza"/>
+                                            <constraint firstAttribute="width" constant="129" id="zjf-B9-rRm"/>
+                                        </constraints>
+                                        <state key="normal" title="More games">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="MoreGameDrag:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IAC-b1-8hK"/>
+                                            <action selector="adMobClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HN9-tj-SQD"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.40810868859999999" green="0.58947855859999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -124,13 +135,16 @@
                                     <constraint firstItem="oau-Vw-0eK" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="K5c-60-84r"/>
                                     <constraint firstAttribute="trailing" secondItem="fmR-lj-ERp" secondAttribute="trailing" constant="8" id="MET-RX-Arh"/>
                                     <constraint firstItem="h3g-3a-NYK" firstAttribute="top" secondItem="hel-ZO-9L1" secondAttribute="top" constant="70" id="Txh-lC-MUD"/>
+                                    <constraint firstItem="MAR-VP-h1F" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="aAQ-pe-tQC"/>
                                     <constraint firstItem="oau-Vw-0eK" firstAttribute="top" secondItem="T5d-lv-L6F" secondAttribute="bottom" constant="21" id="ax3-8A-Npi"/>
                                     <constraint firstAttribute="bottom" secondItem="h3g-3a-NYK" secondAttribute="bottom" id="bRI-LN-Y73"/>
                                     <constraint firstAttribute="bottom" secondItem="fmR-lj-ERp" secondAttribute="bottom" constant="4" id="dPx-VD-KHZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="MAR-VP-h1F" secondAttribute="bottom" id="e6i-5Q-DaS"/>
                                     <constraint firstAttribute="trailing" secondItem="o7D-bA-b3D" secondAttribute="trailing" constant="8" id="i0w-5o-Tm7"/>
                                     <constraint firstItem="T5d-lv-L6F" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="o2Y-KD-kBC"/>
                                     <constraint firstAttribute="height" constant="260" id="poK-1U-tLn"/>
                                     <constraint firstItem="h3g-3a-NYK" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" id="sfX-o2-ANt"/>
+                                    <constraint firstAttribute="trailing" secondItem="MAR-VP-h1F" secondAttribute="trailing" constant="14" id="wTS-LB-3ac"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIb-Na-JlN">
@@ -278,6 +292,7 @@
                         <outlet property="lbLevel" destination="zj5-WA-W3e" id="q7x-4V-BNa"/>
                         <outlet property="lbScore" destination="MxA-1k-Gzf" id="jJx-wR-8WK"/>
                         <outlet property="startButton" destination="a4p-Ws-SZG" id="dbw-q5-uV5"/>
+                        <outlet property="vendorID" destination="MAR-VP-h1F" id="B5n-4R-koK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
