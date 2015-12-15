@@ -8,7 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ChartboostDelegate {
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         
         //AdTapsy.startSession("55bc9f40e4b0a1b5eb3de2d6");
-        Chartboost.startWithAppId("5640665f2fdf347c6ceddf17", appSignature: "132b0b0a693dea3ac08eec4670ae941378f6c4b5", delegate: self)
+        Chartboost.startWithAppId("566cdd81a8b63c775fcdefb6", appSignature: "15a4f0ed84135ce4bd6e963eb362fe83d38c93d0", delegate: self)
         
         //vungle
         // Override point for customization after application launch.

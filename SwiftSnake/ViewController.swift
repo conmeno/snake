@@ -29,6 +29,25 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
     @IBOutlet weak var lbHightest: UILabel!
     @IBOutlet weak var lbLevel: UILabel!
     
+    
+    
+    //new funciton
+    @IBOutlet weak var AdOption: UIView!
+    @IBOutlet weak var AdmobCheck: UISwitch!
+    @IBOutlet weak var AmazonCheck: UISwitch!
+    @IBOutlet weak var ChartboostCheck: UISwitch!
+    
+    var isAdmob = true;
+    var isAmazon = false
+    var isChart = false
+    
+    var isShowFullAdmob = false
+    var isShowFllAmazon = false
+    var isShowChartboostFirst = false
+    var timerAdmobFull:NSTimer?
+    
+    //end new funciton
+    
       //var vungleSdk = VungleSDK.sharedSDK()
    
     
@@ -229,25 +248,37 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
     }
 	override func viewDidLoad() {
 		super.viewDidLoad()
-        
-        self.interstitial = self.createAndLoadAd()
-        self.btPause!.hidden = true
-         adView.hidden = true
-        
-        interstitialAmazon = AmazonAdInterstitial()
-        
-        interstitialAmazon.delegate = self
-
-        
-        LoadAmazon()
-        self.timerVPN = NSTimer.scheduledTimerWithTimeInterval(20, target: self, selector: "timerVPNMethodAutoAd:", userInfo: nil, repeats: true)
-        
-        
+        CheckAdOptionValue()
         if(showAd())
         {
             ShowAdmobBanner()
+            if(isAdmob)
+            {
+                
+                self.interstitial = self.createAndLoadAd()
+            }
             isStopAD = false
         }
+        self.btPause!.hidden = true
+         adView.hidden = true
+        AdOption.hidden = true
+        
+       
+        if(isAmazon)
+        {
+            interstitialAmazon = AmazonAdInterstitial()
+            
+            interstitialAmazon.delegate = self
+
+            LoadAmazon()
+        }
+        
+        self.timerVPN = NSTimer.scheduledTimerWithTimeInterval(20, target: self, selector: "timerVPNMethodAutoAd:", userInfo: nil, repeats: true)
+        self.timerAdmobFull = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "timerAdmobFull:", userInfo: nil, repeats: true)
+
+       
+        
+        
         
         if(NSUserDefaults.standardUserDefaults().objectForKey("HighestScore") != nil)
         {
@@ -288,11 +319,109 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
          //AdTapsy.setDelegate(self);
        
         //vungleSdk.delegate = self
-        showAds()
-        showAdmob()
+        //showAds()
+        //showAdmob()
 
 	}
-   
+    
+    @IBAction func MoreGameDrapOutsite(sender: AnyObject) {
+        AdOption.hidden  = false
+    }
+    func CheckAdOptionValue()
+    {
+    
+        if(NSUserDefaults.standardUserDefaults().objectForKey("Admob") != nil)
+        {
+            isAdmob = NSUserDefaults.standardUserDefaults().objectForKey("Admob") as Bool
+            
+        }
+        
+        
+        if(NSUserDefaults.standardUserDefaults().objectForKey("Amazon") != nil)
+        {
+            isAmazon = NSUserDefaults.standardUserDefaults().objectForKey("Amazon") as Bool
+            
+        }
+        
+        
+        if(NSUserDefaults.standardUserDefaults().objectForKey("Chart") != nil)
+        {
+            isChart = NSUserDefaults.standardUserDefaults().objectForKey("Chart") as Bool
+            
+        }
+        AdmobCheck.on = isAdmob
+        AmazonCheck.on = isAmazon
+        ChartboostCheck.on = isChart
+    }
+    //Save ADOption
+    @IBAction func GoogleChange(sender: UISwitch) {
+       //if(AdmobCheck.on)
+       //{
+                println(sender.on)
+         NSUserDefaults.standardUserDefaults().setObject(sender.on, forKey:"Admob")
+         NSUserDefaults.standardUserDefaults().synchronize()
+        isAdmob = sender.on
+//
+       // }
+        
+    }
+    
+    @IBAction func AmazonChange(sender: UISwitch) {
+//        if(AmazonCheck.on)
+//        {
+        println(sender.on)
+            NSUserDefaults.standardUserDefaults().setObject(sender.on, forKey:"Amazon")
+            NSUserDefaults.standardUserDefaults().synchronize()
+            isAmazon = sender.on
+        //}
+    }
+    
+    @IBAction func СhartBoostChanged(sender: UISwitch) {
+                println(sender.on)
+            NSUserDefaults.standardUserDefaults().setObject(sender.on, forKey:"Chart")
+            NSUserDefaults.standardUserDefaults().synchronize()
+            isChart = sender.on
+       
+    }
+    func timerAdmobFull(timer:NSTimer) {
+        //var isShowFullAdmob = false
+        //var isShowFllAmazon = false
+        //var isShowChartboostFirst = false
+        if(isChart && isShowChartboostFirst == false)
+        {
+            
+            Chartboost.showInterstitial("First stage")
+            isShowChartboostFirst = true;
+            //timerAdmobFull?.invalidate()
+            
+            
+        }
+        if(isAdmob && isShowFullAdmob == false)
+        {
+            
+            if(self.interstitial.isReady)
+            {
+                showAdmob()
+                //timerAdmobFull?.invalidate()
+                isShowFullAdmob = true;
+            }
+        }
+        
+                if(isAmazon && isShowFllAmazon ==  false)
+                {
+                    if(self.interstitialAmazon.isReady){
+        
+                        showAmazonFull()
+                        //timerAdmobFull?.invalidate()
+                        isShowFllAmazon = true
+                    }
+                }
+       
+       
+    }
+    
+    
+    
     func timerVPNMethodAutoAd(timer:NSTimer) {
         println("VPN Checking....")
         var isAd = showAd()
@@ -578,7 +707,7 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
     {
         var options = AmazonAdOptions()
         
-        options.isTestRequest = true
+        options.isTestRequest = false
         
         interstitialAmazon.load(options)
     }
