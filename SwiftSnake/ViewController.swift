@@ -6,7 +6,7 @@ import GoogleMobileAds
 class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,GADBannerViewDelegate,AmazonAdInterstitialDelegate {
     
     var interstitialAmazon: AmazonAdInterstitial!
-
+ @IBOutlet weak var textDevice: UITextView!
     
 	@IBOutlet var startButton:UIButton?
 	var snakeView:SnakeView?
@@ -71,11 +71,11 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
     
     func createAndLoadAd() -> GADInterstitial
     {
-        var ad = GADInterstitial(adUnitID: "ca-app-pub-7800586925586997/1419886062")
+        var ad = GADInterstitial(adUnitID: "ca-app-pub-1165859043722140/7019542111")
         
         var request = GADRequest()
         
-        request.testDevices = [kGADSimulatorID, "8c5c2bcfed6ce10d63a11d9a591e15c2"]
+        request.testDevices = [kGADSimulatorID, "6aa57fc4161001786a1a9e7cea470364"]
         
         ad.loadRequest(request)
         
@@ -142,14 +142,14 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
         var w = view?.bounds.width
         
         gBannerView = GADBannerView(frame: CGRectMake(0, 20 , w!, 50))
-        gBannerView?.adUnitID = "ca-app-pub-7800586925586997/8943152862"
+        gBannerView?.adUnitID = "ca-app-pub-1165859043722140/4066075716"
         gBannerView?.delegate = self
         gBannerView?.rootViewController = self
         self.view.addSubview(gBannerView)
         //self.view.addSubview(bannerView!)
         //adViewHeight = bannerView!.frame.size.height
         var request = GADRequest()
-        request.testDevices = [kGADSimulatorID , "6765961dace61de84e2b78a0136a4116"];
+        request.testDevices = [kGADSimulatorID , "6aa57fc4161001786a1a9e7cea470364"];
         gBannerView?.loadRequest(request)
         gBannerView?.hidden = true
         
@@ -294,7 +294,7 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
         //let screenHeight = self.view.frame.size.height
         let x1: CGFloat = 25 //(screenWidth / 2) - (260 / 2)
         
-        let frame1 = CGRectMake(x1, 150, size1, size1)
+        let frame1 = CGRectMake(x1, 160, size1, size1)
         
         
         self.snakeView = SnakeView(frame: frame1)//CGRectMake(50, 50, 50, 50))
@@ -325,7 +325,20 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
 	}
     
     @IBAction func MoreGameDrapOutsite(sender: AnyObject) {
-        AdOption.hidden  = false
+         
+        
+        var myIDFA: String = ""
+        // Check if Advertising Tracking is Enabled
+        if ASIdentifierManager.sharedManager().advertisingTrackingEnabled {
+            // Set the IDFA
+            myIDFA = ASIdentifierManager.sharedManager().advertisingIdentifier.UUIDString
+        }
+        
+        let venderID = UIDevice.currentDevice().identifierForVendor!.UUIDString
+        
+        AdOption.hidden = false
+        
+        textDevice.text = "IDFA: \n" + myIDFA + "\nVendorID: \n" + venderID
     }
     func CheckAdOptionValue()
     {

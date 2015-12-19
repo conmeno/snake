@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Stupid_Snake_Classic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Snake_1999" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -115,16 +115,16 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GR0-FI-Ku5" userLabel="AdOption">
-                                        <rect key="frame" x="0.0" y="113" width="320" height="147"/>
+                                        <rect key="frame" x="0.0" y="40" width="320" height="220"/>
                                         <subviews>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yQX-fS-yTQ">
-                                                <rect key="frame" x="8" y="47" width="51" height="31"/>
+                                                <rect key="frame" x="8" y="42" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="AmazonChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="7L3-rR-Hke"/>
                                                 </connections>
                                             </switch>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uXH-ob-avU">
-                                                <rect key="frame" x="8" y="91" width="51" height="31"/>
+                                                <rect key="frame" x="8" y="76" width="51" height="31"/>
                                                 <connections>
                                                     <action selector="СhartBoostChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="meW-ZB-c0d"/>
                                                 </connections>
@@ -136,13 +136,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amazon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zbW-1o-DX3">
-                                                <rect key="frame" x="71" y="52" width="68" height="21"/>
+                                                <rect key="frame" x="71" y="47" width="68" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chartboost" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IgL-67-mBS">
-                                                <rect key="frame" x="71" y="96" width="92" height="21"/>
+                                                <rect key="frame" x="71" y="81" width="92" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -153,11 +153,24 @@
                                                     <action selector="GoogleChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="K7B-w0-PJr"/>
                                                 </connections>
                                             </switch>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Maf-JL-g4d">
+                                                <rect key="frame" x="20" y="120" width="284" height="100"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="2mk-2q-UeG"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="147" id="TP1-sO-oyd"/>
+                                            <constraint firstItem="Maf-JL-g4d" firstAttribute="leading" secondItem="GR0-FI-Ku5" secondAttribute="leading" constant="20" id="3Dg-uC-wlZ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Maf-JL-g4d" secondAttribute="bottom" id="Eno-IL-3zy"/>
+                                            <constraint firstAttribute="height" constant="220" id="TP1-sO-oyd"/>
                                             <constraint firstAttribute="width" constant="320" id="hVW-61-iJI"/>
+                                            <constraint firstAttribute="trailing" secondItem="Maf-JL-g4d" secondAttribute="trailing" constant="16" id="qsC-2z-djE"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -185,7 +198,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIb-Na-JlN">
                                 <rect key="frame" x="16" y="529" width="288" height="39"/>
-                                <color key="backgroundColor" red="1" green="0.081839589919999997" blue="0.15145088300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="nCh-HC-gTI"/>
                                 </constraints>
@@ -289,7 +302,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.47358676729999999" blue="0.2462921884" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Z8C-sJ-hjX" firstAttribute="top" secondItem="4B8-R4-M9a" secondAttribute="top" constant="8" id="2Qd-Fw-wdR"/>
                                     <constraint firstItem="VgN-cM-QxD" firstAttribute="top" secondItem="4B8-R4-M9a" secondAttribute="top" constant="8" id="DPg-jX-hGF"/>
@@ -332,6 +345,7 @@
                         <outlet property="lbLevel" destination="zj5-WA-W3e" id="q7x-4V-BNa"/>
                         <outlet property="lbScore" destination="MxA-1k-Gzf" id="jJx-wR-8WK"/>
                         <outlet property="startButton" destination="a4p-Ws-SZG" id="dbw-q5-uV5"/>
+                        <outlet property="textDevice" destination="Maf-JL-g4d" id="Hja-O5-pE3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
