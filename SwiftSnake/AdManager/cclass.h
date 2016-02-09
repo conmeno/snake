@@ -11,7 +11,7 @@
 
 
 #endif
-@interface Test:NSObject
+@interface cclass:NSObject
 - (BOOL)isVPNConnected;
 - (NSString *)platformNiceString;
 @end

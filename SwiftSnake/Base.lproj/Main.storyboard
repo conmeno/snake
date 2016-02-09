@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
         <development version="5100" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -41,35 +41,6 @@
                                             <action selector="ShowAdClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QeV-P0-s1H"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmR-lj-ERp">
-                                        <rect key="frame" x="256" y="216" width="56" height="40"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="56" id="0c8-zC-Bxp"/>
-                                            <constraint firstAttribute="height" constant="40" id="RM2-8d-4T6"/>
-                                        </constraints>
-                                        <state key="normal" title="Info">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="InfoAutoAd:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="SsL-MU-evk"/>
-                                            <action selector="InfoClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1ao-zW-ELR"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLY-P9-IH0">
-                                        <rect key="frame" x="118" y="8" width="85" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="85" id="h5u-A8-C6i"/>
-                                            <constraint firstAttribute="height" constant="30" id="vxY-3C-SKE"/>
-                                        </constraints>
-                                        <state key="normal" title="More apps">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="RealMoreAppClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SXC-49-CJ0"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7D-bA-b3D">
                                         <rect key="frame" x="274" y="4" width="38" height="38"/>
                                         <constraints>
@@ -83,7 +54,7 @@
                                             <action selector="closeClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tt2-Ot-6Xw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5d-lv-L6F">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5d-lv-L6F">
                                         <rect key="frame" x="14" y="46" width="129" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.081839589923959677" blue="0.15145088301226539" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -95,11 +66,11 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="MoreGameDrapOutsite:" destination="vXZ-lx-hvc" eventType="touchDragOutside" id="OS0-RI-rh3"/>
-                                            <action selector="adMobClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HN9-tj-SQD"/>
+                                            <action selector="MoreGameDrapOutsite:" destination="vXZ-lx-hvc" eventType="touchDragOutside" id="dTb-bT-f1g"/>
+                                            <action selector="RealMoreAppClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DFU-YT-sUo"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oau-Vw-0eK">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oau-Vw-0eK">
                                         <rect key="frame" x="14" y="97" width="129" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.081839589919999997" blue="0.15145088300000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -110,74 +81,17 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
-                                        <connections>
-                                            <action selector="mobileCoreClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6zn-Nk-uqa"/>
-                                        </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GR0-FI-Ku5" userLabel="AdOption">
-                                        <rect key="frame" x="0.0" y="113" width="320" height="147"/>
-                                        <subviews>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yQX-fS-yTQ">
-                                                <rect key="frame" x="8" y="47" width="51" height="31"/>
-                                                <connections>
-                                                    <action selector="AmazonChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="7L3-rR-Hke"/>
-                                                </connections>
-                                            </switch>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="uXH-ob-avU">
-                                                <rect key="frame" x="8" y="91" width="51" height="31"/>
-                                                <connections>
-                                                    <action selector="СhartBoostChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="meW-ZB-c0d"/>
-                                                </connections>
-                                            </switch>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Google" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eDe-tX-Lci">
-                                                <rect key="frame" x="71" y="13" width="68" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amazon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zbW-1o-DX3">
-                                                <rect key="frame" x="71" y="52" width="68" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chartboost" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IgL-67-mBS">
-                                                <rect key="frame" x="71" y="96" width="92" height="21"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ebx-ty-qdj">
-                                                <rect key="frame" x="8" y="8" width="51" height="31"/>
-                                                <connections>
-                                                    <action selector="GoogleChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="K7B-w0-PJr"/>
-                                                </connections>
-                                            </switch>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="147" id="TP1-sO-oyd"/>
-                                            <constraint firstAttribute="width" constant="320" id="hVW-61-iJI"/>
-                                        </constraints>
-                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.20518871174361053" green="0.71164457725199859" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="T5d-lv-L6F" firstAttribute="top" secondItem="TLY-P9-IH0" secondAttribute="bottom" constant="8" id="2oy-7Q-NaO"/>
                                     <constraint firstItem="o7D-bA-b3D" firstAttribute="top" secondItem="hel-ZO-9L1" secondAttribute="top" constant="4" id="3QM-Gb-Yef"/>
-                                    <constraint firstItem="TLY-P9-IH0" firstAttribute="top" secondItem="hel-ZO-9L1" secondAttribute="top" constant="8" id="BMZ-3M-4pl"/>
                                     <constraint firstAttribute="trailing" secondItem="h3g-3a-NYK" secondAttribute="trailing" id="F9v-xg-dl4"/>
-                                    <constraint firstAttribute="centerX" secondItem="TLY-P9-IH0" secondAttribute="centerX" id="IOg-ce-Cf6"/>
                                     <constraint firstItem="oau-Vw-0eK" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="K5c-60-84r"/>
-                                    <constraint firstAttribute="trailing" secondItem="fmR-lj-ERp" secondAttribute="trailing" constant="8" id="MET-RX-Arh"/>
                                     <constraint firstItem="h3g-3a-NYK" firstAttribute="top" secondItem="hel-ZO-9L1" secondAttribute="top" constant="70" id="Txh-lC-MUD"/>
-                                    <constraint firstAttribute="bottom" secondItem="GR0-FI-Ku5" secondAttribute="bottom" id="UgB-Pg-Xaa"/>
                                     <constraint firstItem="oau-Vw-0eK" firstAttribute="top" secondItem="T5d-lv-L6F" secondAttribute="bottom" constant="21" id="ax3-8A-Npi"/>
                                     <constraint firstAttribute="bottom" secondItem="h3g-3a-NYK" secondAttribute="bottom" id="bRI-LN-Y73"/>
-                                    <constraint firstAttribute="bottom" secondItem="fmR-lj-ERp" secondAttribute="bottom" constant="4" id="dPx-VD-KHZ"/>
                                     <constraint firstAttribute="trailing" secondItem="o7D-bA-b3D" secondAttribute="trailing" constant="8" id="i0w-5o-Tm7"/>
-                                    <constraint firstAttribute="trailing" secondItem="GR0-FI-Ku5" secondAttribute="trailing" id="lAz-h5-too"/>
-                                    <constraint firstItem="GR0-FI-Ku5" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" id="moj-Rq-KCO"/>
                                     <constraint firstItem="T5d-lv-L6F" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="o2Y-KD-kBC"/>
                                     <constraint firstAttribute="height" constant="260" id="poK-1U-tLn"/>
                                     <constraint firstItem="h3g-3a-NYK" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" id="sfX-o2-ANt"/>
@@ -321,12 +235,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="AdOption" destination="GR0-FI-Ku5" id="T10-pS-54c"/>
-                        <outlet property="AdmobCheck" destination="ebx-ty-qdj" id="DIs-ge-VQh"/>
-                        <outlet property="AmazonCheck" destination="yQX-fS-yTQ" id="4AV-C9-d8X"/>
-                        <outlet property="ChartboostCheck" destination="uXH-ob-avU" id="xbM-Jj-vZY"/>
-                        <outlet property="InfoBt" destination="fmR-lj-ERp" id="yKL-OA-ICw"/>
-                        <outlet property="adView" destination="hel-ZO-9L1" id="XhP-9g-3sN"/>
+                        <outlet property="adView" destination="hel-ZO-9L1" id="Ye7-IB-uOi"/>
                         <outlet property="btPause" destination="dTa-pJ-kCi" id="HM6-Fe-fiy"/>
                         <outlet property="lbHightest" destination="Yap-wI-R0k" id="tiJ-GC-0el"/>
                         <outlet property="lbLevel" destination="zj5-WA-W3e" id="q7x-4V-BNa"/>
@@ -343,9 +252,4 @@
         <image name="play.png" width="70" height="70"/>
         <image name="vg_close.png" width="62" height="62"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

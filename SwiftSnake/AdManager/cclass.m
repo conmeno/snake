@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #include <ifaddrs.h>
-#include "Test.h"
+#include "cclass.h"
 #include <sys/sysctl.h>
-@implementation Test
+@implementation cclass
 - (BOOL)isVPNConnected
 {
     struct ifaddrs *interfaces = NULL;

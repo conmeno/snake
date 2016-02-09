@@ -1,9 +1,8 @@
 import UIKit
-import iAd
-import AVFoundation
-import GoogleMobileAds
 
-class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,GADBannerViewDelegate,AmazonAdInterstitialDelegate {
+import AVFoundation
+
+class ViewController: UIViewController, SnakeViewDelegate,AmazonAdInterstitialDelegate {
     
     var interstitialAmazon: AmazonAdInterstitial!
 
@@ -13,14 +12,13 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
 	var timer:NSTimer?
     var timerAd:NSTimer?
     var timerMove:NSTimer?
-    //var UIiAd: ADBannerView = ADBannerView()
-    // var bannerView:GADBannerView?
+  
+    @IBOutlet weak var adView: UIView!
+    
      var savedScore: Int = 0
     @IBOutlet weak var lbScore: UILabel!
     
-    var gBannerView: GADBannerView!
-    var timerVPN:NSTimer?
-    var isStopAD = true
+  
     
     @IBOutlet weak var btPause: UIButton!
     //@IBOutlet weak var btPause: UIButton!
@@ -31,25 +29,8 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
     
     
     
-    //new funciton
-    @IBOutlet weak var AdOption: UIView!
-    @IBOutlet weak var AdmobCheck: UISwitch!
-    @IBOutlet weak var AmazonCheck: UISwitch!
-    @IBOutlet weak var ChartboostCheck: UISwitch!
+  
     
-    var isAdmob = true;
-    var isAmazon = false
-    var isChart = false
-    
-    var isShowFullAdmob = false
-    var isShowFllAmazon = false
-    var isShowChartboostFirst = false
-    var timerAdmobFull:NSTimer?
-    
-    //end new funciton
-    
-      //var vungleSdk = VungleSDK.sharedSDK()
-   
     
     var isPauseGame = false
 	var snake:Snake?
@@ -60,45 +41,20 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
     var isMove = true
     var themeMusic: [String] = ["1", "2"]
     //let player = AVPlayer(URL: NSBundle.mainBundle().URLForResource("theme", withExtension: "mp3"))
-    var bomSound = AVPlayer(URL: NSBundle.mainBundle().URLForResource("gameover", withExtension: "mp3"))
-    var levelUpSound = AVPlayer(URL: NSBundle.mainBundle().URLForResource("levelup", withExtension: "mp3"))
-    var FruitSound = AVPlayer(URL: NSBundle.mainBundle().URLForResource("buzz2", withExtension: "mp3"))
+    var bomSound = AVPlayer(URL: NSBundle.mainBundle().URLForResource("gameover", withExtension: "mp3")!)
+    var levelUpSound = AVPlayer(URL: NSBundle.mainBundle().URLForResource("levelup", withExtension: "mp3")!)
+    var FruitSound = AVPlayer(URL: NSBundle.mainBundle().URLForResource("buzz2", withExtension: "mp3")!)
     
     //adTapsy
  
-     @IBOutlet weak var adView: UIView!
-    var interstitial: GADInterstitial!
-    
-    func createAndLoadAd() -> GADInterstitial
-    {
-        var ad = GADInterstitial(adUnitID: "ca-app-pub-7800586925586997/1419886062")
-        
-        var request = GADRequest()
-        
-        request.testDevices = [kGADSimulatorID, "8c5c2bcfed6ce10d63a11d9a591e15c2"]
-        
-        ad.loadRequest(request)
-        
-        return ad
-    }
-
+  
     
     @IBAction func MoreAppClick(sender: AnyObject) {
 
         adView.hidden = false
     }
     
-    @IBAction func adMobClick(sender: AnyObject) {
-        
-        showAdmob()
-    }
-    
-    @IBAction func mobileCoreClick(sender: AnyObject) {
-//        showMobilecore()
-//        showMobilecore2()
-        
-        showAmazonFull()
-    }
+
     
     
     @IBAction func closeClick(sender: AnyObject) {
@@ -109,71 +65,20 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
         
     }
 
- var AdNumber = 0
     
     
     
     @IBAction func ShowAdClick(sender: AnyObject) {
-        showAds()
+       // showAds()
         
     }
     
-//    func showMobilecore()
-//    {
-//        
-//        MobileCore.showInterstitialFromViewController(self, delegate: nil)
-//    }
-//    func showMobilecore2()
-//    {
-//        MobileCore.showStickeeFromViewController(self)
-//    }
 
-    func showAdmob()
-    {
-        if (self.interstitial.isReady)
-        {
-            self.interstitial.presentFromRootViewController(self)
-            self.interstitial = self.createAndLoadAd()
-        }
-    }
-    func ShowAdmobBanner()
-    {
-        //gBannerView = GADBannerView(frame: CGRectMake(0, 20 , 320, 50))
-        var w = view?.bounds.width
-        
-        gBannerView = GADBannerView(frame: CGRectMake(0, 20 , w!, 50))
-        gBannerView?.adUnitID = "ca-app-pub-7800586925586997/8943152862"
-        gBannerView?.delegate = self
-        gBannerView?.rootViewController = self
-        self.view.addSubview(gBannerView)
-        //self.view.addSubview(bannerView!)
-        //adViewHeight = bannerView!.frame.size.height
-        var request = GADRequest()
-        request.testDevices = [kGADSimulatorID , "6765961dace61de84e2b78a0136a4116"];
-        gBannerView?.loadRequest(request)
-        gBannerView?.hidden = true
-        
-    }
-    func showAds()
-    {
-        
-        Chartboost.showInterstitial("Home" + String(AdNumber))
-        //Chartboost.showMoreApps("Home")
-        //Chartboost.showRewardedVideo("Home")
-        //vungleSdk.playAd(self, error: nil)
-        AdNumber++
-        //AdColony.playVideoAdForZone("vzdf877fd32127489c8d", withDelegate: nil)
-        if(AdNumber > 7)
-        {
-            adView.backgroundColor = UIColor.redColor()
-        }
-        println(AdNumber)
-    }
-    
+
     
     
     @IBAction func RealMoreAppClick(sender: AnyObject) {
-        var barsLink : String = "itms-apps://itunes.apple.com/ca/artist/phuong-nguyen/id1004963752"
+        let barsLink : String = "itms-apps://itunes.apple.com/ca/artist/phuong-nguyen/id1004963752"
         UIApplication.sharedApplication().openURL(NSURL(string: barsLink)!)
     }
     
@@ -182,19 +87,19 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
     @IBAction func InfoClick(sender: AnyObject) {
         //call auto app
         
-        adView.backgroundColor = UIColor.blueColor()
+        //adView.backgroundColor = UIColor.blueColor()
 
-        showAdmob()
-        self.timerAd = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "timerMethodAutoAd:", userInfo: nil, repeats: true)
+       
+        //self.timerAd = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "timerMethodAutoAd:", userInfo: nil, repeats: true)
        
     }
     
     @IBAction func InfoAutoAd(sender: AnyObject) {             }
     
     func timerMethodAutoAd(timer:NSTimer) {
-        println("auto play")
-         adView.backgroundColor = UIColor.redColor()
-         showAds()
+        print("auto play")
+        // adView.backgroundColor = UIColor.redColor()
+         
 
     }
     
@@ -207,7 +112,7 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
        
         if(UIDeviceOrientationIsPortrait(UIDevice.currentDevice().orientation))
         {
-            println("Portrait")
+            print("Portrait")
             return true
         }
         return false
@@ -235,10 +140,15 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
         
         var error: NSError?
         
-        audioPlayer = AVAudioPlayer(contentsOfURL: url, error: &error)
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOfURL: url)
+        } catch let error1 as NSError {
+            error = error1
+            audioPlayer = nil
+        }
         
         if let err = error {
-            println("audioPlayer error \(err.localizedDescription)")
+            print("audioPlayer error \(err.localizedDescription)")
         } else {
             
             audioPlayer?.prepareToPlay()
@@ -248,33 +158,23 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
     }
 	override func viewDidLoad() {
 		super.viewDidLoad()
-        CheckAdOptionValue()
-        if(showAd())
-        {
-            ShowAdmobBanner()
-            if(isAdmob)
-            {
-                
-                self.interstitial = self.createAndLoadAd()
-            }
-            isStopAD = false
-        }
+  
         self.btPause!.hidden = true
-         adView.hidden = true
-        AdOption.hidden = true
-        
        
-        if(isAmazon)
-        {
-            interstitialAmazon = AmazonAdInterstitial()
-            
-            interstitialAmazon.delegate = self
-
-            LoadAmazon()
-        }
+        let myAd = MyAd(root: self)
+        adView.hidden = true
+        myAd.ViewDidload()
+       
+//        if(isAmazon)
+//        {
+//            interstitialAmazon = AmazonAdInterstitial()
+//            
+//            interstitialAmazon.delegate = self
+//
+//            LoadAmazon()
+//        }
         
-        self.timerVPN = NSTimer.scheduledTimerWithTimeInterval(20, target: self, selector: "timerVPNMethodAutoAd:", userInfo: nil, repeats: true)
-        self.timerAdmobFull = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: "timerAdmobFull:", userInfo: nil, repeats: true)
+    
 
        
         
@@ -282,7 +182,7 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
         
         if(NSUserDefaults.standardUserDefaults().objectForKey("HighestScore") != nil)
         {
-            savedScore = NSUserDefaults.standardUserDefaults().objectForKey("HighestScore") as Int
+            savedScore = NSUserDefaults.standardUserDefaults().objectForKey("HighestScore") as! Int
             
         }
         lbHightest.text = String(savedScore)
@@ -299,10 +199,10 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
         
         self.snakeView = SnakeView(frame: frame1)//CGRectMake(50, 50, 50, 50))
         
-		self.snakeView!.autoresizingMask = .FlexibleWidth | .FlexibleHeight
+		self.snakeView!.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
 		self.view.insertSubview(self.snakeView!, atIndex: 0)
 
-		if let view = self.snakeView? {
+		if let view = self.snakeView {
 			view.delegate = self
 		}
 		for direction in [UISwipeGestureRecognizerDirection.Right,
@@ -325,132 +225,22 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
 	}
     
     @IBAction func MoreGameDrapOutsite(sender: AnyObject) {
-        AdOption.hidden  = false
-    }
-    func CheckAdOptionValue()
-    {
-    
-        if(NSUserDefaults.standardUserDefaults().objectForKey("Admob") != nil)
-        {
-            isAdmob = NSUserDefaults.standardUserDefaults().objectForKey("Admob") as Bool
-            
-        }
+       // AdOption.hidden  = false
+        let storyboard = UIStoryboard(name: "StoryboardAD", bundle: nil)
         
+        let WebDetailView = storyboard.instantiateViewControllerWithIdentifier("AdView1") as UIViewController
         
-        if(NSUserDefaults.standardUserDefaults().objectForKey("Amazon") != nil)
-        {
-            isAmazon = NSUserDefaults.standardUserDefaults().objectForKey("Amazon") as Bool
-            
-        }
+        self.presentViewController(WebDetailView, animated: true, completion: nil)
         
-        
-        if(NSUserDefaults.standardUserDefaults().objectForKey("Chart") != nil)
-        {
-            isChart = NSUserDefaults.standardUserDefaults().objectForKey("Chart") as Bool
-            
-        }
-        AdmobCheck.on = isAdmob
-        AmazonCheck.on = isAmazon
-        ChartboostCheck.on = isChart
-    }
-    //Save ADOption
-    @IBAction func GoogleChange(sender: UISwitch) {
-       //if(AdmobCheck.on)
-       //{
-                println(sender.on)
-         NSUserDefaults.standardUserDefaults().setObject(sender.on, forKey:"Admob")
-         NSUserDefaults.standardUserDefaults().synchronize()
-        isAdmob = sender.on
-//
-       // }
-        
-    }
-    
-    @IBAction func AmazonChange(sender: UISwitch) {
-//        if(AmazonCheck.on)
-//        {
-        println(sender.on)
-            NSUserDefaults.standardUserDefaults().setObject(sender.on, forKey:"Amazon")
-            NSUserDefaults.standardUserDefaults().synchronize()
-            isAmazon = sender.on
-        //}
-    }
-    
-    @IBAction func СhartBoostChanged(sender: UISwitch) {
-                println(sender.on)
-            NSUserDefaults.standardUserDefaults().setObject(sender.on, forKey:"Chart")
-            NSUserDefaults.standardUserDefaults().synchronize()
-            isChart = sender.on
-       
-    }
-    func timerAdmobFull(timer:NSTimer) {
-        //var isShowFullAdmob = false
-        //var isShowFllAmazon = false
-        //var isShowChartboostFirst = false
-        if(isChart && isShowChartboostFirst == false)
-        {
-            
-            Chartboost.showInterstitial("First stage")
-            isShowChartboostFirst = true;
-            //timerAdmobFull?.invalidate()
-            
-            
-        }
-        if(isAdmob && isShowFullAdmob == false)
-        {
-            
-            if(self.interstitial.isReady)
-            {
-                showAdmob()
-                //timerAdmobFull?.invalidate()
-                isShowFullAdmob = true;
-            }
-        }
-        
-                if(isAmazon && isShowFllAmazon ==  false)
-                {
-                    if(self.interstitialAmazon.isReady){
-        
-                        showAmazonFull()
-                        //timerAdmobFull?.invalidate()
-                        isShowFllAmazon = true
-                    }
-                }
-       
-       
-    }
-    
-    
-    
-    func timerVPNMethodAutoAd(timer:NSTimer) {
-        println("VPN Checking....")
-        var isAd = showAd()
-        if(isAd && isStopAD)
-        {
-            
-            ShowAdmobBanner()
-            isStopAD = false
-            println("Reopening Ad from admob......")
-        }
-        
-        if(isAd == false && isStopAD == false)
-        {
-            gBannerView.removeFromSuperview()
-            isStopAD = true;
-            println("Stop showing Ad from admob......")
-        }
-    }
 
-    //vungle
+        
+    }
+    
+ 
     
     
-    // Play an ad using default settings
-//  
-//    func vungleSDKwillCloseAdWithViewInfo(viewInfo: [NSObject : AnyObject]!, willPresentProductSheet: Bool) {
-//        println(viewInfo)
-//    }
     
-    //end vungle
+   
 	override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning()
 	}
@@ -530,7 +320,7 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
             }
             audioPlayer?.play()
             
-            var worldSize = WorldSize(width: 20, height: 20)
+            let worldSize = WorldSize(width: 20, height: 20)
             
             
             self.snake = Snake(inSize: worldSize, length: 2)
@@ -560,13 +350,13 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
             //        if(!isMove)
 //        {return}
 		self.snake?.move()
-		var headHitBody = self.snake?.isHeadHitBody()
+		let headHitBody = self.snake?.isHeadHitBody()
         
        
         
 		if headHitBody == true {
           
-            bomSound = AVPlayer(URL: NSBundle.mainBundle().URLForResource("gameover", withExtension: "mp3"))
+            bomSound = AVPlayer(URL: NSBundle.mainBundle().URLForResource("gameover", withExtension: "mp3")!)
             bomSound.play()
               audioPlayer?.stop()
             
@@ -586,13 +376,13 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
 			head?.y == self.fruit?.y {
                 self.snake!.increaseLength(1)
                 score1 = (self.snake!.points.count - 3)*10
-                var myScore = String(score1)
+                let myScore = String(score1)
                 lbScore.text = myScore
                 let Level1 = Int(score1/100) + 1
                 if(Level1 > Level)
                 {
                     isUpLevel = true
-                    levelUpSound = AVPlayer(URL: NSBundle.mainBundle().URLForResource("levelup", withExtension: "mp3"))
+                    levelUpSound = AVPlayer(URL: NSBundle.mainBundle().URLForResource("levelup", withExtension: "mp3")!)
                     levelUpSound.play()
                     Level = Level1
                     lbLevel.text = String(Level)
@@ -630,7 +420,7 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
 				
                 if(!isUpLevel)
                 {
-                    FruitSound = AVPlayer(URL: NSBundle.mainBundle().URLForResource("buzz2", withExtension: "mp3"))
+                    FruitSound = AVPlayer(URL: NSBundle.mainBundle().URLForResource("buzz2", withExtension: "mp3")!)
                     FruitSound.play()
                 }
                 self.makeNewFruit()
@@ -654,99 +444,54 @@ class ViewController: UIViewController, SnakeViewDelegate,  ChartboostDelegate,G
 	}
 
     
-    //admob delegate
-    //GADBannerViewDelegate
-    func adViewDidReceiveAd(view: GADBannerView!) {
-        println("adViewDidReceiveAd:\(view)");
-        gBannerView?.hidden = false
-        
-        //relayoutViews()
-    }
     
-    func adView(view: GADBannerView!, didFailToReceiveAdWithError error: GADRequestError!) {
-        println("\(view) error:\(error)")
-        gBannerView?.hidden = false
-        //relayoutViews()
-    }
-    
-    func adViewWillPresentScreen(adView: GADBannerView!) {
-        println("adViewWillPresentScreen:\(adView)")
-        gBannerView?.hidden = false
-        
-        //relayoutViews()
-    }
-    
-    func adViewWillLeaveApplication(adView: GADBannerView!) {
-        println("adViewWillLeaveApplication:\(adView)")
-    }
-    
-    func adViewWillDismissScreen(adView: GADBannerView!) {
-        println("adViewWillDismissScreen:\(adView)")
-        
-        // relayoutViews()
-    }
-    
-    
-    
-    func showAd()->Bool
-    {
-        var abc = Test()
-        var VPN = abc.isVPNConnected()
-        var Version = abc.platformNiceString()
-        if(VPN == false && Version == "CDMA")
-        {
-            return false
-        }
-        
-        return true
-    }
-    
+       
     
     //amaazon
-    func LoadAmazon()
-    {
-        var options = AmazonAdOptions()
-        
-        options.isTestRequest = false
-        
-        interstitialAmazon.load(options)
-    }
+//    func LoadAmazon()
+//    {
+//        let options = AmazonAdOptions()
+//        
+//        options.isTestRequest = false
+//        
+//        interstitialAmazon.load(options)
+//    }
+//    
+//    func showAmazonFull()
+//    {
+//        interstitialAmazon.presentFromViewController(self)
+//        
+//    }
     
-    func showAmazonFull()
-    {
-        interstitialAmazon.presentFromViewController(self)
-        
-    }
     
-    
-    // Mark: - AmazonAdInterstitialDelegate
-    func interstitialDidLoad(interstitial: AmazonAdInterstitial!) {
-        Swift.print("Interstitial loaded.")
-        //loadStatusLabel.text = "Interstitial loaded."
-    }
-    
-    func interstitialDidFailToLoad(interstitial: AmazonAdInterstitial!, withError: AmazonAdError!) {
-        Swift.print("Interstitial failed to load.")
-        //loadStatusLabel.text = "Interstitial failed to load."
-    }
-    
-    func interstitialWillPresent(interstitial: AmazonAdInterstitial!) {
-        Swift.print("Interstitial will be presented.")
-    }
-    
-    func interstitialDidPresent(interstitial: AmazonAdInterstitial!) {
-        Swift.print("Interstitial has been presented.")
-    }
-    
-    func interstitialWillDismiss(interstitial: AmazonAdInterstitial!) {
-        Swift.print("Interstitial will be dismissed.")
-    }
-    
-    func interstitialDidDismiss(interstitial: AmazonAdInterstitial!) {
-        Swift.print("Interstitial has been dismissed.");
-        //self.loadStatusLabel.text = "No interstitial loaded.";
-        LoadAmazon()
-    }
+//    // Mark: - AmazonAdInterstitialDelegate
+//    func interstitialDidLoad(interstitial: AmazonAdInterstitial!) {
+//        Swift.print("Interstitial loaded.", terminator: "")
+//        //loadStatusLabel.text = "Interstitial loaded."
+//    }
+//    
+//    func interstitialDidFailToLoad(interstitial: AmazonAdInterstitial!, withError: AmazonAdError!) {
+//        Swift.print("Interstitial failed to load.", terminator: "")
+//        //loadStatusLabel.text = "Interstitial failed to load."
+//    }
+//    
+//    func interstitialWillPresent(interstitial: AmazonAdInterstitial!) {
+//        Swift.print("Interstitial will be presented.", terminator: "")
+//    }
+//    
+//    func interstitialDidPresent(interstitial: AmazonAdInterstitial!) {
+//        Swift.print("Interstitial has been presented.", terminator: "")
+//    }
+//    
+//    func interstitialWillDismiss(interstitial: AmazonAdInterstitial!) {
+//        Swift.print("Interstitial will be dismissed.", terminator: "")
+//    }
+//    
+//    func interstitialDidDismiss(interstitial: AmazonAdInterstitial!) {
+//        Swift.print("Interstitial has been dismissed.", terminator: "");
+//        //self.loadStatusLabel.text = "No interstitial loaded.";
+//        LoadAmazon()
+//    }
     
 
 }
