@@ -214,7 +214,7 @@ class MyAd:NSObject {
         
         if(showAd())
         {
-            if(isAd2)
+            if(isAd3)
             {
                showChartBoost()
             }
@@ -256,6 +256,10 @@ class MyAd:NSObject {
         Chartboost.showInterstitial("Home" + String(AdNumber))
         AdNumber++
         print(AdNumber)
+        if(AdNumber>10)
+        {
+            AdNumber = 1
+        }
     }
     
     

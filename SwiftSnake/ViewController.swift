@@ -49,7 +49,7 @@ class ViewController: UIViewController, SnakeViewDelegate,AmazonAdInterstitialDe
  
   
     
-    @IBAction func MoreAppClick(sender: AnyObject) {
+    @IBAction func SettingClick(sender: AnyObject) {
 
         adView.hidden = false
     }
@@ -61,10 +61,7 @@ class ViewController: UIViewController, SnakeViewDelegate,AmazonAdInterstitialDe
         adView.hidden = true
     }
   
-    @IBAction func MoreAppOutsite(sender: AnyObject) {
-        
-    }
-
+    
     
     
     
@@ -74,6 +71,11 @@ class ViewController: UIViewController, SnakeViewDelegate,AmazonAdInterstitialDe
     }
     
 
+    @IBAction func MoreAppClick(sender: AnyObject) {
+        let myAd = MyAd(root: self)
+        
+        myAd.showChartBoost()
+    }
 
     
     

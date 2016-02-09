@@ -54,12 +54,12 @@
                                             <action selector="closeClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tt2-Ot-6Xw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5d-lv-L6F">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5d-lv-L6F">
                                         <rect key="frame" x="14" y="46" width="129" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.081839589923959677" blue="0.15145088301226539" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="ZSi-tY-yza"/>
-                                            <constraint firstAttribute="width" constant="129" id="zjf-B9-rRm"/>
+                                            <constraint firstAttribute="width" constant="129" id="0sd-bF-jWa"/>
+                                            <constraint firstAttribute="height" constant="30" id="grf-d7-koA"/>
                                         </constraints>
                                         <state key="normal" title="More games">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -70,12 +70,14 @@
                                             <action selector="RealMoreAppClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DFU-YT-sUo"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oau-Vw-0eK">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oau-Vw-0eK">
                                         <rect key="frame" x="14" y="97" width="129" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.081839589919999997" blue="0.15145088300000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="CzG-FP-9Eq"/>
                                             <constraint firstAttribute="height" constant="30" id="fEm-gf-qjL"/>
                                             <constraint firstAttribute="width" constant="129" id="tlI-DV-FYB"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="129" id="x3H-Va-Ae3"/>
                                         </constraints>
                                         <state key="normal" title="More Apps">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -86,13 +88,15 @@
                                 <color key="backgroundColor" red="0.20518871174361053" green="0.71164457725199859" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="o7D-bA-b3D" firstAttribute="top" secondItem="hel-ZO-9L1" secondAttribute="top" constant="4" id="3QM-Gb-Yef"/>
+                                    <constraint firstItem="T5d-lv-L6F" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="Eu5-1D-6yn"/>
                                     <constraint firstAttribute="trailing" secondItem="h3g-3a-NYK" secondAttribute="trailing" id="F9v-xg-dl4"/>
                                     <constraint firstItem="oau-Vw-0eK" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="K5c-60-84r"/>
+                                    <constraint firstItem="oau-Vw-0eK" firstAttribute="top" secondItem="T5d-lv-L6F" secondAttribute="bottom" constant="21" id="LNe-F6-C88"/>
+                                    <constraint firstItem="oau-Vw-0eK" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="NCJ-aA-SzK"/>
                                     <constraint firstItem="h3g-3a-NYK" firstAttribute="top" secondItem="hel-ZO-9L1" secondAttribute="top" constant="70" id="Txh-lC-MUD"/>
-                                    <constraint firstItem="oau-Vw-0eK" firstAttribute="top" secondItem="T5d-lv-L6F" secondAttribute="bottom" constant="21" id="ax3-8A-Npi"/>
                                     <constraint firstAttribute="bottom" secondItem="h3g-3a-NYK" secondAttribute="bottom" id="bRI-LN-Y73"/>
                                     <constraint firstAttribute="trailing" secondItem="o7D-bA-b3D" secondAttribute="trailing" constant="8" id="i0w-5o-Tm7"/>
-                                    <constraint firstItem="T5d-lv-L6F" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="o2Y-KD-kBC"/>
+                                    <constraint firstItem="T5d-lv-L6F" firstAttribute="top" secondItem="hel-ZO-9L1" secondAttribute="top" constant="46" id="jqN-Qn-KIP"/>
                                     <constraint firstAttribute="height" constant="260" id="poK-1U-tLn"/>
                                     <constraint firstItem="h3g-3a-NYK" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" id="sfX-o2-ANt"/>
                                 </constraints>
@@ -108,8 +112,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="MoreAppClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WHX-MQ-WTm"/>
-                                    <action selector="MoreAppOutsite:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="TA6-nD-bBx"/>
+                                    <action selector="SettingClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YRI-k3-Lnb"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4B8-R4-M9a" userLabel="top-view">
