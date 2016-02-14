@@ -11,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, ChartboostDelegate {
         Chartboost.startWithAppId(data.cAppID, appSignature: data.cSign, delegate: self)
         
         
-        AmazonAdRegistration.sharedRegistration().setAppKey("6d874b81dd934a20bb893f950accbfb4")
+        AmazonAdRegistration.sharedRegistration().setAppKey(data.AmazonKey)
         AmazonAdRegistration.sharedRegistration().setLogging(true)
         return true
 	}

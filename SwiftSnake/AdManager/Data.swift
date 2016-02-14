@@ -9,32 +9,23 @@
 import Foundation
 import GoogleMobileAds
 class Data {
-    //class Entry {
-        let gBanner : String = "ca-app-pub-4268017457011380/5936452156"
-        let gFull : String = "ca-app-pub-4268017457011380/7413185355"
+  
+    //data for snake 1998
+        let gBanner : String = "ca-app-pub-2839097909624465/5605816037"
+        let gFull : String = "ca-app-pub-2839097909624465/2593474031"
         let TestDeviceID: String = "12d7a54f9646b17dab2a691b5bb24e43"
-        let cAppID: String = "56b99017da152749b35111f0"
-        let cSign : String = "fc029f42d5d9f2f5409c8faf8c71861c85a7c9eb"
+        let cAppID: String = "56c0012a88380973b1e73055"
+        let cSign : String = "ac537c7f94bd5e868f0856cdb9cc5450332cb96a"
     
-    let AmazonKey: String = "6d874b81dd934a20bb893f950accbfb4"
+    let AdmobBanerY = 20
+    
+    let AmazonKey: String = "729491e1690143fdaed868d15f3b7bbf"
     
     
-//    appphuongnguyen2018@gmail.com
-//    Stupid snake classic
-//    
 //    App ID
-//    56b99017da152749b35111f0
+//    56c0012a88380973b1e73055
 //    Signature
-//    fc029f42d5d9f2f5409c8faf8c71861c85a7c9eb
-//    
-//    admob
-//    App name: Stupid Snake Classic 2016
-//    
-//    Ad unit name: Snake banner
-//    Ad unit ID: ca-app-pub-4268017457011380/5936452156
-//    
-//    Ad unit name: Snake full
-//    Ad unit ID: ca-app-pub-4268017457011380/7413185355
+//    ac537c7f94bd5e868f0856cdb9cc5450332cb96a
     
    
     

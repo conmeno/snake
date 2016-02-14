@@ -14,7 +14,6 @@
 		1B628D701C69D0B000B822C0 /* StoryboardAD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B628D6B1C69D0B000B822C0 /* StoryboardAD.storyboard */; };
 		84A43D511B6CDA8F00182E19 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D501B6CDA8F00182E19 /* AdSupport.framework */; };
 		84A43D531B6CDD7600182E19 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D521B6CDD7600182E19 /* WebKit.framework */; };
-		84A43D551B6CDD7C00182E19 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D541B6CDD7C00182E19 /* StoreKit.framework */; };
 		84A43D571B6CDD8400182E19 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D561B6CDD8400182E19 /* Social.framework */; };
 		84A43D5D1B6CDDA300182E19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D5C1B6CDDA300182E19 /* Foundation.framework */; };
 		84A43D5F1B6CDDAD00182E19 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D5E1B6CDDAD00182E19 /* UIKit.framework */; };
@@ -79,7 +78,6 @@
 		1B628D6B1C69D0B000B822C0 /* StoryboardAD.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StoryboardAD.storyboard; path = AdManager/StoryboardAD.storyboard; sourceTree = "<group>"; };
 		84A43D501B6CDA8F00182E19 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		84A43D521B6CDD7600182E19 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		84A43D541B6CDD7C00182E19 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		84A43D561B6CDD8400182E19 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		84A43D5C1B6CDDA300182E19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		84A43D5E1B6CDDAD00182E19 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -116,13 +114,13 @@
 		96F1292B1B4F887400ADAA87 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		96F1292C1B4F887400ADAA87 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		D4429BE4193FDB7A00F1E910 /* SnakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeView.swift; sourceTree = "<group>"; };
-		D4F3B140193F777800D11DE2 /* Stupid Snake Classic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stupid Snake Classic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F3B140193F777800D11DE2 /* Snake 1998.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snake 1998.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F3B144193F777800D11DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F3B145193F777800D11DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4F3B147193F777800D11DE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D4F3B14A193F777800D11DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4F3B14C193F777800D11DE2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D4F3B152193F777800D11DE2 /* Stupid Snake ClassicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stupid Snake ClassicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F3B152193F777800D11DE2 /* Snake 1998.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Snake 1998.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F3B157193F777800D11DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F3B162193F780C00D11DE2 /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,7 +151,6 @@
 				84A43D5F1B6CDDAD00182E19 /* UIKit.framework in Frameworks */,
 				84A43D5D1B6CDDA300182E19 /* Foundation.framework in Frameworks */,
 				84A43D571B6CDD8400182E19 /* Social.framework in Frameworks */,
-				84A43D551B6CDD7C00182E19 /* StoreKit.framework in Frameworks */,
 				84A43D531B6CDD7600182E19 /* WebKit.framework in Frameworks */,
 				84A43D511B6CDA8F00182E19 /* AdSupport.framework in Frameworks */,
 				84AD19471B9C4BCD00CEBD37 /* GoogleMobileAds.framework in Frameworks */,
@@ -236,7 +233,6 @@
 				84A43D5E1B6CDDAD00182E19 /* UIKit.framework */,
 				84A43D5C1B6CDDA300182E19 /* Foundation.framework */,
 				84A43D561B6CDD8400182E19 /* Social.framework */,
-				84A43D541B6CDD7C00182E19 /* StoreKit.framework */,
 				84A43D521B6CDD7600182E19 /* WebKit.framework */,
 				84A43D501B6CDA8F00182E19 /* AdSupport.framework */,
 				D4F3B142193F777800D11DE2 /* SwiftSnake */,
@@ -248,8 +244,8 @@
 		D4F3B141193F777800D11DE2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4F3B140193F777800D11DE2 /* Stupid Snake Classic.app */,
-				D4F3B152193F777800D11DE2 /* Stupid Snake ClassicTests.xctest */,
+				D4F3B140193F777800D11DE2 /* Snake 1998.app */,
+				D4F3B152193F777800D11DE2 /* Snake 1998.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -298,9 +294,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4F3B13F193F777800D11DE2 /* Stupid Snake Classic */ = {
+		D4F3B13F193F777800D11DE2 /* Snake 1998 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4F3B15C193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Stupid Snake Classic" */;
+			buildConfigurationList = D4F3B15C193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Snake 1998" */;
 			buildPhases = (
 				D4F3B13C193F777800D11DE2 /* Sources */,
 				D4F3B13D193F777800D11DE2 /* Frameworks */,
@@ -310,14 +306,14 @@
 			);
 			dependencies = (
 			);
-			name = "Stupid Snake Classic";
+			name = "Snake 1998";
 			productName = SwiftSnake;
-			productReference = D4F3B140193F777800D11DE2 /* Stupid Snake Classic.app */;
+			productReference = D4F3B140193F777800D11DE2 /* Snake 1998.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D4F3B151193F777800D11DE2 /* Stupid Snake ClassicTests */ = {
+		D4F3B151193F777800D11DE2 /* Snake 1998Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4F3B15F193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Stupid Snake ClassicTests" */;
+			buildConfigurationList = D4F3B15F193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Snake 1998Tests" */;
 			buildPhases = (
 				D4F3B14E193F777800D11DE2 /* Sources */,
 				D4F3B14F193F777800D11DE2 /* Frameworks */,
@@ -328,9 +324,9 @@
 			dependencies = (
 				D4F3B154193F777800D11DE2 /* PBXTargetDependency */,
 			);
-			name = "Stupid Snake ClassicTests";
+			name = "Snake 1998Tests";
 			productName = SwiftSnakeTests;
-			productReference = D4F3B152193F777800D11DE2 /* Stupid Snake ClassicTests.xctest */;
+			productReference = D4F3B152193F777800D11DE2 /* Snake 1998.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -346,7 +342,12 @@
 				TargetAttributes = {
 					D4F3B13F193F777800D11DE2 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = 597LVZ4LQD;
+						DevelopmentTeam = 6SZC32EP3F;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					D4F3B151193F777800D11DE2 = {
 						CreatedOnToolsVersion = 6.0;
@@ -354,7 +355,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D4F3B13B193F777800D11DE2 /* Build configuration list for PBXProject "Stupid Snake Classic" */;
+			buildConfigurationList = D4F3B13B193F777800D11DE2 /* Build configuration list for PBXProject "Snake 1998" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -367,8 +368,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4F3B13F193F777800D11DE2 /* Stupid Snake Classic */,
-				D4F3B151193F777800D11DE2 /* Stupid Snake ClassicTests */,
+				D4F3B13F193F777800D11DE2 /* Snake 1998 */,
+				D4F3B151193F777800D11DE2 /* Snake 1998Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -435,7 +436,7 @@
 /* Begin PBXTargetDependency section */
 		D4F3B154193F777800D11DE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4F3B13F193F777800D11DE2 /* Stupid Snake Classic */;
+			target = D4F3B13F193F777800D11DE2 /* Snake 1998 */;
 			targetProxy = D4F3B153193F777800D11DE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -551,8 +552,8 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "phuongnt.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "Stupid Snake Classic";
+				PRODUCT_BUNDLE_IDENTIFIER = "phuongnguyen1997.Snake-1998";
+				PRODUCT_NAME = "Snake 1998";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSnake/AdManager/Bridging-header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -578,8 +579,8 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "phuongnt.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "Stupid Snake Classic";
+				PRODUCT_BUNDLE_IDENTIFIER = "phuongnguyen1997.Snake-1998";
+				PRODUCT_NAME = "Snake 1998";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSnake/AdManager/Bridging-header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -601,7 +602,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.zonble.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "Stupid Snake ClassicTests";
+				PRODUCT_NAME = "Snake 1998";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftSnake.app/SwiftSnake";
 			};
 			name = Debug;
@@ -617,7 +618,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.zonble.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "Stupid Snake ClassicTests";
+				PRODUCT_NAME = "Snake 1998";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftSnake.app/SwiftSnake";
 			};
 			name = Release;
@@ -625,7 +626,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4F3B13B193F777800D11DE2 /* Build configuration list for PBXProject "Stupid Snake Classic" */ = {
+		D4F3B13B193F777800D11DE2 /* Build configuration list for PBXProject "Snake 1998" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4F3B15A193F777800D11DE2 /* Debug */,
@@ -634,7 +635,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4F3B15C193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Stupid Snake Classic" */ = {
+		D4F3B15C193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Snake 1998" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4F3B15D193F777800D11DE2 /* Debug */,
@@ -643,7 +644,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4F3B15F193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Stupid Snake ClassicTests" */ = {
+		D4F3B15F193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Snake 1998Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4F3B160193F777800D11DE2 /* Debug */,
