@@ -163,18 +163,14 @@ class ViewController: UIViewController, SnakeViewDelegate,AmazonAdInterstitialDe
   
         self.btPause!.hidden = true
        
-        let myAd = MyAd(root: self)
+        
         adView.hidden = true
-        myAd.ViewDidload()
+     
+        
+        let myad = MyAd(root: self)
+        myad.ViewDidload()
        
-//        if(isAmazon)
-//        {
-//            interstitialAmazon = AmazonAdInterstitial()
-//            
-//            interstitialAmazon.delegate = self
-//
-//            LoadAmazon()
-//        }
+ 
         
     
 
