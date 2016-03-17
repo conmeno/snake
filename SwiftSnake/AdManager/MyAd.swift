@@ -32,7 +32,8 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
     var isApplovinShowed = false
     var amazonLocationY:CGFloat = -30.0
     var AdmobLocationY: CGFloat = 20
-    var AdmobBannerTop = false
+    var AdmobBannerTop = true
+    var AmazonBannerTop = false
     var AdNumber = 1
     let data = Data()
     
@@ -50,6 +51,10 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
     func ViewDidload()
     {
      
+        if(!AmazonBannerTop)
+        {
+            amazonLocationY = (viewController.view?.bounds.height)! - 5
+        }
         
         if(Utility.CanShowAd())
         {
@@ -94,10 +99,7 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
                 
                 if(Utility.isAd6)
                 {
-                    showAmazonBanner()
-                    self.timerAmazon = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: "timerMethodAutoAmazon:", userInfo: nil, repeats: true)
-                    
-                    
+                  amazonLocationY = (viewController.view?.bounds.height)! - 50
                     //set up amazon full
                     interstitialAmazon = AmazonAdInterstitial()
                     interstitialAmazon.delegate = self
@@ -106,7 +108,9 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
                     showAmazonFull()
                     
                 }
-                
+                showAmazonBanner()
+                self.timerAmazon = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: "timerMethodAutoAmazon:", userInfo: nil, repeats: true)
+
                 
                 
                 
@@ -124,6 +128,9 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
                     showAppLovin()
                     
                 }
+                
+                
+                
             }
             
             
@@ -444,10 +451,15 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
     }
     func timerMethodAutoAmazon(timer:NSTimer) {
         print("auto load amazon")
-        if(Utility.CanShowAd())
-        {
-            showAmazonBanner()
-        }
+         loadAmazonAdWithUserInterfaceIdiom(UIDevice.currentDevice().userInterfaceIdiom, interfaceOrientation: UIApplication.sharedApplication().statusBarOrientation)
+        
+//        if(Utility.CanShowAd())
+//        {
+//            showAmazonBanner()
+//        }else
+//        {
+//            amazonAdView.removeFromSuperview()
+//        }
         
         
     }

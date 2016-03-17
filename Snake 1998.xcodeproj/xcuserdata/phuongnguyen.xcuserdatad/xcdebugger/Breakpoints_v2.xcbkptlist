@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftSnake/ViewController.swift"
-            timestampString = "458393567.932652"
+            timestampString = "479883580.254887"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftSnake/ViewController.swift"
-            timestampString = "458393567.932652"
+            timestampString = "479883580.254887"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "272"
-            endingLineNumber = "272"
+            startingLineNumber = "264"
+            endingLineNumber = "264"
             landmarkName = "swipe(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -58,28 +58,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftSnake/AdManager/MyAd.swift"
-            timestampString = "479640282.319045"
+            timestampString = "479894847.77279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "268"
-            endingLineNumber = "268"
-            landmarkName = "timerVPNMethodAutoAd(_:)"
+            startingLineNumber = "275"
+            endingLineNumber = "275"
+            landmarkName = "timerAD10(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftSnake/AdManager/MyAd.swift"
-            timestampString = "479640613.15739"
+            timestampString = "479894847.77279"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "ShowAdmobBanner()"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "ViewDidload()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

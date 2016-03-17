@@ -224,13 +224,9 @@ class ViewController: UIViewController, SnakeViewDelegate,AmazonAdInterstitialDe
     
     @IBAction func MoreGameDrapOutsite(sender: AnyObject) {
        // AdOption.hidden  = false
-        let storyboard = UIStoryboard(name: "StoryboardAD", bundle: nil)
+     
         
-        let WebDetailView = storyboard.instantiateViewControllerWithIdentifier("AdView1") as UIViewController
-        
-        self.presentViewController(WebDetailView, animated: true, completion: nil)
-        
-
+        Utility.OpenView("AdView1", view: self)
         
     }
     
