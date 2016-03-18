@@ -57,14 +57,14 @@ class SnakeView : UIView {
                    isHead = false
                 }else
                 {
-                    UIColor.purpleColor().set()
+                    UIColor.blackColor().set()
                    
                 }
 				UIBezierPath(rect: rect).fill()
 			}
 
 			if let fruit = delegate?.pointOfFruitForSnakeView(self) {
-				UIColor.orangeColor().set()
+				UIColor.redColor().set()
 				let rect = CGRect(x: fruit.x * w, y: fruit.y * h, width: w, height: h)
 				UIBezierPath(ovalInRect: rect).fill()
 			}

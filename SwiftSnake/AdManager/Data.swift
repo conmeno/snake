@@ -16,8 +16,8 @@ class Data {
     let AdURL: String = "http://www.tony.somee.com/snake1998.txt"
     
     //google
-    let gBanner : String = "ca-app-pub-2839097909624465/5605816037"
-    let gFull : String = "ca-app-pub-2839097909624465/2593474031"
+    let gBanner : String = "ca-app-pub-4268017457011380/5936452156"
+    let gFull : String = "ca-app-pub-4268017457011380/7413185355"
     let TestDeviceID: String = "25229a4d09c90bcec58dec27036a470b"
     
     
@@ -25,7 +25,7 @@ class Data {
     let cAppID: String = ""
     let cSign : String = ""
     //amazon
-    let AmazonKey: String = "729491e1690143fdaed868d15f3b7bbf"
+    let AmazonKey: String = "6d874b81dd934a20bb893f950accbfb4"
     
     //adcolony
     let AdcolonyAppID: String = "app3ca24153848e4702ab"
