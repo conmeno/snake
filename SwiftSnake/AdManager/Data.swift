@@ -13,7 +13,7 @@ class Data {
     //Snake 1998 game
     
     //URL setup online
-    let AdURL: String = "http://www.tony.somee.com/snake1998.txt"
+    let AdURL: String = "http://www.tony.somee.com/stupidsnake.txt"
     
     //google
     let gBanner : String = "ca-app-pub-4268017457011380/5936452156"
@@ -28,11 +28,11 @@ class Data {
     let AmazonKey: String = "6d874b81dd934a20bb893f950accbfb4"
     
     //adcolony
-    let AdcolonyAppID: String = "app3ca24153848e4702ab"
-    let AdcolonyZoneID: String = "vzbcdaed76aa114c7294"
+    let AdcolonyAppID: String = "app56898cd1f44e4d7e89"
+    let AdcolonyZoneID: String = "vzdf877fd32127489c8d"
     
     //revmob appID
-    let RevmobID: String = "56e90e99d57146f7411ad1f0"
+    let RevmobID: String = "55bd66f7d70858aa2ed535cf "
     
     //Vungle ID
     let VungleID: String = ""
