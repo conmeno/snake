@@ -30,7 +30,7 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
     var isFirsAdmob = false
     var isFirstChart = false
     var isApplovinShowed = false
-    var amazonLocationY:CGFloat = -30.0
+    var amazonLocationY:CGFloat = -50.0
     var AdmobLocationY: CGFloat = 20
     var AdmobBannerTop = true
     var AmazonBannerTop = false
@@ -51,10 +51,10 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
     func ViewDidload()
     {
      
-        if(!AmazonBannerTop)
-        {
-            amazonLocationY = (viewController.view?.bounds.height)! - 5
-        }
+//        if(!AmazonBannerTop)
+//        {
+//            amazonLocationY = (viewController.view?.bounds.height)! - 5
+//        }
         
         if(Utility.CanShowAd())
         {
