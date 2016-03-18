@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Allow Arbitrary Loads</key>
+	<true/>
+	<key>AppLovinSdkKey</key>
+	<string>cR8QklF2fyL7GBTFGrqQlWHaQFFMkvrLL-n3i16N-RVEdzTuoHIWpa6ErMbTFRvaPgd6hlUfA-voyMgke-FSTM</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -19,9 +23,11 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>100</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict/>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -32,12 +38,6 @@
 	<true/>
 	<key>UIStatusBarHidden</key>
 	<true/>
-	<key>NSAppTransportSecurity</key>
-	<dict/>
-	<key>Allow Arbitrary Loads</key>
-	<true/>
-	<key>AppLovinSdkKey</key>
-	<string>cR8QklF2fyL7GBTFGrqQlWHaQFFMkvrLL-n3i16N-RVEdzTuoHIWpa6ErMbTFRvaPgd6hlUfA-voyMgke-FSTM</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
