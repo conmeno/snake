@@ -67,44 +67,24 @@ class ViewController: UIViewController, SnakeViewDelegate,AmazonAdInterstitialDe
     
     @IBAction func ShowAdClick(sender: AnyObject) {
        // showAds()
-        
+        Utility.MoreGame()
     }
     
 
     @IBAction func MoreAppClick(sender: AnyObject) {
-        let myAd = MyAd(root: self)
-        
-        myAd.showChartBoost()
+        Utility.MoreGame()
     }
 
     
     
     @IBAction func RealMoreAppClick(sender: AnyObject) {
-        let barsLink : String = "itms-apps://itunes.apple.com/ca/artist/phuong-nguyen/id1004963752"
-        UIApplication.sharedApplication().openURL(NSURL(string: barsLink)!)
+        Utility.MoreGame()
     }
     
     @IBOutlet weak var InfoBt: UIButton!
     
-    @IBAction func InfoClick(sender: AnyObject) {
-        //call auto app
-        
-        //adView.backgroundColor = UIColor.blueColor()
-
-       
-        //self.timerAd = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "timerMethodAutoAd:", userInfo: nil, repeats: true)
-       
-    }
     
-    @IBAction func InfoAutoAd(sender: AnyObject) {             }
-    
-    func timerMethodAutoAd(timer:NSTimer) {
-        print("auto play")
-        // adView.backgroundColor = UIColor.redColor()
-         
-
-    }
-    
+ 
  
     
     var audioPlayer: AVAudioPlayer?
