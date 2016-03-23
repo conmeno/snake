@@ -20,7 +20,7 @@ class Utility {
     static var isAd8 = false//VungLe    /not show
     static var isAd9 = false//Applovin  //ok
     
-    
+    static var CheckOnline = true // on/off check ad online
     static var GBannerAdUnit: String = ""
     static var GFullAdUnit: String = ""
     static var ChartboostAppID: String = ""
@@ -127,17 +127,24 @@ class Utility {
             
         }
         
+        if(NSUserDefaults.standardUserDefaults().objectForKey("adOnline") != nil)
+        {
+            Utility.CheckOnline = NSUserDefaults.standardUserDefaults().objectForKey("adOnline") as! Bool
+            
+        }
+        
         
         
         
         
         //GEt Ad unit online
         
-        
-        
-        let xmlSetup = ADXML()
-        xmlSetup.LoadXML()
-        
+        if(Utility.CheckOnline)
+        {
+            
+            let xmlSetup = ADXML()
+            xmlSetup.LoadXML()
+        }
         SetupAdOnline()
         
         
