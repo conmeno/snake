@@ -445,7 +445,7 @@ class ViewController: UIViewController, SnakeViewDelegate,GADBannerViewDelegate 
         
         //let viewController = appDelegate1.window!.rootViewController as! GameViewController
         let w = self.view.bounds.width
-        let h = self.view.bounds.height
+        //let h = self.view.bounds.height
 //        if(!AdmobBannerTop)
 //        {
 //            AdmobLocationY = h - 50

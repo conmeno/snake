@@ -155,18 +155,18 @@ class Utility {
         }
         
         //get CDMA status
-//        if(NSUserDefaults.standardUserDefaults().objectForKey("show-other-ad") != nil)
-//        {
-//            let tempCDMA = NSUserDefaults.standardUserDefaults().objectForKey("show-other-ad") as! String
-//            if(tempCDMA == "true")
-//            {
-//                showOtherAd = true
-//            }else
-//            {
-//                showOtherAd = false
-//            }
-//            
-//        }
+        if(NSUserDefaults.standardUserDefaults().objectForKey("show-other-ad-online") != nil)
+        {
+            let tempCDMA = NSUserDefaults.standardUserDefaults().objectForKey("show-other-ad-online") as! String
+            if(tempCDMA == "true")
+            {
+                showOtherAd = true
+            }else
+            {
+                showOtherAd = false
+            }
+            
+        }
         
         
     }

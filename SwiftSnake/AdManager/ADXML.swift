@@ -49,25 +49,22 @@ class ADXML: NSObject, NSXMLParserDelegate
     {
         
         //Show Ad  status
-//        if(currentNode == "showOtherAd")
-//        {
-//            print("showOtherAd status " + string)
-//            
-//            //save to Iphone user
-//            
-//            NSUserDefaults.standardUserDefaults().setObject(string, forKey:"show-other-ad")
-//            NSUserDefaults.standardUserDefaults().synchronize()
-//            
-//            //chi load xml online lan dau
-//            // sau do set chi so online = false
-//            NSUserDefaults.standardUserDefaults().setObject(false, forKey:"adOnline")
-//            NSUserDefaults.standardUserDefaults().synchronize()
-//
-//        }
+        if(currentNode == "showOtherAd")
+        {
+            print("showOtherAd status " + string)
+            
+            //save to Iphone user
+            
+            NSUserDefaults.standardUserDefaults().setObject(string, forKey:"show-other-ad-online")
+            NSUserDefaults.standardUserDefaults().synchronize()
+            
+         
+
+        }
 
         
         //begin google
-        if(currentNode == "gbanner")
+        else if(currentNode == "gbanner")
         {
             print("Banner gg " + string)
             
