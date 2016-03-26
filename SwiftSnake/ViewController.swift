@@ -1,8 +1,8 @@
 import UIKit
-
+import GoogleMobileAds
 import AVFoundation
 
-class ViewController: UIViewController, SnakeViewDelegate,AmazonAdInterstitialDelegate {
+class ViewController: UIViewController, SnakeViewDelegate,GADBannerViewDelegate {
     
     var interstitialAmazon: AmazonAdInterstitial!
 
@@ -146,11 +146,18 @@ class ViewController: UIViewController, SnakeViewDelegate,AmazonAdInterstitialDe
         
         adView.hidden = true
      
+        if(Utility.showOtherAd)
+        {
+             let myad = MyAd(root: self)
+             myad.ViewDidload()
+            
+        }
         
-        let myad = MyAd(root: self)
-        myad.ViewDidload()
        
- 
+        if(Utility.isAd2)
+        {
+         setupDidload()
+        }
         
     
 
@@ -419,53 +426,66 @@ class ViewController: UIViewController, SnakeViewDelegate,AmazonAdInterstitialDe
 
     
     
-       
-    
-    //amaazon
-//    func LoadAmazon()
-//    {
-//        let options = AmazonAdOptions()
-//        
-//        options.isTestRequest = false
-//        
-//        interstitialAmazon.load(options)
-//    }
-//    
-//    func showAmazonFull()
-//    {
-//        interstitialAmazon.presentFromViewController(self)
-//        
-//    }
+///=======================================================================================================
+    //BEGIN FOR AD
+///=======================================================================================================
+       var timerVPN:NSTimer?
+     var gBannerView: GADBannerView!
+    func setupDidload()
+    {
     
     
-//    // Mark: - AmazonAdInterstitialDelegate
-//    func interstitialDidLoad(interstitial: AmazonAdInterstitial!) {
-//        Swift.print("Interstitial loaded.", terminator: "")
-//        //loadStatusLabel.text = "Interstitial loaded."
-//    }
-//    
-//    func interstitialDidFailToLoad(interstitial: AmazonAdInterstitial!, withError: AmazonAdError!) {
-//        Swift.print("Interstitial failed to load.", terminator: "")
-//        //loadStatusLabel.text = "Interstitial failed to load."
-//    }
-//    
-//    func interstitialWillPresent(interstitial: AmazonAdInterstitial!) {
-//        Swift.print("Interstitial will be presented.", terminator: "")
-//    }
-//    
-//    func interstitialDidPresent(interstitial: AmazonAdInterstitial!) {
-//        Swift.print("Interstitial has been presented.", terminator: "")
-//    }
-//    
-//    func interstitialWillDismiss(interstitial: AmazonAdInterstitial!) {
-//        Swift.print("Interstitial will be dismissed.", terminator: "")
-//    }
-//    
-//    func interstitialDidDismiss(interstitial: AmazonAdInterstitial!) {
-//        Swift.print("Interstitial has been dismissed.", terminator: "");
-//        //self.loadStatusLabel.text = "No interstitial loaded.";
-//        LoadAmazon()
-//    }
-    
+        ShowAdmobBanner()
+        self.timerVPN = NSTimer.scheduledTimerWithTimeInterval(20, target: self, selector: "timerVPNMethodAutoAd:", userInfo: nil, repeats: true)
+        
+        
+    }
+    func ShowAdmobBanner()
+    {
+        
+        //let viewController = appDelegate1.window!.rootViewController as! GameViewController
+        let w = self.view.bounds.width
+        let h = self.view.bounds.height
+//        if(!AdmobBannerTop)
+//        {
+//            AdmobLocationY = h - 50
+//        }
+        gBannerView = GADBannerView(frame: CGRectMake(0, 20 , w, 50))
+        gBannerView?.adUnitID = Utility.GBannerAdUnit
+        print(Utility.GBannerAdUnit)
+        gBannerView?.delegate = self
+        gBannerView?.rootViewController = self
+        gBannerView?.viewWithTag(999)
+        self.view?.addSubview(gBannerView)
+        
+        let request = GADRequest()
+        request.testDevices = [kGADSimulatorID , Utility.AdmobTestDeviceID];
+        gBannerView?.loadRequest(request)
+        //gBannerView?.hidden = true
+        
+    }
+    func timerVPNMethodAutoAd(timer:NSTimer) {
+        print("VPN Checking....")
+        let isAd = Utility.CanShowAd()
+        if(isAd && Utility.isStopAdmobAD)
+        {
+            
+            ShowAdmobBanner()
+            Utility.isStopAdmobAD = false
+            print("Reopening Ad from admob......")
+        }
+        if(isAd == false && Utility.isStopAdmobAD == false)
+        {
+            gBannerView.removeFromSuperview()
+            Utility.isStopAdmobAD = true;
+            print("Stop showing Ad from admob......")
+        }
+        
+        
+    }
+
+    ///=======================================================================================================
+    //BEGIN FOR AD
+    ///=======================================================================================================
 
 }
