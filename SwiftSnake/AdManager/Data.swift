@@ -13,7 +13,7 @@ class Data {
     //Snake 1998 game
     
     //URL setup online
-    let AdURL: String = "http://www.tony.somee.com/stupidsnake.txt"
+    let AdURL: String = "http://www.tony.somee.com/stupidsnake-v2.txt"
     
     //google
     let gBanner : String = "ca-app-pub-4268017457011380/5936452156"

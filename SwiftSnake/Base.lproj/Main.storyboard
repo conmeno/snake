@@ -54,49 +54,43 @@
                                             <action selector="closeClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tt2-Ot-6Xw"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oau-Vw-0eK">
+                                        <rect key="frame" x="14" y="99" width="292" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.081839589919999997" blue="0.15145088300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="More Apps">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="RealMoreAppClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Op8-mB-B50"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5d-lv-L6F">
-                                        <rect key="frame" x="14" y="46" width="129" height="30"/>
+                                        <rect key="frame" x="14" y="50" width="292" height="30"/>
                                         <color key="backgroundColor" red="1" green="0.081839589923959677" blue="0.15145088301226539" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="129" id="0sd-bF-jWa"/>
-                                            <constraint firstAttribute="height" constant="30" id="grf-d7-koA"/>
-                                        </constraints>
                                         <state key="normal" title="More games">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="MoreAppClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NDl-ks-RRq"/>
                                             <action selector="MoreGameDrapOutsite:" destination="vXZ-lx-hvc" eventType="touchDragOutside" id="dTb-bT-f1g"/>
                                             <action selector="RealMoreAppClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DFU-YT-sUo"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oau-Vw-0eK">
-                                        <rect key="frame" x="14" y="97" width="129" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.081839589919999997" blue="0.15145088300000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="CzG-FP-9Eq"/>
-                                            <constraint firstAttribute="height" constant="30" id="fEm-gf-qjL"/>
-                                            <constraint firstAttribute="width" constant="129" id="tlI-DV-FYB"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="129" id="x3H-Va-Ae3"/>
-                                        </constraints>
-                                        <state key="normal" title="More Apps">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.20518871174361053" green="0.71164457725199859" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="o7D-bA-b3D" firstAttribute="top" secondItem="hel-ZO-9L1" secondAttribute="top" constant="4" id="3QM-Gb-Yef"/>
-                                    <constraint firstItem="T5d-lv-L6F" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="Eu5-1D-6yn"/>
+                                    <constraint firstItem="T5d-lv-L6F" firstAttribute="top" secondItem="o7D-bA-b3D" secondAttribute="bottom" constant="8" id="AZc-Iu-rLv"/>
                                     <constraint firstAttribute="trailing" secondItem="h3g-3a-NYK" secondAttribute="trailing" id="F9v-xg-dl4"/>
-                                    <constraint firstItem="oau-Vw-0eK" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="K5c-60-84r"/>
-                                    <constraint firstItem="oau-Vw-0eK" firstAttribute="top" secondItem="T5d-lv-L6F" secondAttribute="bottom" constant="21" id="LNe-F6-C88"/>
-                                    <constraint firstItem="oau-Vw-0eK" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="NCJ-aA-SzK"/>
                                     <constraint firstItem="h3g-3a-NYK" firstAttribute="top" secondItem="hel-ZO-9L1" secondAttribute="top" constant="70" id="Txh-lC-MUD"/>
+                                    <constraint firstAttribute="trailing" secondItem="T5d-lv-L6F" secondAttribute="trailing" constant="14" id="XWz-1Y-xfr"/>
+                                    <constraint firstAttribute="trailing" secondItem="oau-Vw-0eK" secondAttribute="trailing" constant="14" id="Xop-Lz-ObT"/>
+                                    <constraint firstItem="T5d-lv-L6F" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="Zxm-Qf-wFD"/>
                                     <constraint firstAttribute="bottom" secondItem="h3g-3a-NYK" secondAttribute="bottom" id="bRI-LN-Y73"/>
+                                    <constraint firstItem="oau-Vw-0eK" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="d4T-QO-hMf"/>
                                     <constraint firstAttribute="trailing" secondItem="o7D-bA-b3D" secondAttribute="trailing" constant="8" id="i0w-5o-Tm7"/>
-                                    <constraint firstItem="T5d-lv-L6F" firstAttribute="top" secondItem="hel-ZO-9L1" secondAttribute="top" constant="46" id="jqN-Qn-KIP"/>
                                     <constraint firstAttribute="height" constant="260" id="poK-1U-tLn"/>
                                     <constraint firstItem="h3g-3a-NYK" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" id="sfX-o2-ANt"/>
                                 </constraints>
@@ -248,6 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="282" y="198"/>
         </scene>
     </scenes>
     <resources>

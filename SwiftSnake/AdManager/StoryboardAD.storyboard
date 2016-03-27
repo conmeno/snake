@@ -10,7 +10,7 @@
         <!--Ad Manager View-->
         <scene sceneID="MDb-VE-VLt">
             <objects>
-                <viewController storyboardIdentifier="AdView1" id="mQ7-qi-MMn" customClass="AdManagerView" customModule="Hexspin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AdView1" id="mQ7-qi-MMn" customClass="AdManagerView" customModule="Snake_1998" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RkD-vD-QMJ"/>
                         <viewControllerLayoutGuide type="bottom" id="lsm-U3-Fee"/>
@@ -19,25 +19,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Google Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bi-Ak-Z6H">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Show Other AD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bi-Ak-Z6H">
                                 <rect key="frame" x="66" y="65" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="83" y="33" width="97" height="21"/>
+                                    <rect key="frame" x="83" y="33" width="125" height="21"/>
                                 </variation>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wOF-1C-lwA">
-                                <rect key="frame" x="26" y="94" width="51" height="31"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="28" width="51" height="31"/>
-                                </variation>
-                                <connections>
-                                    <action selector="sw1Action:" destination="mQ7-qi-MMn" eventType="valueChanged" id="Yh5-Jf-Aob"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto Chartboost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKv-dD-nOF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google Banner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WKv-dD-nOF">
                                 <rect key="frame" x="66" y="65" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,10 +43,10 @@
                                     <rect key="frame" x="20" y="106" width="51" height="31"/>
                                 </variation>
                                 <connections>
-                                    <action selector="sw3Action:" destination="mQ7-qi-MMn" eventType="valueChanged" id="OEg-Ey-gu8"/>
+                                    <action selector="sw2Action:" destination="mQ7-qi-MMn" eventType="valueChanged" id="1mE-xs-M5p"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chartboost" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ND5-4K-AdM">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google Full" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ND5-4K-AdM">
                                 <rect key="frame" x="66" y="65" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -68,7 +59,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="zN6-Sm-Og7"/>
+                                    <constraint firstAttribute="height" constant="150" id="zN6-Sm-Og7">
+                                        <variation key="widthClass=compact" constant="90"/>
+                                    </constraint>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -84,7 +77,7 @@
                                     </mask>
                                 </variation>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Google Banner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJh-kl-yli">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJh-kl-yli">
                                 <rect key="frame" x="66" y="65" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -99,7 +92,7 @@
                                     <rect key="frame" x="20" y="145" width="51" height="31"/>
                                 </variation>
                                 <connections>
-                                    <action selector="sw4Action:" destination="mQ7-qi-MMn" eventType="valueChanged" id="fff-9E-c9Z"/>
+                                    <action selector="sw3Action:" destination="mQ7-qi-MMn" eventType="valueChanged" id="P2i-1x-PJj"/>
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adcolony" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQ4-NK-dH7">
@@ -117,88 +110,43 @@
                                     <rect key="frame" x="20" y="184" width="51" height="31"/>
                                 </variation>
                                 <connections>
-                                    <action selector="sw5Action:" destination="mQ7-qi-MMn" eventType="valueChanged" id="0T3-By-vCm"/>
+                                    <action selector="sw4Action:" destination="mQ7-qi-MMn" eventType="valueChanged" id="OAS-If-aTc"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amazon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcH-4E-TE5">
-                                <rect key="frame" x="66" y="65" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="83" y="228" width="97" height="21"/>
-                                </variation>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="P64-op-RR4">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8HN-vQ-Ta5">
                                 <rect key="frame" x="26" y="94" width="51" height="31"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="223" width="51" height="31"/>
+                                    <rect key="frame" x="20" y="224" width="51" height="31"/>
                                 </variation>
                                 <connections>
-                                    <action selector="sw6Action:" destination="mQ7-qi-MMn" eventType="valueChanged" id="beJ-zO-Njg"/>
+                                    <action selector="CheckAdOnlineAction:" destination="mQ7-qi-MMn" eventType="valueChanged" id="Vt6-cf-wPj"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Revmob" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3xm-dk-WCB">
-                                <rect key="frame" x="66" y="65" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="83" y="267" width="132" height="21"/>
-                                </variation>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IJ1-Lu-gTx">
-                                <rect key="frame" x="26" y="94" width="51" height="31"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="262" width="51" height="31"/>
-                                </variation>
-                                <connections>
-                                    <action selector="sw7Action:" destination="mQ7-qi-MMn" eventType="valueChanged" id="CVX-H5-fop"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vungle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2yc-fA-ibW">
-                                <rect key="frame" x="66" y="65" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="83" y="306" width="125" height="21"/>
-                                </variation>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jPY-Lm-igu">
-                                <rect key="frame" x="26" y="94" width="51" height="31"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="301" width="51" height="31"/>
-                                </variation>
-                                <connections>
-                                    <action selector="sw8Action:" destination="mQ7-qi-MMn" eventType="valueChanged" id="NnR-2Y-enT"/>
-                                </connections>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Applovin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygi-vI-sfP">
-                                <rect key="frame" x="66" y="65" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="208" y="306" width="71" height="21"/>
-                                </variation>
-                            </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="B9w-ww-hV3">
                                 <rect key="frame" x="26" y="94" width="51" height="31"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="67" width="51" height="31"/>
                                 </variation>
                                 <connections>
-                                    <action selector="sw2Action:" destination="mQ7-qi-MMn" eventType="valueChanged" id="WjC-tx-Yx1"/>
+                                    <action selector="sw1Action:" destination="mQ7-qi-MMn" eventType="valueChanged" id="5If-rh-biK"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="16D-cy-ecX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check Ad Online" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1P-zF-qHq">
+                                <rect key="frame" x="66" y="65" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="83" y="229" width="166" height="21"/>
+                                </variation>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wOF-1C-lwA">
                                 <rect key="frame" x="26" y="94" width="51" height="31"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="145" y="301" width="51" height="31"/>
+                                    <rect key="frame" x="20" y="28" width="51" height="31"/>
                                 </variation>
                                 <connections>
-                                    <action selector="sw9Action:" destination="mQ7-qi-MMn" eventType="valueChanged" id="DrV-pM-EzK"/>
+                                    <action selector="ShowOtherAd:" destination="mQ7-qi-MMn" eventType="valueChanged" id="cPz-Eb-pVX"/>
                                 </connections>
                             </switch>
                         </subviews>
@@ -218,15 +166,9 @@
                                 <exclude reference="XDQ-VJ-oo7"/>
                                 <exclude reference="UQ4-NK-dH7"/>
                                 <exclude reference="7YG-R5-FrN"/>
-                                <exclude reference="xcH-4E-TE5"/>
-                                <exclude reference="P64-op-RR4"/>
-                                <exclude reference="3xm-dk-WCB"/>
-                                <exclude reference="IJ1-Lu-gTx"/>
-                                <exclude reference="2yc-fA-ibW"/>
-                                <exclude reference="jPY-Lm-igu"/>
-                                <exclude reference="ygi-vI-sfP"/>
+                                <exclude reference="8HN-vQ-Ta5"/>
                                 <exclude reference="B9w-ww-hV3"/>
-                                <exclude reference="16D-cy-ecX"/>
+                                <exclude reference="J1P-zF-qHq"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="0se-Mu-mSP"/>
@@ -244,15 +186,9 @@
                                 <include reference="XDQ-VJ-oo7"/>
                                 <include reference="UQ4-NK-dH7"/>
                                 <include reference="7YG-R5-FrN"/>
-                                <include reference="xcH-4E-TE5"/>
-                                <include reference="P64-op-RR4"/>
-                                <include reference="3xm-dk-WCB"/>
-                                <include reference="IJ1-Lu-gTx"/>
-                                <include reference="2yc-fA-ibW"/>
-                                <include reference="jPY-Lm-igu"/>
-                                <include reference="ygi-vI-sfP"/>
+                                <include reference="8HN-vQ-Ta5"/>
                                 <include reference="B9w-ww-hV3"/>
-                                <include reference="16D-cy-ecX"/>
+                                <include reference="J1P-zF-qHq"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="0se-Mu-mSP"/>
@@ -263,15 +199,12 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="sw1" destination="wOF-1C-lwA" id="Z4c-B2-2Sh"/>
-                        <outlet property="sw2" destination="B9w-ww-hV3" id="nI1-bu-eMa"/>
-                        <outlet property="sw3" destination="RsR-Mn-Med" id="Xug-em-pur"/>
-                        <outlet property="sw4" destination="XDQ-VJ-oo7" id="a7n-py-xnG"/>
-                        <outlet property="sw5" destination="7YG-R5-FrN" id="w7P-3W-OXM"/>
-                        <outlet property="sw6" destination="P64-op-RR4" id="ZG3-YB-fRV"/>
-                        <outlet property="sw7" destination="IJ1-Lu-gTx" id="Dga-yk-6qy"/>
-                        <outlet property="sw8" destination="jPY-Lm-igu" id="0wa-K5-sqx"/>
-                        <outlet property="sw9" destination="16D-cy-ecX" id="hWc-yQ-IvA"/>
+                        <outlet property="CheckAdOnline" destination="8HN-vQ-Ta5" id="hVq-bL-RJH"/>
+                        <outlet property="ShowOtherAd" destination="wOF-1C-lwA" id="O0Y-a6-jgj"/>
+                        <outlet property="sw1" destination="B9w-ww-hV3" id="cRW-3M-vZd"/>
+                        <outlet property="sw2" destination="RsR-Mn-Med" id="zB4-QI-YLm"/>
+                        <outlet property="sw3" destination="XDQ-VJ-oo7" id="wLO-la-dvd"/>
+                        <outlet property="sw4" destination="7YG-R5-FrN" id="2vp-dW-aea"/>
                         <outlet property="textDevice" destination="spA-Qb-dIS" id="vz2-5B-6lI"/>
                     </connections>
                 </viewController>
