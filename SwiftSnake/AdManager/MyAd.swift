@@ -51,10 +51,10 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
     func ViewDidload()
     {
      
-        if(!AmazonBannerTop)
-        {
-            amazonLocationY = (viewController.view?.bounds.height)! - 50
-        }
+//        if(!AmazonBannerTop)
+//        {
+            amazonLocationY = (viewController.view?.bounds.height)!
+        //}
         
         if(Utility.CanShowAd())
         {

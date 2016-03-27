@@ -70,6 +70,12 @@ class AdManagerView: UIViewController
         NSUserDefaults.standardUserDefaults().setObject(sender.on, forKey:"show-other-ad")
         NSUserDefaults.standardUserDefaults().synchronize()
         Utility.showOtherAd = sender.on
+        if(Utility.showOtherAd)
+        {
+            NSUserDefaults.standardUserDefaults().setObject("true", forKey:"show-other-ad-online")
+            NSUserDefaults.standardUserDefaults().synchronize()
+
+        }
     }
     
     @IBAction func CheckAdOnlineAction(sender: UISwitch) {

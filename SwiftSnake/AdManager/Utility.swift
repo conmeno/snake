@@ -90,12 +90,14 @@ class Utility {
         {
             showOtherAd = NSUserDefaults.standardUserDefaults().objectForKey("show-other-ad") as! Bool
             
+            print( NSUserDefaults.standardUserDefaults().objectForKey("show-other-ad"))
+            
         }
         
         if(NSUserDefaults.standardUserDefaults().objectForKey("adOnline") != nil)
         {
             Utility.CheckOnline = NSUserDefaults.standardUserDefaults().objectForKey("adOnline") as! Bool
-            
+            print(NSUserDefaults.standardUserDefaults().objectForKey("adOnline"))
         }
         
         
