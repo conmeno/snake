@@ -52,6 +52,8 @@
 		96AA6EE51B525AC300F43F29 /* 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AA6EDF1B525AC300F43F29 /* 5.mp3 */; };
 		96AA6EE61B525AC300F43F29 /* 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96AA6EE01B525AC300F43F29 /* 6.mp3 */; };
 		96B841261B5158CC00DD532B /* buzz2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96B841251B5158CC00DD532B /* buzz2.mp3 */; };
+		96E1FCCD1CABBC2B00A98394 /* StartApp.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96E1FCCB1CABBC2A00A98394 /* StartApp.bundle */; };
+		96E1FCCE1CABBC2B00A98394 /* StartApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E1FCCC1CABBC2B00A98394 /* StartApp.framework */; };
 		96F1292D1B4F887400ADAA87 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F1292B1B4F887400ADAA87 /* pause.png */; };
 		96F1292E1B4F887400ADAA87 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F1292C1B4F887400ADAA87 /* play.png */; };
 		D4429BE5193FDB7A00F1E910 /* SnakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4429BE4193FDB7A00F1E910 /* SnakeView.swift */; };
@@ -121,6 +123,8 @@
 		96AA6EDF1B525AC300F43F29 /* 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 5.mp3; path = Sounds/5.mp3; sourceTree = "<group>"; };
 		96AA6EE01B525AC300F43F29 /* 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = 6.mp3; path = Sounds/6.mp3; sourceTree = "<group>"; };
 		96B841251B5158CC00DD532B /* buzz2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = buzz2.mp3; path = Sounds/buzz2.mp3; sourceTree = "<group>"; };
+		96E1FCCB1CABBC2A00A98394 /* StartApp.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = StartApp.bundle; sourceTree = "<group>"; };
+		96E1FCCC1CABBC2B00A98394 /* StartApp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = StartApp.framework; sourceTree = "<group>"; };
 		96F1292B1B4F887400ADAA87 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		96F1292C1B4F887400ADAA87 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		D4429BE4193FDB7A00F1E910 /* SnakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeView.swift; sourceTree = "<group>"; };
@@ -153,6 +157,7 @@
 				84A6D0001BF194B3006C51C7 /* AmazonAd.framework in Frameworks */,
 				84B82B391B6CE1360019B1DD /* EventKitUI.framework in Frameworks */,
 				966A04E51C9A691A00A11F57 /* AdColony.framework in Frameworks */,
+				96E1FCCE1CABBC2B00A98394 /* StartApp.framework in Frameworks */,
 				84B82B311B6CE1050019B1DD /* AudioToolbox.framework in Frameworks */,
 				84A43D751B6CDE3500182E19 /* AVFoundation.framework in Frameworks */,
 				84A43D731B6CDE2E00182E19 /* CFNetwork.framework in Frameworks */,
@@ -225,6 +230,8 @@
 		D4F3B137193F777800D11DE2 = {
 			isa = PBXGroup;
 			children = (
+				96E1FCCB1CABBC2A00A98394 /* StartApp.bundle */,
+				96E1FCCC1CABBC2B00A98394 /* StartApp.framework */,
 				966A04ED1C9A6A5300A11F57 /* libz.1.2.5.tbd */,
 				966A04EB1C9A6A4A00A11F57 /* libsqlite3.0.tbd */,
 				966A04E91C9A6A3C00A11F57 /* CoreFoundation.framework */,
@@ -412,6 +419,7 @@
 				96B841261B5158CC00DD532B /* buzz2.mp3 in Resources */,
 				96A00EC01B4FB51C00ED6D42 /* levelup.mp3 in Resources */,
 				84AD19491B9C4FDE00CEBD37 /* vg_close.png in Resources */,
+				96E1FCCD1CABBC2B00A98394 /* StartApp.bundle in Resources */,
 				96A00EBE1B4FB51C00ED6D42 /* drop.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

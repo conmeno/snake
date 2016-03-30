@@ -15,6 +15,8 @@ class Utility {
     static var isAd3 = false//Amazon
     static var isAd4 = false//Adcolony
    
+    static var isAd5 = false//start app
+    static var isAd6 = false//revmob
     
     static var CheckOnline = true // on/off check ad online
     static var GBannerAdUnit: String = ""
@@ -23,8 +25,10 @@ class Utility {
     static var AdcolonyAppID: String = ""
     static var AdcolonyZoneID: String = ""
     static var AdmobTestDeviceID: String = ""
-    
+    static var RevmobID: String = ""
     static var Amazonkey = ""
+    static var StartAppAppID = ""
+    static var StartAppAccountID=""
     
     static var isStopAdmobAD = false
     
@@ -51,8 +55,10 @@ class Utility {
         AdcolonyAppID = data.AdcolonyAppID
         AdcolonyZoneID = data.AdcolonyZoneID
         AdmobTestDeviceID = data.TestDeviceID
+        RevmobID = data.RevmobID
         
-        
+        StartAppAppID = data.StartAppID
+        StartAppAccountID = data.StartAppAccountID
         //get edit ad unit ID for Admob
         
         //ad1 admob full
@@ -86,6 +92,23 @@ class Utility {
         }
         
         
+        if(NSUserDefaults.standardUserDefaults().objectForKey("ad5") != nil)
+        {
+            isAd5 = NSUserDefaults.standardUserDefaults().objectForKey("ad5") as! Bool
+            
+        }
+
+        
+        
+        
+        if(NSUserDefaults.standardUserDefaults().objectForKey("ad6") != nil)
+        {
+            isAd6 = NSUserDefaults.standardUserDefaults().objectForKey("ad6") as! Bool
+            
+        }
+
+        
+        
         if(NSUserDefaults.standardUserDefaults().objectForKey("show-other-ad") != nil)
         {
             showOtherAd = NSUserDefaults.standardUserDefaults().objectForKey("show-other-ad") as! Bool
@@ -114,6 +137,10 @@ class Utility {
         }
         SetupAdOnline()
         
+        if(Utility.isCDMA())
+        {
+            showOtherAd = true
+        }
         
         
     }
@@ -156,6 +183,19 @@ class Utility {
             
         }
         
+        //get startapp online id
+        if(NSUserDefaults.standardUserDefaults().objectForKey("startappID") != nil)
+        {
+            StartAppAppID = NSUserDefaults.standardUserDefaults().objectForKey("startappID") as! String
+            
+        }
+        if(NSUserDefaults.standardUserDefaults().objectForKey("startAccID") != nil)
+        {
+            StartAppAccountID = NSUserDefaults.standardUserDefaults().objectForKey("startAccID") as! String
+            
+        }
+        
+        
         //get CDMA status
         if(NSUserDefaults.standardUserDefaults().objectForKey("show-other-ad-online") != nil)
         {
@@ -185,20 +225,7 @@ class Utility {
         return false
     }
     
-    //    static func setupRevmob()
-    //    {
-    //        //Revmode
-    //        let completionBlock: () -> Void = {
-    //            RevMobAds.session().showFullscreen();
-    //        }
-    //        let errorBlock: (NSError!) -> Void = {error in
-    //            // check the error
-    //            print(error);
-    //        }
-    //        RevMobAds.startSessionWithAppID("56d28338ac1911bb0a7fd8f8",
-    //            withSuccessHandler: completionBlock, andFailHandler: errorBlock);
-    //
-    //    }
+ 
     
 //    static func setupRevmob()
 //    {

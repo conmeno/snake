@@ -36,7 +36,9 @@ class Data {
     
     //Vungle ID
     let VungleID: String = ""
-    
+    //startapp
+    let StartAppID: String = "202174021"
+    let StartAppAccountID: String = " 102803784"
     
     
     
