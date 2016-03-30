@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftSnake/ViewController.swift"
-            timestampString = "480309468.654342"
+            timestampString = "481003578.890937"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftSnake/ViewController.swift"
-            timestampString = "480309468.654342"
+            timestampString = "481003578.890937"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "244"
-            endingLineNumber = "244"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
             landmarkName = "swipe(_:)"
             landmarkType = "5">
          </BreakpointContent>

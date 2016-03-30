@@ -81,10 +81,7 @@ class ViewController: UIViewController, SnakeViewDelegate,GADBannerViewDelegate 
         Utility.MoreGame()
     }
     
-    @IBOutlet weak var InfoBt: UIButton!
-    
-    
- 
+   
  
     
     var audioPlayer: AVAudioPlayer?
