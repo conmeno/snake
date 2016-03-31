@@ -39,7 +39,6 @@
 		966A04F91C9A6E6F00A11F57 /* ADXML.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966A04F01C9A6E6F00A11F57 /* ADXML.swift */; };
 		966A04FA1C9A6E6F00A11F57 /* cclass.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A04F31C9A6E6F00A11F57 /* cclass.m */; };
 		966A04FB1C9A6E6F00A11F57 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966A04F41C9A6E6F00A11F57 /* Data.swift */; };
-		966A04FC1C9A6E6F00A11F57 /* MyAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966A04F51C9A6E6F00A11F57 /* MyAd.swift */; };
 		966A04FD1C9A6E6F00A11F57 /* StoryboardAD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966A04F61C9A6E6F00A11F57 /* StoryboardAD.storyboard */; };
 		96A00EBE1B4FB51C00ED6D42 /* drop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96A00EB91B4FB51C00ED6D42 /* drop.mp3 */; };
 		96A00EBF1B4FB51C00ED6D42 /* gameover.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96A00EBA1B4FB51C00ED6D42 /* gameover.mp3 */; };
@@ -107,7 +106,6 @@
 		966A04F21C9A6E6F00A11F57 /* cclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cclass.h; path = AdManager/cclass.h; sourceTree = "<group>"; };
 		966A04F31C9A6E6F00A11F57 /* cclass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cclass.m; path = AdManager/cclass.m; sourceTree = "<group>"; };
 		966A04F41C9A6E6F00A11F57 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = AdManager/Data.swift; sourceTree = "<group>"; };
-		966A04F51C9A6E6F00A11F57 /* MyAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyAd.swift; path = AdManager/MyAd.swift; sourceTree = "<group>"; };
 		966A04F61C9A6E6F00A11F57 /* StoryboardAD.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StoryboardAD.storyboard; path = AdManager/StoryboardAD.storyboard; sourceTree = "<group>"; };
 		96A00EB91B4FB51C00ED6D42 /* drop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = drop.mp3; path = Sounds/drop.mp3; sourceTree = "<group>"; };
 		96A00EBA1B4FB51C00ED6D42 /* gameover.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = gameover.mp3; path = Sounds/gameover.mp3; sourceTree = "<group>"; };
@@ -187,7 +185,6 @@
 				966A04F21C9A6E6F00A11F57 /* cclass.h */,
 				966A04F31C9A6E6F00A11F57 /* cclass.m */,
 				966A04F41C9A6E6F00A11F57 /* Data.swift */,
-				966A04F51C9A6E6F00A11F57 /* MyAd.swift */,
 				966A04F61C9A6E6F00A11F57 /* StoryboardAD.storyboard */,
 			);
 			name = Ad;
@@ -435,7 +432,6 @@
 				D4F3B163193F780C00D11DE2 /* Snake.swift in Sources */,
 				D4429BE5193FDB7A00F1E910 /* SnakeView.swift in Sources */,
 				966A04FB1C9A6E6F00A11F57 /* Data.swift in Sources */,
-				966A04FC1C9A6E6F00A11F57 /* MyAd.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

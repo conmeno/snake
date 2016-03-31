@@ -65,18 +65,18 @@ class ViewController: UIViewController, SnakeViewDelegate, GADBannerViewDelegate
     
     @IBAction func ShowAdClick(sender: AnyObject) {
        // showAds()
-        Utility.Static.MoreGame()
+        MoreGame()
     }
     
 
     @IBAction func MoreAppClick(sender: AnyObject) {
-        Utility.Static.MoreGame()
+        MoreGame()
     }
 
     
     
     @IBAction func RealMoreAppClick(sender: AnyObject) {
-        Utility.Static.MoreGame()
+        MoreGame()
     }
     
     @IBOutlet weak var InfoBt: UIButton!
@@ -211,7 +211,7 @@ setupAD()
        // AdOption.hidden  = false
      
         
-        Utility.Static.OpenView("AdView1", view: self)
+        OpenView("AdView1", view: self)
         
     }
     

@@ -20,6 +20,7 @@ class AdManagerView: UIViewController
     var isAd3 = false//amazon
     var isAd4 = false//adcolony
     var isAd5 = false//startapp
+    
          var CheckOnline = true
     
       
@@ -171,6 +172,11 @@ class AdManagerView: UIViewController
             isAd5 = NSUserDefaults.standardUserDefaults().objectForKey("ad5") as! Bool
             
         }
+        if(NSUserDefaults.standardUserDefaults().objectForKey("show-other-ad") != nil)
+        {
+            showOtherAd1 = NSUserDefaults.standardUserDefaults().objectForKey("show-other-ad") as! Bool
+            
+        }
         
         if(NSUserDefaults.standardUserDefaults().objectForKey("adOnline") != nil)
         {
@@ -184,7 +190,8 @@ class AdManagerView: UIViewController
         sw2.on = isAd2
         sw3.on = isAd3
         sw4.on = isAd4
-        sw5.on = isAd4
+        sw5.on = isAd5
+        ShowOtherAd.on = showOtherAd1
         //ShowOtherAd1.on = Utility.Static.showOtherAd
         CheckAdOnline.on = CheckOnline
         
