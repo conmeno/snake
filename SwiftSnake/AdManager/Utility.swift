@@ -9,7 +9,7 @@
 import Foundation
 
 class Utility {
-    
+      struct Static {
     static var isAd1 = false//admob full
     static var isAd2 = true//Admob Banner
     static var isAd3 = false//Amazon
@@ -96,7 +96,7 @@ class Utility {
         
         if(NSUserDefaults.standardUserDefaults().objectForKey("adOnline") != nil)
         {
-            Utility.CheckOnline = NSUserDefaults.standardUserDefaults().objectForKey("adOnline") as! Bool
+            CheckOnline = NSUserDefaults.standardUserDefaults().objectForKey("adOnline") as! Bool
             print(NSUserDefaults.standardUserDefaults().objectForKey("adOnline"))
         }
         
@@ -106,7 +106,7 @@ class Utility {
         
         //GEt Ad unit online
         
-        if(Utility.CheckOnline)
+        if(CheckOnline)
         {
             
             let xmlSetup = ADXML()
@@ -267,4 +267,5 @@ class Utility {
     }
     
     
+}
 }

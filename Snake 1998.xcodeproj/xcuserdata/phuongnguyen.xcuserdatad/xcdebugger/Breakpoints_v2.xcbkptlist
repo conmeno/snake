@@ -63,7 +63,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "275"
             endingLineNumber = "275"
-            landmarkName = "timerAD10(_:)"
+            landmarkName = "timerAd30(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -79,7 +79,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "142"
             endingLineNumber = "142"
-            landmarkName = "ViewDidload()"
+            landmarkName = "showAdmob()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

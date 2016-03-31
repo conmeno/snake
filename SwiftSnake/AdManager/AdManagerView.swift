@@ -41,36 +41,36 @@ class AdManagerView: UIViewController
     @IBAction func sw1Action(sender: UISwitch) {
         NSUserDefaults.standardUserDefaults().setObject(sender.on, forKey:"ad1")
         NSUserDefaults.standardUserDefaults().synchronize()
-        Utility.isAd1 = sender.on
+        Utility.Static.isAd1 = sender.on
         
     }
     
     @IBAction func sw2Action(sender: UISwitch) {
         NSUserDefaults.standardUserDefaults().setObject(sender.on, forKey:"ad2")
         NSUserDefaults.standardUserDefaults().synchronize()
-        Utility.isAd2 = sender.on
+        Utility.Static.isAd2 = sender.on
     }
     
     
     @IBAction func sw3Action(sender: UISwitch) {
         NSUserDefaults.standardUserDefaults().setObject(sender.on, forKey:"ad3")
         NSUserDefaults.standardUserDefaults().synchronize()
-        Utility.isAd3 = sender.on
+        Utility.Static.isAd3 = sender.on
     }
     
     
     @IBAction func sw4Action(sender: UISwitch) {
         NSUserDefaults.standardUserDefaults().setObject(sender.on, forKey:"ad4")
         NSUserDefaults.standardUserDefaults().synchronize()
-        Utility.isAd4 = sender.on
+        Utility.Static.isAd4 = sender.on
     }
     
        
     @IBAction func ShowOtherAd(sender: UISwitch) {
         NSUserDefaults.standardUserDefaults().setObject(sender.on, forKey:"show-other-ad")
         NSUserDefaults.standardUserDefaults().synchronize()
-        Utility.showOtherAd = sender.on
-        if(Utility.showOtherAd)
+        Utility.Static.showOtherAd = sender.on
+        if(Utility.Static.showOtherAd)
         {
             NSUserDefaults.standardUserDefaults().setObject("true", forKey:"show-other-ad-online")
             NSUserDefaults.standardUserDefaults().synchronize()
@@ -81,7 +81,7 @@ class AdManagerView: UIViewController
     @IBAction func CheckAdOnlineAction(sender: UISwitch) {
         NSUserDefaults.standardUserDefaults().setObject(sender.on, forKey:"adOnline")
         NSUserDefaults.standardUserDefaults().synchronize()
-        Utility.CheckOnline = sender.on
+        Utility.Static.CheckOnline = sender.on
     }
     
     
@@ -182,12 +182,12 @@ class AdManagerView: UIViewController
         //            
         //        }
         
-        sw1.on = Utility.isAd1
-        sw2.on = Utility.isAd2
-        sw3.on = Utility.isAd3
-        sw4.on = Utility.isAd4
-         ShowOtherAd.on = Utility.showOtherAd
-        CheckAdOnline.on = Utility.CheckOnline
+        sw1.on = Utility.Static.isAd1
+        sw2.on = Utility.Static.isAd2
+        sw3.on = Utility.Static.isAd3
+        sw4.on = Utility.Static.isAd4
+         ShowOtherAd.on = Utility.Static.showOtherAd
+        CheckAdOnline.on = Utility.Static.CheckOnline
         
     }
     

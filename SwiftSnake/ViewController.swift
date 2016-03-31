@@ -67,18 +67,18 @@ class ViewController: UIViewController, SnakeViewDelegate,GADBannerViewDelegate 
     
     @IBAction func ShowAdClick(sender: AnyObject) {
        // showAds()
-        Utility.MoreGame()
+        Utility.Static.MoreGame()
     }
     
 
     @IBAction func MoreAppClick(sender: AnyObject) {
-        Utility.MoreGame()
+        Utility.Static.MoreGame()
     }
 
     
     
     @IBAction func RealMoreAppClick(sender: AnyObject) {
-        Utility.MoreGame()
+        Utility.Static.MoreGame()
     }
     
     @IBOutlet weak var InfoBt: UIButton!
@@ -146,7 +146,7 @@ class ViewController: UIViewController, SnakeViewDelegate,GADBannerViewDelegate 
         
         adView.hidden = true
      
-        if(Utility.showOtherAd)
+        if(Utility.Static.showOtherAd)
         {
              let myad = MyAd(root: self)
              myad.ViewDidload()
@@ -154,7 +154,7 @@ class ViewController: UIViewController, SnakeViewDelegate,GADBannerViewDelegate 
         }
         
        
-        if(Utility.isAd2)
+        if(Utility.Static.isAd2)
         {
          setupDidload()
         }
@@ -213,7 +213,7 @@ class ViewController: UIViewController, SnakeViewDelegate,GADBannerViewDelegate 
        // AdOption.hidden  = false
      
         
-        Utility.OpenView("AdView1", view: self)
+        Utility.Static.OpenView("AdView1", view: self)
         
     }
     
@@ -451,33 +451,33 @@ class ViewController: UIViewController, SnakeViewDelegate,GADBannerViewDelegate 
 //            AdmobLocationY = h - 50
 //        }
         gBannerView = GADBannerView(frame: CGRectMake(0, 20 , w, 50))
-        gBannerView?.adUnitID = Utility.GBannerAdUnit
-        print(Utility.GBannerAdUnit)
+        gBannerView?.adUnitID = Utility.Static.GBannerAdUnit
+        print(Utility.Static.GBannerAdUnit)
         gBannerView?.delegate = self
         gBannerView?.rootViewController = self
-        gBannerView?.viewWithTag(999)
+        //gBannerView?.viewWithTag(999)
         self.view?.addSubview(gBannerView)
         
         let request = GADRequest()
-        request.testDevices = [kGADSimulatorID , Utility.AdmobTestDeviceID];
+        request.testDevices = [kGADSimulatorID , Utility.Static.AdmobTestDeviceID];
         gBannerView?.loadRequest(request)
         //gBannerView?.hidden = true
         
     }
     func timerVPNMethodAutoAd(timer:NSTimer) {
         print("VPN Checking....")
-        let isAd = Utility.CanShowAd()
-        if(isAd && Utility.isStopAdmobAD)
+        let isAd = Utility.Static.CanShowAd()
+        if(isAd && Utility.Static.isStopAdmobAD)
         {
             
             ShowAdmobBanner()
-            Utility.isStopAdmobAD = false
+            Utility.Static.isStopAdmobAD = false
             print("Reopening Ad from admob......")
         }
-        if(isAd == false && Utility.isStopAdmobAD == false)
+        if(isAd == false && Utility.Static.isStopAdmobAD == false)
         {
             gBannerView.removeFromSuperview()
-            Utility.isStopAdmobAD = true;
+            Utility.Static.isStopAdmobAD = true;
             print("Stop showing Ad from admob......")
         }
         

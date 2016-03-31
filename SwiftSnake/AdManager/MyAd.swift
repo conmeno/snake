@@ -56,9 +56,9 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
             amazonLocationY = (viewController.view?.bounds.height)!
         //}
         
-        if(Utility.CanShowAd())
+        if(Utility.Static.CanShowAd())
         {
-            if(Utility.isAd1)
+            if(Utility.Static.isAd1)
             {
                 self.interstitial = self.createAndLoadAd()
                 showAdmob()
@@ -66,13 +66,13 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
  
             
             
-            if(Utility.isAd4)
+            if(Utility.Static.isAd4)
             {
                 showAdcolony()
                 self.timerAd30 = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: "timerAd30:", userInfo: nil, repeats: true)
             }
             
-            if(Utility.isAd3)
+            if(Utility.Static.isAd3)
             {
                 amazonLocationY = (viewController.view?.bounds.height)! - 50
                 //set up amazon full
@@ -121,13 +121,13 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
 //    
       func showAdcolony()
     {
-        AdColony.playVideoAdForZone(Utility.AdcolonyZoneID, withDelegate: nil)
+        AdColony.playVideoAdForZone(Utility.Static.AdcolonyZoneID, withDelegate: nil)
     }
     
     func createAndLoadAd() -> GADInterstitial
     {
-        let ad = GADInterstitial(adUnitID: Utility.GFullAdUnit)
-        print(Utility.GFullAdUnit)
+        let ad = GADInterstitial(adUnitID: Utility.Static.GFullAdUnit)
+        print(Utility.Static.GFullAdUnit)
         let request = GADRequest()
         
         request.testDevices = [kGADSimulatorID, data.TestDeviceID]
@@ -258,11 +258,11 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
     //timerADcolony
     func timerAd30(timer:NSTimer) {
         
-        if(Utility.CanShowAd())
+        if(Utility.Static.CanShowAd())
         {
-            if(Utility.showOtherAd)
+            if(Utility.Static.showOtherAd)
             {
-                if(Utility.isAd4)
+                if(Utility.Static.isAd4)
                 {
                     showAdcolony()
                     

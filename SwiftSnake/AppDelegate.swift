@@ -8,19 +8,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
        
-        Utility.SetUpAdData()
+        Utility.Static.SetUpAdData()
 
         
         //if(Utility.isAd3)
         //{
-            AmazonAdRegistration.sharedRegistration().setAppKey(Utility.Amazonkey)
+            AmazonAdRegistration.sharedRegistration().setAppKey(Utility.Static.Amazonkey)
             AmazonAdRegistration.sharedRegistration().setLogging(true)
         //}
 
         
-        if(Utility.isAd4)
+        if(Utility.Static.isAd4)
         {
-            AdColony.configureWithAppID(Utility.AdcolonyAppID, zoneIDs: [Utility.AdcolonyZoneID], delegate: nil, logging: true)
+            AdColony.configureWithAppID(Utility.Static.AdcolonyAppID, zoneIDs: [Utility.Static.AdcolonyZoneID], delegate: nil, logging: true)
         }
         
         return true
