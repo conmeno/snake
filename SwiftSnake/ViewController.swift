@@ -517,8 +517,8 @@ setupAD()
             
             
             
-            showAmazonBanner()
-            self.timerAmazon = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: "timerMethodAutoAmazon:", userInfo: nil, repeats: true)
+//            showAmazonBanner()
+//            self.timerAmazon = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: "timerMethodAutoAmazon:", userInfo: nil, repeats: true)
             
         }
     }
@@ -648,24 +648,24 @@ setupAD()
             
         }
         
-        if(NSUserDefaults.standardUserDefaults().objectForKey("adOnline") != nil)
-        {
-            CheckOnline = NSUserDefaults.standardUserDefaults().objectForKey("adOnline") as! Bool
-            print(NSUserDefaults.standardUserDefaults().objectForKey("adOnline"))
-        }
-        
-        
-        
-        
-        
-        //GEt Ad unit online
-        
-        if(CheckOnline)
-        {
-            
-            let xmlSetup = ADXML()
-            xmlSetup.LoadXML()
-        }
+//        if(NSUserDefaults.standardUserDefaults().objectForKey("adOnline") != nil)
+//        {
+//            CheckOnline = NSUserDefaults.standardUserDefaults().objectForKey("adOnline") as! Bool
+//            print(NSUserDefaults.standardUserDefaults().objectForKey("adOnline"))
+//        }
+//        
+//        
+//        
+//        
+//        
+//        //GEt Ad unit online
+//        
+//        if(CheckOnline)
+//        {
+//            
+//            let xmlSetup = ADXML()
+//            xmlSetup.LoadXML()
+//        }
         SetupAdOnline()
         
         
