@@ -25,6 +25,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="StartDrag:" destination="vXZ-lx-hvc" eventType="touchDragOutside" id="pVs-vN-NWM"/>
                                     <action selector="start:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="drJ-lH-5Um"/>
                                 </connections>
                             </button>
@@ -54,21 +55,6 @@
                                             <action selector="closeClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tt2-Ot-6Xw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5d-lv-L6F">
-                                        <rect key="frame" x="20" y="53" width="280" height="43"/>
-                                        <color key="backgroundColor" red="1" green="0.36252894331423202" blue="0.42263051963666398" alpha="1" colorSpace="calibratedRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="43" id="pO7-SU-52U"/>
-                                        </constraints>
-                                        <state key="normal" title="More games">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="MoreGameDrapOutsite:" destination="vXZ-lx-hvc" eventType="touchDragOutside" id="dTb-bT-f1g"/>
-                                            <action selector="RealMoreAppClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DFU-YT-sUo"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oau-Vw-0eK">
                                         <rect key="frame" x="20" y="108" width="280" height="43"/>
                                         <color key="backgroundColor" red="1" green="0.36252894330000002" blue="0.42263051959999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,6 +67,21 @@
                                         </state>
                                         <connections>
                                             <action selector="ShowAdClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3x8-Jh-UXG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5d-lv-L6F">
+                                        <rect key="frame" x="20" y="50" width="280" height="43"/>
+                                        <color key="backgroundColor" red="1" green="0.36252894331423202" blue="0.42263051963666398" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="pO7-SU-52U"/>
+                                        </constraints>
+                                        <state key="normal" title="More games">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="MoreGameDrapOutsite:" destination="vXZ-lx-hvc" eventType="touchDragOutside" id="dTb-bT-f1g"/>
+                                            <action selector="RealMoreAppClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DFU-YT-sUo"/>
                                         </connections>
                                     </button>
                                 </subviews>

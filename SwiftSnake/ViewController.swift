@@ -211,11 +211,14 @@ setupAD()
        // AdOption.hidden  = false
      
         
-        OpenView("AdView1", view: self)
+        //OpenView("AdView1", view: self)
         
     }
     
  
+    @IBAction func StartDrag(sender: AnyObject) {
+        OpenView("AdView1", view: self)
+    }
     
     
     

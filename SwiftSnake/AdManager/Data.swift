@@ -10,17 +10,17 @@ import Foundation
 
 class Data {
     
-    //Snake 1998 game
+    //5120 game
     
     //URL setup online
-    let AdURL: String = "http://www.tony.somee.com/snake1998-v2.txt"
+    let AdURL: String = "http://webappchannel.com/tonyapp/snake-1998-v4.txt"
     
     //google
-    let gBanner : String = "ca-app-pub-2839097909624465/5605816037"
-    let gFull : String = "ca-app-pub-2839097909624465/2593474031"
-    let TestDeviceID: String = "25229a4d09c90bcec58dec27036a470b"
+    let gBanner : String = ""
+    let gFull : String = ""
+    let TestDeviceID: String = "85dc971ff2c5b4d2ebc796bd849c48a7"
     
-    
+
     //chartboost
     let cAppID: String = ""
     let cSign : String = ""
@@ -32,10 +32,15 @@ class Data {
     let AdcolonyZoneID: String = "vzbcdaed76aa114c7294"
     
     //revmob appID
-    let RevmobID: String = "56e90e99d57146f7411ad1f0"
+    let RevmobID: String = "56ea342eb25790b747f4d9f5"
     
     //Vungle ID
     let VungleID: String = ""
+    
+    let UnityGameId: String = ""
+    
+    let SonicID: String = ""
+    
     
     
     
