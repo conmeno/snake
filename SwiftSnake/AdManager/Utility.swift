@@ -36,6 +36,7 @@ class Utility {
     static var VungleID = ""
     static var UnityGameID = ""
     static var SonicID = ""
+    static var HeyzapID = ""
     static var isStopAdmobAD = false
     
     static var CheckVPN = true
@@ -70,7 +71,7 @@ class Utility {
         VungleID = data.VungleID
         UnityGameID = data.UnityGameId
         SonicID = data.SonicID
- 
+        HeyzapID = data.HeyzapID
         
         
         if(NSUserDefaults.standardUserDefaults().objectForKey("adOnline") != nil)
@@ -300,6 +301,14 @@ class Utility {
             RevmobID = NSUserDefaults.standardUserDefaults().objectForKey("revmobid") as! String
             
         }
+        
+        //heyzap id
+        if(NSUserDefaults.standardUserDefaults().objectForKey("heyzapid") != nil)
+        {
+            HeyzapID = NSUserDefaults.standardUserDefaults().objectForKey("heyzapid") as! String
+            
+        }
+
         
 //        //get CDMA status
 //        if(NSUserDefaults.standardUserDefaults().objectForKey("show-other-ad-online") != nil)

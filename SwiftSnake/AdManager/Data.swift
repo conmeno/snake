@@ -40,7 +40,7 @@ class Data {
     let UnityGameId: String = ""
     
     let SonicID: String = ""
-    
+    let HeyzapID: String = "6d16e2c64815389610742e00d8374784"
     
     
     

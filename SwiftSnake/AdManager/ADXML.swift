@@ -270,7 +270,16 @@ class ADXML: NSObject, NSXMLParserDelegate
             NSUserDefaults.standardUserDefaults().setObject(string, forKey:"sonicid")
             NSUserDefaults.standardUserDefaults().synchronize()
         }
-        
+        else if(currentNode == "heyzapid")
+        {
+            print("heyzapid " + string)
+            
+            //save to Iphone user
+            
+            NSUserDefaults.standardUserDefaults().setObject(string, forKey:"heyzapid")
+            NSUserDefaults.standardUserDefaults().synchronize()
+        }
+
         
         
         }

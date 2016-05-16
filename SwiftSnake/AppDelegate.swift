@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UnityAdsDelegate {
 //            sdk.clearSleep()
             
             
-             HeyzapAds.startWithPublisherID("6d16e2c64815389610742e00d8374784")
+             HeyzapAds.startWithPublisherID(Utility.HeyzapID)
         }
         
         if(Utility.isAd5)
