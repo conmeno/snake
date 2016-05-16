@@ -110,7 +110,7 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
                 Supersonic.sharedInstance().showISWithViewController(viewController)
             }
             
-            if(Utility.isAd4 || Utility.isAd7 || Utility.isAd5 || Utility.isAd8 )
+            if(Utility.isAd4 || Utility.isAd7 || Utility.isAd5 || Utility.isAd8 || Utility.isAd7)
             {
                 self.timerAd30 = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: "timerAd30:", userInfo: nil, repeats: true)
             }
