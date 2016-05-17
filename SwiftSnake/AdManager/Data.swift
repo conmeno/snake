@@ -24,15 +24,16 @@ class Data {
     //chartboost
     let cAppID: String = ""
     let cSign : String = ""
+    
     //amazon
-    let AmazonKey: String = "729491e1690143fdaed868d15f3b7bbf"
+    let AmazonKey: String = "a520f96277c048fd8627a5dc3ad90f1e"
     
     //adcolony
-    let AdcolonyAppID: String = "app3ca24153848e4702ab"
-    let AdcolonyZoneID: String = "vzbcdaed76aa114c7294"
+    let AdcolonyAppID: String = "appf3d05360d62e4ceda0"
+    let AdcolonyZoneID: String = "vz57e65dce2e05400ea4"
     
     //revmob appID
-    let RevmobID: String = "56ea342eb25790b747f4d9f5"
+    let RevmobID: String = "573aa32c5ccf4e472e90f7c1"
     
     //Vungle ID
     let VungleID: String = ""
