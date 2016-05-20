@@ -25,6 +25,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="MoreGameDrapOutsite:" destination="vXZ-lx-hvc" eventType="touchDragOutside" id="s0s-L5-WhV"/>
                                     <action selector="start:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="drJ-lH-5Um"/>
                                 </connections>
                             </button>
@@ -214,7 +215,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cIb-Na-JlN" secondAttribute="bottom" id="16I-fy-QOz"/>
                             <constraint firstAttribute="centerY" secondItem="a4p-Ws-SZG" secondAttribute="centerY" id="3JP-HH-hIS"/>
