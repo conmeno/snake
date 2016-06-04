@@ -24,7 +24,6 @@
 		1B105A441CE82AD70066BA2C /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B105A411CE82AD70066BA2C /* SpriteKit.framework */; };
 		1B105A451CE82AD70066BA2C /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B105A421CE82AD70066BA2C /* StoreKit.framework */; };
 		1B105A461CE82AD70066BA2C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B105A431CE82AD70066BA2C /* WebKit.framework */; };
-		1B105A481CE86E4B0066BA2C /* HeyzapAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B105A471CE86E4B0066BA2C /* HeyzapAds.framework */; };
 		1B105A4A1CE871990066BA2C /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B105A491CE871990066BA2C /* libxml2.tbd */; };
 		1B105A4C1CE871A40066BA2C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B105A4B1CE871A40066BA2C /* MobileCoreServices.framework */; };
 		84A43D511B6CDA8F00182E19 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D501B6CDA8F00182E19 /* AdSupport.framework */; };
@@ -106,7 +105,6 @@
 		1B105A411CE82AD70066BA2C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		1B105A421CE82AD70066BA2C /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1B105A431CE82AD70066BA2C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/PrivateFrameworks/WebKit.framework; sourceTree = SDKROOT; };
-		1B105A471CE86E4B0066BA2C /* HeyzapAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HeyzapAds.framework; sourceTree = "<group>"; };
 		1B105A491CE871990066BA2C /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		1B105A4B1CE871A40066BA2C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		84A43D501B6CDA8F00182E19 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
@@ -192,7 +190,6 @@
 				84B82B351B6CE12C0019B1DD /* CoreData.framework in Frameworks */,
 				1B105A3E1CE829EF0066BA2C /* UnityAds.framework in Frameworks */,
 				84A6D0001BF194B3006C51C7 /* AmazonAd.framework in Frameworks */,
-				1B105A481CE86E4B0066BA2C /* HeyzapAds.framework in Frameworks */,
 				1B105A3C1CE829EF0066BA2C /* Supersonic.framework in Frameworks */,
 				966A04E51C9A691A00A11F57 /* AdColony.framework in Frameworks */,
 				84B82B311B6CE1050019B1DD /* AudioToolbox.framework in Frameworks */,
@@ -264,7 +261,6 @@
 			children = (
 				1B105A4B1CE871A40066BA2C /* MobileCoreServices.framework */,
 				1B105A491CE871990066BA2C /* libxml2.tbd */,
-				1B105A471CE86E4B0066BA2C /* HeyzapAds.framework */,
 				1B105A411CE82AD70066BA2C /* SpriteKit.framework */,
 				1B105A421CE82AD70066BA2C /* StoreKit.framework */,
 				1B105A431CE82AD70066BA2C /* WebKit.framework */,

@@ -29,15 +29,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UnityAdsDelegate {
         if(Utility.isAd7)
         {
             
-//            let sdk = VungleSDK.sharedSDK()
-//            // start vungle publisher library
-//            sdk.startWithAppId(Utility.VungleID)
-//            sdk.setLoggingEnabled(true)
-//            sdk.clearCache()
-//            sdk.clearSleep()
+            let sdk = VungleSDK.sharedSDK()
+            // start vungle publisher library
+            sdk.startWithAppId(Utility.VungleID)
+            sdk.setLoggingEnabled(true)
+            sdk.clearCache()
+            sdk.clearSleep()
             
             
-             HeyzapAds.startWithPublisherID(Utility.HeyzapID)
+//             HeyzapAds.startWithPublisherID(Utility.HeyzapID)
         }
         
         if(Utility.isAd5)

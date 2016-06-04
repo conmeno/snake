@@ -94,12 +94,12 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
             
             if(Utility.isAd7)
             {
-                //showVungle()
-                HZInterstitialAd.show()
-                
-                //heyzap video
-                HZVideoAd.fetch()
-//                HZVideoAd.show()
+                showVungle()
+//                HZInterstitialAd.show()
+//                
+//                //heyzap video
+//                HZVideoAd.fetch()
+////                HZVideoAd.show()
             }
             
             
@@ -315,10 +315,10 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
                 }
                 
             }
-            if(Utility.isAd7)
-            {
-                HZVideoAd.show()
-            }
+//            if(Utility.isAd7)
+//            {
+//                HZVideoAd.show()
+//            }
             
             
         }

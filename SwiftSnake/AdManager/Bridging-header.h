@@ -21,7 +21,7 @@
 #import <AdColony/AdColony.h>
  #import <VungleSDK/VungleSDK.h>
 #import <UnityAds/UnityAds.h>
-#import <HeyzapAds/HeyzapAds.h>
+//#import <HeyzapAds/HeyzapAds.h>
 //#import <StartApp/StartApp.h>
 
 

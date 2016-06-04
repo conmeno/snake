@@ -16,7 +16,7 @@ class Data {
     let AdURL: String = "http://webappchannel.com/tonyapp/snake-1998-v4.txt"
     
     //google
-    let gBanner : String = ""
+    let gBanner : String = "ca-app-pub-3536895709750378/1997876844"
     let gFull : String = ""
     let TestDeviceID: String = "85dc971ff2c5b4d2ebc796bd849c48a7"
     
