@@ -15,7 +15,6 @@
 		1B105A321CE829A80066BA2C /* MyAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B105A2A1CE829A80066BA2C /* MyAd.swift */; };
 		1B105A331CE829A80066BA2C /* StoryboardAD.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B105A2B1CE829A80066BA2C /* StoryboardAD.storyboard */; };
 		1B105A341CE829A80066BA2C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B105A2C1CE829A80066BA2C /* Utility.swift */; };
-		1B105A3B1CE829EF0066BA2C /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B105A351CE829EF0066BA2C /* RevMobAds.framework */; };
 		1B105A3C1CE829EF0066BA2C /* Supersonic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B105A361CE829EF0066BA2C /* Supersonic.framework */; };
 		1B105A3D1CE829EF0066BA2C /* UnityAds.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1B105A371CE829EF0066BA2C /* UnityAds.bundle */; };
 		1B105A3E1CE829EF0066BA2C /* UnityAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B105A381CE829EF0066BA2C /* UnityAds.framework */; };
@@ -26,7 +25,6 @@
 		1B105A461CE82AD70066BA2C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B105A431CE82AD70066BA2C /* WebKit.framework */; };
 		1B105A4A1CE871990066BA2C /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B105A491CE871990066BA2C /* libxml2.tbd */; };
 		1B105A4C1CE871A40066BA2C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B105A4B1CE871A40066BA2C /* MobileCoreServices.framework */; };
-		84A43D511B6CDA8F00182E19 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D501B6CDA8F00182E19 /* AdSupport.framework */; };
 		84A43D531B6CDD7600182E19 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D521B6CDD7600182E19 /* WebKit.framework */; };
 		84A43D571B6CDD8400182E19 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D561B6CDD8400182E19 /* Social.framework */; };
 		84A43D5D1B6CDDA300182E19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A43D5C1B6CDDA300182E19 /* Foundation.framework */; };
@@ -66,6 +64,7 @@
 		96B841261B5158CC00DD532B /* buzz2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 96B841251B5158CC00DD532B /* buzz2.mp3 */; };
 		96F1292D1B4F887400ADAA87 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F1292B1B4F887400ADAA87 /* pause.png */; };
 		96F1292E1B4F887400ADAA87 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 96F1292C1B4F887400ADAA87 /* play.png */; };
+		96FF7B3B1D06762100031F31 /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FF7B3A1D06762100031F31 /* RevMobAds.framework */; };
 		D4429BE5193FDB7A00F1E910 /* SnakeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4429BE4193FDB7A00F1E910 /* SnakeView.swift */; };
 		D4429BE6193FECE400F1E910 /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3B162193F780C00D11DE2 /* Snake.swift */; };
 		D4F3B146193F777800D11DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4F3B145193F777800D11DE2 /* AppDelegate.swift */; };
@@ -96,7 +95,6 @@
 		1B105A2A1CE829A80066BA2C /* MyAd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyAd.swift; path = AdManager/MyAd.swift; sourceTree = "<group>"; };
 		1B105A2B1CE829A80066BA2C /* StoryboardAD.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = StoryboardAD.storyboard; path = AdManager/StoryboardAD.storyboard; sourceTree = "<group>"; };
 		1B105A2C1CE829A80066BA2C /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utility.swift; path = AdManager/Utility.swift; sourceTree = "<group>"; };
-		1B105A351CE829EF0066BA2C /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevMobAds.framework; sourceTree = "<group>"; };
 		1B105A361CE829EF0066BA2C /* Supersonic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Supersonic.framework; sourceTree = "<group>"; };
 		1B105A371CE829EF0066BA2C /* UnityAds.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = UnityAds.bundle; sourceTree = "<group>"; };
 		1B105A381CE829EF0066BA2C /* UnityAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = UnityAds.framework; sourceTree = "<group>"; };
@@ -147,6 +145,7 @@
 		96B841251B5158CC00DD532B /* buzz2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = buzz2.mp3; path = Sounds/buzz2.mp3; sourceTree = "<group>"; };
 		96F1292B1B4F887400ADAA87 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		96F1292C1B4F887400ADAA87 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		96FF7B3A1D06762100031F31 /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevMobAds.framework; sourceTree = "<group>"; };
 		D4429BE4193FDB7A00F1E910 /* SnakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeView.swift; sourceTree = "<group>"; };
 		D4F3B140193F777800D11DE2 /* Snake 1999.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snake 1999.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F3B144193F777800D11DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -193,12 +192,11 @@
 				1B105A3C1CE829EF0066BA2C /* Supersonic.framework in Frameworks */,
 				966A04E51C9A691A00A11F57 /* AdColony.framework in Frameworks */,
 				84B82B311B6CE1050019B1DD /* AudioToolbox.framework in Frameworks */,
+				96FF7B3B1D06762100031F31 /* RevMobAds.framework in Frameworks */,
 				84A43D731B6CDE2E00182E19 /* CFNetwork.framework in Frameworks */,
 				84A43D5F1B6CDDAD00182E19 /* UIKit.framework in Frameworks */,
-				1B105A3B1CE829EF0066BA2C /* RevMobAds.framework in Frameworks */,
 				1B105A401CE829EF0066BA2C /* VungleSDK.framework in Frameworks */,
 				84A43D531B6CDD7600182E19 /* WebKit.framework in Frameworks */,
-				84A43D511B6CDA8F00182E19 /* AdSupport.framework in Frameworks */,
 				84AD19471B9C4BCD00CEBD37 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,12 +257,12 @@
 		D4F3B137193F777800D11DE2 = {
 			isa = PBXGroup;
 			children = (
+				96FF7B3A1D06762100031F31 /* RevMobAds.framework */,
 				1B105A4B1CE871A40066BA2C /* MobileCoreServices.framework */,
 				1B105A491CE871990066BA2C /* libxml2.tbd */,
 				1B105A411CE82AD70066BA2C /* SpriteKit.framework */,
 				1B105A421CE82AD70066BA2C /* StoreKit.framework */,
 				1B105A431CE82AD70066BA2C /* WebKit.framework */,
-				1B105A351CE829EF0066BA2C /* RevMobAds.framework */,
 				1B105A361CE829EF0066BA2C /* Supersonic.framework */,
 				1B105A371CE829EF0066BA2C /* UnityAds.bundle */,
 				1B105A381CE829EF0066BA2C /* UnityAds.framework */,
@@ -405,7 +403,7 @@
 				TargetAttributes = {
 					D4F3B13F193F777800D11DE2 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = 6SZC32EP3F;
+						DevelopmentTeam = S5AVB3Q4DW;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;

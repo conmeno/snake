@@ -345,13 +345,11 @@ class Utility {
     {
         
         let completionBlock: () -> Void = {
-            RevMobAds.session().showFullscreen()
-        
-            
+           self.RevmobBanner()
             self.RevmobFull()
-            self.RevmobVideo()
+            //self.RevmobVideo()
             //RevmobPopup()
-            self.RevmobBanner()
+            
         }
         let errorBlock: (NSError!) -> Void = {error in
             // check the error
