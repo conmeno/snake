@@ -105,7 +105,6 @@
 		1B105A431CE82AD70066BA2C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/PrivateFrameworks/WebKit.framework; sourceTree = SDKROOT; };
 		1B105A491CE871990066BA2C /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		1B105A4B1CE871A40066BA2C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		84A43D501B6CDA8F00182E19 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		84A43D521B6CDD7600182E19 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		84A43D561B6CDD8400182E19 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		84A43D5C1B6CDDA300182E19 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -295,7 +294,6 @@
 				84A43D5C1B6CDDA300182E19 /* Foundation.framework */,
 				84A43D561B6CDD8400182E19 /* Social.framework */,
 				84A43D521B6CDD7600182E19 /* WebKit.framework */,
-				84A43D501B6CDA8F00182E19 /* AdSupport.framework */,
 				D4F3B142193F777800D11DE2 /* SwiftSnake */,
 				D4F3B155193F777800D11DE2 /* SwiftSnakeTests */,
 				D4F3B141193F777800D11DE2 /* Products */,
