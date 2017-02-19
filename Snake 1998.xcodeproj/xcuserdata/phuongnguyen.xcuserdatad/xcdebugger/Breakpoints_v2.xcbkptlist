@@ -63,7 +63,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "275"
             endingLineNumber = "275"
-            landmarkName = "timerAd30(_:)"
+            landmarkName = "showAmazonBanner()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -79,7 +79,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "142"
             endingLineNumber = "142"
-            landmarkName = "showAdmob()"
+            landmarkName = "createAndLoadAd()"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
