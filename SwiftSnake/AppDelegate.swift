@@ -19,10 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             AmazonAdRegistration.sharedRegistration().setAppKey(Utility.Amazonkey)
             AmazonAdRegistration.sharedRegistration().setLogging(true)
         }
-        if(Utility.isAd4)
-        {
-            AdColony.configureWithAppID(Utility.AdcolonyAppID, zoneIDs: [Utility.AdcolonyZoneID], delegate: nil, logging: true)
-        }
+//        if(Utility.isAd4)
+//        {
+//            AdColony.configureWithAppID(Utility.AdcolonyAppID, zoneIDs: [Utility.AdcolonyZoneID], delegate: nil, logging: true)
+//        }
         //        if(Utility.isAd7)
         //        {
         //

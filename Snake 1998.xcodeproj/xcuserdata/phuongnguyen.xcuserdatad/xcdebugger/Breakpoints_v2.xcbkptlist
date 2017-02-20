@@ -54,15 +54,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftSnake/AdManager/MyAd.swift"
-            timestampString = "479894847.77279"
+            timestampString = "509269432.438788"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "275"
-            endingLineNumber = "275"
+            startingLineNumber = "278"
+            endingLineNumber = "278"
             landmarkName = "showAmazonBanner()"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,12 +74,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SwiftSnake/AdManager/MyAd.swift"
-            timestampString = "479894847.77279"
+            timestampString = "509268254.903725"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "142"
-            endingLineNumber = "142"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "createAndLoadAd()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftSnake/AdManager/MyAd.swift"
+            timestampString = "509269432.438788"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "timerAd30(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

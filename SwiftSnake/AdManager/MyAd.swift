@@ -9,7 +9,7 @@
 import Foundation
 import GoogleMobileAds
 
-class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAdViewDelegate {
+class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAdViewDelegate,ADCInterstitialDelegate {
     
     
     let viewController:UIViewController
@@ -17,7 +17,7 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
     var gBannerView: GADBannerView!
     var interstitial: GADInterstitial!
     var interstitialAmazon: AmazonAdInterstitial!
-    
+    var adcashInterstitial: ADCInterstitial!
     
     var timerVPN:NSTimer?
     var timerAd10:NSTimer?
@@ -67,8 +67,11 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
             
             if(Utility.isAd4)
             {
-                showAdcolony()
-                
+                //showAdcolony()
+                self.adcashInterstitial = ADCInterstitial.init(zoneID: "1523933");
+                self.adcashInterstitial.delegate=self;
+                self.adcashInterstitial.load();
+
             }
             
             
@@ -94,12 +97,10 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
 //            }
 //            
 //            
-//            if(Utility.isAd8)
-//            {
-//    
-//                Supersonic.sharedInstance().loadIS()
-//                Supersonic.sharedInstance().showISWithViewController(viewController)
-//            }
+            if(Utility.isAd8)
+            {
+                //ADCInterstitial.
+                            }
             
             if(Utility.isAd4 || Utility.isAd7 || Utility.isAd5 || Utility.isAd6 || Utility.isAd8 )
             {
@@ -130,10 +131,10 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
         }
         
     }
-       func showAdcolony()
-    {
-        AdColony.playVideoAdForZone(Utility.AdcolonyZoneID, withDelegate: nil)
-    }
+//       func showAdcolony()
+//    {
+//        AdColony.playVideoAdForZone(Utility.AdcolonyZoneID, withDelegate: nil)
+//    }
     
     func createAndLoadAd() -> GADInterstitial
     {
@@ -178,8 +179,10 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
             
             if(Utility.isAd4)
             {
-                showAdcolony()
                 
+                self.adcashInterstitial.load();
+                print("load adcash");
+
             }
 //            if(Utility.isAd7)
 //            {
@@ -392,6 +395,27 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
         //loadAmazonFull();
     }
     
+    
+    
+    
+    
+    func interstitialDidReceiveAd(_ interstitial: ADCInterstitial) {
+        print("Interstitial loaded")
+       // self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.adcashInterstitial.presentFromRootViewController(viewController);//
+    }
+   
+    
+    func interstitialWillPresentScreen(_ interstitial: ADCInterstitial) {
+        print("Interstitial will present screen.")
+    }
+    
+    func interstitialWillDismissScreen(_ interstitial: ADCInterstitial) {
+        print("Interstitial will dismiss screen")
+       // self.navigationController?.popToRootViewController(animated: true)
+        
+        
+    }
     
     ////////////////////////////////////////////////////////////////////////
     //////////////////////////////////////////////////////////////////////////////////////////
