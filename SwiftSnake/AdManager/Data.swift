@@ -13,11 +13,11 @@ class Data {
     //5120 game
     
     //URL setup online
-     let AdURL: String = "http://webappchannel.com/tonyapp/snake-stupid-v4.txt"
+     let AdURL: String = "http://webappchannel.com/v5/StupidSnake_v5.txt"
     
     //google
-    let gBanner : String = "ca-app-pub-4268017457011380/5936452156"
-    let gFull : String = "ca-app-pub-4268017457011380/7413185355"
+    let gBanner : String = ""
+    let gFull : String = ""
     let TestDeviceID: String = ""
     
 
@@ -25,23 +25,15 @@ class Data {
     let cAppID: String = ""
     let cSign : String = ""
     //amazon
-    let AmazonKey: String = "6d874b81dd934a20bb893f950accbfb4"
+    let AmazonKey: String = ""
     
     //adcolony
-    let AdcolonyAppID: String = "app56898cd1f44e4d7e89"
-    let AdcolonyZoneID: String = "vzdf877fd32127489c8d"
+    let AdcolonyAppID: String = ""
+    let AdcolonyZoneID: String = ""
     
     //revmob appID
-    let RevmobID: String = "55bd66f7d70858aa2ed535cf"
-    
-    //Vungle ID
-    let VungleID: String = ""
-    
-    let UnityGameId: String = ""
-    
-    let SonicID: String = ""
-    
-    
+    let RevmobID: String = ""
+       
     
     
     
