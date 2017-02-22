@@ -46,8 +46,8 @@
 		9605ED231E589B33007A33DF /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9605ED221E589B33007A33DF /* Chartboost.framework */; };
 		9605ED251E589EB2007A33DF /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9605ED241E589EB2007A33DF /* JavaScriptCore.framework */; };
 		9605ED271E589EC7007A33DF /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9605ED261E589EC7007A33DF /* SafariServices.framework */; };
-		960BAAF91E5AADED00AEBECC /* AdcashSDKiOS in Resources */ = {isa = PBXBuildFile; fileRef = 960BAAF81E5AADED00AEBECC /* AdcashSDKiOS */; };
-		960BAAFB1E5ACEC100AEBECC /* Adcash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 960BAAFA1E5ACEC100AEBECC /* Adcash.a */; };
+		9647FF2A1E5BF74800E6DEA6 /* AdcashSDKiOS in Resources */ = {isa = PBXBuildFile; fileRef = 9647FF291E5BF74800E6DEA6 /* AdcashSDKiOS */; };
+		9647FF2C1E5BF79100E6DEA6 /* Adcash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9647FF2B1E5BF79100E6DEA6 /* Adcash.a */; };
 		966A04EA1C9A6A3C00A11F57 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966A04E91C9A6A3C00A11F57 /* CoreFoundation.framework */; };
 		966A04EC1C9A6A4A00A11F57 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 966A04EB1C9A6A4A00A11F57 /* libsqlite3.0.tbd */; };
 		966A04EE1C9A6A5300A11F57 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 966A04ED1C9A6A5300A11F57 /* libz.1.2.5.tbd */; };
@@ -124,8 +124,8 @@
 		9605ED221E589B33007A33DF /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
 		9605ED241E589EB2007A33DF /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		9605ED261E589EC7007A33DF /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
-		960BAAF81E5AADED00AEBECC /* AdcashSDKiOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AdcashSDKiOS; sourceTree = "<group>"; };
-		960BAAFA1E5ACEC100AEBECC /* Adcash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Adcash.a; path = AdcashSDKiOS/Adcash.a; sourceTree = "<group>"; };
+		9647FF291E5BF74800E6DEA6 /* AdcashSDKiOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AdcashSDKiOS; sourceTree = SOURCE_ROOT; };
+		9647FF2B1E5BF79100E6DEA6 /* Adcash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Adcash.a; path = AdcashSDKiOS/Adcash.a; sourceTree = "<group>"; };
 		966A04E91C9A6A3C00A11F57 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		966A04EB1C9A6A4A00A11F57 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		966A04ED1C9A6A5300A11F57 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
@@ -158,7 +158,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				960BAAFB1E5ACEC100AEBECC /* Adcash.a in Frameworks */,
+				9647FF2C1E5BF79100E6DEA6 /* Adcash.a in Frameworks */,
+				84A43D531B6CDD7600182E19 /* WebKit.framework in Frameworks */,
 				9605ED271E589EC7007A33DF /* SafariServices.framework in Frameworks */,
 				9605ED251E589EB2007A33DF /* JavaScriptCore.framework in Frameworks */,
 				84A43D631B6CDDBF00182E19 /* SystemConfiguration.framework in Frameworks */,
@@ -190,7 +191,6 @@
 				84A43D731B6CDE2E00182E19 /* CFNetwork.framework in Frameworks */,
 				84A43D5F1B6CDDAD00182E19 /* UIKit.framework in Frameworks */,
 				1B105A3B1CE829EF0066BA2C /* RevMobAds.framework in Frameworks */,
-				84A43D531B6CDD7600182E19 /* WebKit.framework in Frameworks */,
 				84A43D511B6CDA8F00182E19 /* AdSupport.framework in Frameworks */,
 				84AD19471B9C4BCD00CEBD37 /* GoogleMobileAds.framework in Frameworks */,
 			);
@@ -251,8 +251,7 @@
 		D4F3B137193F777800D11DE2 = {
 			isa = PBXGroup;
 			children = (
-				960BAAFA1E5ACEC100AEBECC /* Adcash.a */,
-				960BAAF81E5AADED00AEBECC /* AdcashSDKiOS */,
+				9647FF2B1E5BF79100E6DEA6 /* Adcash.a */,
 				9605ED261E589EC7007A33DF /* SafariServices.framework */,
 				9605ED241E589EB2007A33DF /* JavaScriptCore.framework */,
 				9605ED221E589B33007A33DF /* Chartboost.framework */,
@@ -306,6 +305,7 @@
 		D4F3B142193F777800D11DE2 /* SwiftSnake */ = {
 			isa = PBXGroup;
 			children = (
+				9647FF291E5BF74800E6DEA6 /* AdcashSDKiOS */,
 				9605ED111E589A96007A33DF /* Ad */,
 				96A00EB71B4FB50400ED6D42 /* mp3 */,
 				96F1292A1B4F884D00ADAA87 /* icon */,
@@ -433,7 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9605ED201E589AB1007A33DF /* StoryboardAD.storyboard in Resources */,
-				960BAAF91E5AADED00AEBECC /* AdcashSDKiOS in Resources */,
+				9647FF2A1E5BF74800E6DEA6 /* AdcashSDKiOS in Resources */,
 				96AA6EE51B525AC300F43F29 /* 5.mp3 in Resources */,
 				96AA6EE21B525AC300F43F29 /* 2.mp3 in Resources */,
 				96A00EBF1B4FB51C00ED6D42 /* gameover.mp3 in Resources */,
@@ -610,7 +610,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"\"$(PROJECT_DIR)/AdcashSDKiOS/Headers\"",
 					"$(PROJECT_DIR)/AdcashSDKiOS",
 				);
 				OTHER_LDFLAGS = (
@@ -646,7 +645,6 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
-					"\"$(PROJECT_DIR)/AdcashSDKiOS/Headers\"",
 					"$(PROJECT_DIR)/AdcashSDKiOS",
 				);
 				OTHER_LDFLAGS = (

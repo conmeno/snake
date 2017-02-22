@@ -68,7 +68,7 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
             if(Utility.isAd4)
             {
                 //showAdcolony()
-                self.adcashInterstitial = ADCInterstitial.init(zoneID: "1523933");
+                self.adcashInterstitial = ADCInterstitial.init(zoneID: "1524017");
                 self.adcashInterstitial.delegate=self;
                 self.adcashInterstitial.load();
 
@@ -399,18 +399,18 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
     
     
     
-    func interstitialDidReceiveAd(_ interstitial: ADCInterstitial) {
+    func interstitialDidReceiveAd(interstitial: ADCInterstitial) {
         print("Interstitial loaded")
        // self.navigationController?.setNavigationBarHidden(true, animated: true)
         self.adcashInterstitial.presentFromRootViewController(viewController);//
     }
    
     
-    func interstitialWillPresentScreen(_ interstitial: ADCInterstitial) {
+    func interstitialWillPresentScreen(interstitial: ADCInterstitial) {
         print("Interstitial will present screen.")
     }
     
-    func interstitialWillDismissScreen(_ interstitial: ADCInterstitial) {
+    func interstitialWillDismissScreen(interstitial: ADCInterstitial) {
         print("Interstitial will dismiss screen")
        // self.navigationController?.popToRootViewController(animated: true)
         

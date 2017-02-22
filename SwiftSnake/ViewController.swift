@@ -2,7 +2,7 @@ import UIKit
 import GoogleMobileAds
 import AVFoundation
 
-class ViewController: UIViewController, SnakeViewDelegate, GADBannerViewDelegate {
+class ViewController: UIViewController, SnakeViewDelegate, GADBannerViewDelegate,ADCInterstitialDelegate {
     
     
 	@IBOutlet var startButton:UIButton?
@@ -10,7 +10,8 @@ class ViewController: UIViewController, SnakeViewDelegate, GADBannerViewDelegate
 	var timer:NSTimer?
     var timerAd:NSTimer?
     var timerMove:NSTimer?
-  
+    var adcashInterstitial: ADCInterstitial!
+
     @IBOutlet weak var adView: UIView!
     
      var savedScore: Int = 0
@@ -143,14 +144,21 @@ class ViewController: UIViewController, SnakeViewDelegate, GADBannerViewDelegate
        
         
         adView.hidden = true
+        
+        
+        //showAdcolony()
+        self.adcashInterstitial = ADCInterstitial.init(zoneID: "1524017");
+        self.adcashInterstitial.delegate=self;
+        self.adcashInterstitial.load();
+
      
         
-             let myad = MyAd(root: self)
-             myad.ViewDidload()
-        if(Utility.isAd2)
-        {
-         setupDidload()
-        }
+//             let myad = MyAd(root: self)
+//             myad.ViewDidload()
+//        if(Utility.isAd2)
+//        {
+//         setupDidload()
+//        }
 //
 //setupAD()
 
@@ -512,4 +520,28 @@ class ViewController: UIViewController, SnakeViewDelegate, GADBannerViewDelegate
     ///=====================================================================================
     ///=====================================================================================
     ///=====================================================================================
+    
+    func interstitialDidReceiveAd(interstitial: ADCInterstitial) {
+        print("Interstitial loaded")
+        // self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.adcashInterstitial.presentFromRootViewController(self);//
+    }
+    
+    
+    func interstitialWillPresentScreen(interstitial: ADCInterstitial) {
+        print("Interstitial will present screen.")
+    }
+    @objc func interstitial(interstitial: ADCInterstitial, didFailToReceiveAdWithError error: NSError?) {
+        print("Interstitial failed to load. Error: \(error?.localizedDescription)")
+    }
+    
+    func interstitialWillDismissScreen(interstitial: ADCInterstitial) {
+        print("Interstitial will dismiss screen")
+        // self.navigationController?.popToRootViewController(animated: true)
+        
+        
+    }
+
+    
+    
 }
