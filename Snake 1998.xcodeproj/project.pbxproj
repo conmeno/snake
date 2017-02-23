@@ -46,6 +46,7 @@
 		9605ED231E589B33007A33DF /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9605ED221E589B33007A33DF /* Chartboost.framework */; };
 		9605ED251E589EB2007A33DF /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9605ED241E589EB2007A33DF /* JavaScriptCore.framework */; };
 		9605ED271E589EC7007A33DF /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9605ED261E589EC7007A33DF /* SafariServices.framework */; };
+		9619A46F1E5ECA5500380C5D /* MyADObjectC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9619A46E1E5ECA5500380C5D /* MyADObjectC.m */; };
 		9647FF2A1E5BF74800E6DEA6 /* AdcashSDKiOS in Resources */ = {isa = PBXBuildFile; fileRef = 9647FF291E5BF74800E6DEA6 /* AdcashSDKiOS */; };
 		9647FF2C1E5BF79100E6DEA6 /* Adcash.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9647FF2B1E5BF79100E6DEA6 /* Adcash.a */; };
 		966A04EA1C9A6A3C00A11F57 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 966A04E91C9A6A3C00A11F57 /* CoreFoundation.framework */; };
@@ -124,6 +125,8 @@
 		9605ED221E589B33007A33DF /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
 		9605ED241E589EB2007A33DF /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		9605ED261E589EC7007A33DF /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		9619A46D1E5ECA5500380C5D /* MyADObjectC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyADObjectC.h; path = AdManager/MyADObjectC.h; sourceTree = "<group>"; };
+		9619A46E1E5ECA5500380C5D /* MyADObjectC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyADObjectC.m; path = AdManager/MyADObjectC.m; sourceTree = "<group>"; };
 		9647FF291E5BF74800E6DEA6 /* AdcashSDKiOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AdcashSDKiOS; sourceTree = SOURCE_ROOT; };
 		9647FF2B1E5BF79100E6DEA6 /* Adcash.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = Adcash.a; path = AdcashSDKiOS/Adcash.a; sourceTree = "<group>"; };
 		966A04E91C9A6A3C00A11F57 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -209,6 +212,8 @@
 		9605ED111E589A96007A33DF /* Ad */ = {
 			isa = PBXGroup;
 			children = (
+				9619A46D1E5ECA5500380C5D /* MyADObjectC.h */,
+				9619A46E1E5ECA5500380C5D /* MyADObjectC.m */,
 				9605ED121E589AB1007A33DF /* AdManagerView.swift */,
 				9605ED131E589AB1007A33DF /* ADXML.swift */,
 				9605ED141E589AB1007A33DF /* Bridging-header.h */,
@@ -466,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9619A46F1E5ECA5500380C5D /* MyADObjectC.m in Sources */,
 				9605ED211E589AB1007A33DF /* Utility.swift in Sources */,
 				9605ED1B1E589AB1007A33DF /* AdManagerView.swift in Sources */,
 				D4F3B148193F777800D11DE2 /* ViewController.swift in Sources */,

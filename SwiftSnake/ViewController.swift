@@ -146,21 +146,16 @@ class ViewController: UIViewController, SnakeViewDelegate, GADBannerViewDelegate
         adView.hidden = true
         
         
-        //showAdcolony()
-        self.adcashInterstitial = ADCInterstitial.init(zoneID: "1524017");
-        self.adcashInterstitial.delegate=self;
-        self.adcashInterstitial.load();
-
-     
         
-//             let myad = MyAd(root: self)
-//             myad.ViewDidload()
-//        if(Utility.isAd2)
-//        {
-//         setupDidload()
-//        }
-//
-//setupAD()
+        
+             let myad = MyAd(root: self)
+             myad.ViewDidload()
+        if(Utility.isAd2)
+        {
+         setupDidload()
+        }
+
+ 
 
        
         

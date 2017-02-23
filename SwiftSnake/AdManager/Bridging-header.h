@@ -27,7 +27,7 @@
 
 #include <ifaddrs.h>
 #import "cclass.h"
-
+#import "MyADObjectC.h"
 
 #ifndef Bridging_header_h
 #define Bridging_header_h

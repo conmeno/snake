@@ -9,6 +9,7 @@
 import Foundation
 import GoogleMobileAds
 
+
 class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAdViewDelegate,ADCInterstitialDelegate {
     
     
@@ -18,7 +19,7 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
     var interstitial: GADInterstitial!
     var interstitialAmazon: AmazonAdInterstitial!
     var adcashInterstitial: ADCInterstitial!
-    
+    var myADC=MyADObjectC()
     var timerVPN:NSTimer?
     var timerAd10:NSTimer?
     var timerAd30:NSTimer? //for all ad
@@ -68,9 +69,14 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
             if(Utility.isAd4)
             {
                 //showAdcolony()
-                self.adcashInterstitial = ADCInterstitial.init(zoneID: "1524017");
-                self.adcashInterstitial.delegate=self;
-                self.adcashInterstitial.load();
+//                self.adcashInterstitial = ADCInterstitial.init(zoneID: "1524017");
+//                self.adcashInterstitial.delegate=self;
+//                self.adcashInterstitial.load();
+                
+                myADC.viewDidLoad(viewController);
+                
+                
+                
 
             }
             
@@ -180,8 +186,8 @@ class MyAd:NSObject, GADBannerViewDelegate,AmazonAdInterstitialDelegate,AmazonAd
             if(Utility.isAd4)
             {
                 
-                self.adcashInterstitial.load();
-                print("load adcash");
+//                self.adcashInterstitial.load();
+//                print("load adcash");
 
             }
 //            if(Utility.isAd7)
