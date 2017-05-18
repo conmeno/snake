@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Snake_1998" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Snake_1999" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -25,23 +25,13 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="StartDrag:" destination="vXZ-lx-hvc" eventType="touchDragOutside" id="pVs-vN-NWM"/>
+                                    <action selector="StartDrag:" destination="vXZ-lx-hvc" eventType="touchDragOutside" id="geN-ho-eJM"/>
                                     <action selector="start:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="drJ-lH-5Um"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hel-ZO-9L1" userLabel="adView">
                                 <rect key="frame" x="0.0" y="257" width="320" height="260"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3g-3a-NYK">
-                                        <rect key="frame" x="0.0" y="80" width="320" height="180"/>
-                                        <state key="normal" title="Thanks for using my app">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ShowAdClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QeV-P0-s1H"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7D-bA-b3D">
                                         <rect key="frame" x="274" y="4" width="38" height="38"/>
                                         <constraints>
@@ -56,66 +46,62 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oau-Vw-0eK">
-                                        <rect key="frame" x="20" y="108" width="280" height="43"/>
-                                        <color key="backgroundColor" red="1" green="0.36252894330000002" blue="0.42263051959999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="14" y="115" width="292" height="48"/>
+                                        <color key="backgroundColor" red="1" green="0.081839589919999997" blue="0.15145088300000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="43" id="gCR-bb-Hw0"/>
+                                            <constraint firstAttribute="height" constant="48" id="Vbd-nW-rgC"/>
                                         </constraints>
                                         <state key="normal" title="More Apps">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="ShowAdClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3x8-Jh-UXG"/>
+                                            <action selector="MoreAppClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Grc-w4-tXF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5d-lv-L6F">
-                                        <rect key="frame" x="20" y="50" width="280" height="43"/>
-                                        <color key="backgroundColor" red="1" green="0.36252894331423202" blue="0.42263051963666398" alpha="1" colorSpace="calibratedRGB"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h3g-3a-NYK">
+                                        <rect key="frame" x="0.0" y="100" width="320" height="160"/>
+                                        <state key="normal" title="Thanks for using my app">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ShowAdClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QeV-P0-s1H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5d-lv-L6F">
+                                        <rect key="frame" x="14" y="50" width="292" height="48"/>
+                                        <color key="backgroundColor" red="1" green="0.081839589923959677" blue="0.15145088301226539" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="43" id="pO7-SU-52U"/>
+                                            <constraint firstAttribute="height" constant="48" id="wZf-SX-yHZ"/>
                                         </constraints>
                                         <state key="normal" title="More games">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="MoreGameDrapOutsite:" destination="vXZ-lx-hvc" eventType="touchDragOutside" id="dTb-bT-f1g"/>
-                                            <action selector="RealMoreAppClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DFU-YT-sUo"/>
+                                            <action selector="MoreGameDrapOutsite:" destination="vXZ-lx-hvc" eventType="touchDragOutside" id="57t-sI-CVg"/>
+                                            <action selector="RealMoreAppClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Nvn-eq-L6l"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.40810868859999999" green="0.58947855859999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.20518871174361053" green="0.71164457725199859" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="o7D-bA-b3D" firstAttribute="top" secondItem="hel-ZO-9L1" secondAttribute="top" constant="4" id="3QM-Gb-Yef"/>
-                                    <constraint firstItem="oau-Vw-0eK" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="20" id="Bct-li-9I9"/>
+                                    <constraint firstItem="T5d-lv-L6F" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="4fM-mD-4ft"/>
+                                    <constraint firstItem="oau-Vw-0eK" firstAttribute="top" secondItem="T5d-lv-L6F" secondAttribute="bottom" constant="17" id="7hE-7c-LUo"/>
                                     <constraint firstAttribute="trailing" secondItem="h3g-3a-NYK" secondAttribute="trailing" id="F9v-xg-dl4"/>
-                                    <constraint firstAttribute="trailing" secondItem="T5d-lv-L6F" secondAttribute="trailing" constant="20" id="Hal-wM-yqE"/>
-                                    <constraint firstItem="h3g-3a-NYK" firstAttribute="top" secondItem="hel-ZO-9L1" secondAttribute="top" constant="80" id="Txh-lC-MUD"/>
+                                    <constraint firstItem="T5d-lv-L6F" firstAttribute="top" secondItem="o7D-bA-b3D" secondAttribute="bottom" constant="8" id="JLk-fq-C1N"/>
+                                    <constraint firstItem="oau-Vw-0eK" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="14" id="TmL-Bh-Aqh"/>
+                                    <constraint firstItem="h3g-3a-NYK" firstAttribute="top" secondItem="hel-ZO-9L1" secondAttribute="top" constant="100" id="Txh-lC-MUD"/>
+                                    <constraint firstAttribute="trailing" secondItem="oau-Vw-0eK" secondAttribute="trailing" constant="14" id="b7x-rb-pCV"/>
                                     <constraint firstAttribute="bottom" secondItem="h3g-3a-NYK" secondAttribute="bottom" id="bRI-LN-Y73"/>
-                                    <constraint firstItem="oau-Vw-0eK" firstAttribute="top" secondItem="T5d-lv-L6F" secondAttribute="bottom" constant="12" id="equ-tz-K75"/>
                                     <constraint firstAttribute="trailing" secondItem="o7D-bA-b3D" secondAttribute="trailing" constant="8" id="i0w-5o-Tm7"/>
-                                    <constraint firstItem="T5d-lv-L6F" firstAttribute="top" secondItem="o7D-bA-b3D" secondAttribute="bottom" constant="11" id="oHB-2V-whG"/>
                                     <constraint firstAttribute="height" constant="260" id="poK-1U-tLn"/>
-                                    <constraint firstAttribute="trailing" secondItem="oau-Vw-0eK" secondAttribute="trailing" constant="20" id="rS5-li-KYC"/>
                                     <constraint firstItem="h3g-3a-NYK" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" id="sfX-o2-ANt"/>
-                                    <constraint firstItem="T5d-lv-L6F" firstAttribute="leading" secondItem="hel-ZO-9L1" secondAttribute="leading" constant="20" id="vuk-J9-O39"/>
+                                    <constraint firstAttribute="trailing" secondItem="T5d-lv-L6F" secondAttribute="trailing" constant="14" id="uLg-J1-njx"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIb-Na-JlN">
-                                <rect key="frame" x="16" y="529" width="288" height="39"/>
-                                <color key="backgroundColor" red="0.40810868859999999" green="0.58947855859999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="nCh-HC-gTI"/>
-                                </constraints>
-                                <state key="normal" title="Settings">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="SettingClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YRI-k3-Lnb"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4B8-R4-M9a" userLabel="top-view">
                                 <rect key="frame" x="0.0" y="75" width="320" height="70"/>
                                 <subviews>
@@ -125,7 +111,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="99" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zj5-WA-W3e">
                                                 <rect key="frame" x="60" y="11" width="24" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="0.97464923469999998" green="0.85789623839999996" blue="0.24069099790000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" red="0.96862745100000003" green="0.94117647059999998" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U3T-Cm-Kxr">
@@ -149,7 +135,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yap-wI-R0k">
                                                 <rect key="frame" x="88" y="12" width="42" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="0.97464923469999998" green="0.85789623839999996" blue="0.24069099790000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" red="0.96862745100000003" green="0.94117647059999998" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hightest" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5tj-9Y-WaC">
@@ -173,7 +159,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MxA-1k-Gzf">
                                                 <rect key="frame" x="52" y="11" width="42" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="textColor" red="0.97464923469999998" green="0.85789623839999996" blue="0.24069099790000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="highlightedColor" red="0.96862745100000003" green="0.94117647059999998" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" useAutomaticPreferredMaxLayoutWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRV-ue-NmD">
@@ -207,7 +193,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.40810868859999999" green="0.58947855859999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Z8C-sJ-hjX" firstAttribute="top" secondItem="4B8-R4-M9a" secondAttribute="top" constant="8" id="2Qd-Fw-wdR"/>
                                     <constraint firstItem="VgN-cM-QxD" firstAttribute="top" secondItem="4B8-R4-M9a" secondAttribute="top" constant="8" id="DPg-jX-hGF"/>
@@ -220,6 +206,20 @@
                                     <constraint firstItem="VgN-cM-QxD" firstAttribute="leading" secondItem="4B8-R4-M9a" secondAttribute="leading" constant="8" id="y0Z-DB-A8B"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIb-Na-JlN">
+                                <rect key="frame" x="16" y="529" width="288" height="39"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="nCh-HC-gTI"/>
+                                </constraints>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="SettingClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="OSG-a9-Fiq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -239,7 +239,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="adView" destination="hel-ZO-9L1" id="Ye7-IB-uOi"/>
+                        <outlet property="adView" destination="hel-ZO-9L1" id="XhP-9g-3sN"/>
                         <outlet property="btPause" destination="dTa-pJ-kCi" id="HM6-Fe-fiy"/>
                         <outlet property="lbHightest" destination="Yap-wI-R0k" id="tiJ-GC-0el"/>
                         <outlet property="lbLevel" destination="zj5-WA-W3e" id="q7x-4V-BNa"/>
@@ -249,7 +249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="251" y="334"/>
+            <point key="canvasLocation" x="215" y="309"/>
         </scene>
     </scenes>
     <resources>

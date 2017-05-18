@@ -20,14 +20,14 @@
 #import <AmazonAd/AmazonAdError.h>
 #import <AmazonAd/AmazonAdOptions.h>
 #import <RevMobAds/RevMobAds.h>
-//#import <AdColony/AdColony.h>
+#import <AdColony/AdColony.h>
 
 
-#import<AdcashSDK.h>
+//#import<AdcashSDK.h>
 
 #include <ifaddrs.h>
 #import "cclass.h"
-#import "MyADObjectC.h"
+//#import "MyADObjectC.h"
 
 #ifndef Bridging_header_h
 #define Bridging_header_h
