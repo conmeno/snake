@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
-               BuildableName = "Snake 1998.app"
-               BlueprintName = "Snake 1998"
-               ReferencedContainer = "container:Snake 1998.xcodeproj">
+               BuildableName = "Snake 1998.temp_caseinsensitive_rename.app"
+               BlueprintName = "sudoku"
+               ReferencedContainer = "container:sudoku.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
-            BuildableName = "Snake 1998.app"
-            BlueprintName = "Snake 1998"
-            ReferencedContainer = "container:Snake 1998.xcodeproj">
+            BuildableName = "Snake 1998.temp_caseinsensitive_rename.app"
+            BlueprintName = "sudoku"
+            ReferencedContainer = "container:sudoku.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
-            BuildableName = "Snake 1998.app"
-            BlueprintName = "Snake 1998"
-            ReferencedContainer = "container:Snake 1998.xcodeproj">
+            BuildableName = "Snake 1998.temp_caseinsensitive_rename.app"
+            BlueprintName = "sudoku"
+            ReferencedContainer = "container:sudoku.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
-            BuildableName = "Snake 1998.app"
-            BlueprintName = "Snake 1998"
-            ReferencedContainer = "container:Snake 1998.xcodeproj">
+            BuildableName = "Snake 1998.temp_caseinsensitive_rename.app"
+            BlueprintName = "sudoku"
+            ReferencedContainer = "container:sudoku.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
