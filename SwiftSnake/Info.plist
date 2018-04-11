@@ -4,8 +4,6 @@
 <dict>
 	<key>Allow Arbitrary Loads</key>
 	<true/>
-	<key>AppLovinSdkKey</key>
-	<string>cR8QklF2fyL7GBTFGrqQlWHaQFFMkvrLL-n3i16N-RVEdzTuoHIWpa6ErMbTFRvaPgd6hlUfA-voyMgke-FSTM</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
