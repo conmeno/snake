@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
                BuildableName = "Sudoku Game.temp_caseinsensitive_rename.app"
-               BlueprintName = "Sudoku Game"
-               ReferencedContainer = "container:Sudoku Game.xcodeproj">
+               BlueprintName = "Sudoku Classic"
+               ReferencedContainer = "container:Sudoku Classic.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,8 +35,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
             BuildableName = "Sudoku Game.temp_caseinsensitive_rename.app"
-            BlueprintName = "Sudoku Game"
-            ReferencedContainer = "container:Sudoku Game.xcodeproj">
+            BlueprintName = "Sudoku Classic"
+            ReferencedContainer = "container:Sudoku Classic.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,8 +58,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
             BuildableName = "Sudoku Game.temp_caseinsensitive_rename.app"
-            BlueprintName = "Sudoku Game"
-            ReferencedContainer = "container:Sudoku Game.xcodeproj">
+            BlueprintName = "Sudoku Classic"
+            ReferencedContainer = "container:Sudoku Classic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,8 +77,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
             BuildableName = "Sudoku Game.temp_caseinsensitive_rename.app"
-            BlueprintName = "Sudoku Game"
-            ReferencedContainer = "container:Sudoku Game.xcodeproj">
+            BlueprintName = "Sudoku Classic"
+            ReferencedContainer = "container:Sudoku Classic.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

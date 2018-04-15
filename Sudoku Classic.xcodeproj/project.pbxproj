@@ -140,13 +140,13 @@
 		96F1292B1B4F887400ADAA87 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		96F1292C1B4F887400ADAA87 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		D4429BE4193FDB7A00F1E910 /* SnakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeView.swift; sourceTree = "<group>"; };
-		D4F3B140193F777800D11DE2 /* Sudoku Game.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sudoku Game.temp_caseinsensitive_rename.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F3B140193F777800D11DE2 /* Sudoku Classic.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sudoku Classic.temp_caseinsensitive_rename.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F3B144193F777800D11DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F3B145193F777800D11DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4F3B147193F777800D11DE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D4F3B14A193F777800D11DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D4F3B14C193F777800D11DE2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D4F3B152193F777800D11DE2 /* Sudoku Game.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sudoku Game.temp_caseinsensitive_rename.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F3B152193F777800D11DE2 /* Sudoku Classic.temp_caseinsensitive_rename.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sudoku Classic.temp_caseinsensitive_rename.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F3B157193F777800D11DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F3B162193F780C00D11DE2 /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -294,8 +294,8 @@
 		D4F3B141193F777800D11DE2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4F3B140193F777800D11DE2 /* Sudoku Game.temp_caseinsensitive_rename.app */,
-				D4F3B152193F777800D11DE2 /* Sudoku Game.temp_caseinsensitive_rename.xctest */,
+				D4F3B140193F777800D11DE2 /* Sudoku Classic.temp_caseinsensitive_rename.app */,
+				D4F3B152193F777800D11DE2 /* Sudoku Classic.temp_caseinsensitive_rename.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -344,9 +344,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D4F3B13F193F777800D11DE2 /* Sudoku Game */ = {
+		D4F3B13F193F777800D11DE2 /* Sudoku Classic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4F3B15C193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Sudoku Game" */;
+			buildConfigurationList = D4F3B15C193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Sudoku Classic" */;
 			buildPhases = (
 				D4F3B13C193F777800D11DE2 /* Sources */,
 				D4F3B13D193F777800D11DE2 /* Frameworks */,
@@ -356,14 +356,14 @@
 			);
 			dependencies = (
 			);
-			name = "Sudoku Game";
+			name = "Sudoku Classic";
 			productName = SwiftSnake;
-			productReference = D4F3B140193F777800D11DE2 /* Sudoku Game.temp_caseinsensitive_rename.app */;
+			productReference = D4F3B140193F777800D11DE2 /* Sudoku Classic.temp_caseinsensitive_rename.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D4F3B151193F777800D11DE2 /* Sudoku GameTests */ = {
+		D4F3B151193F777800D11DE2 /* Sudoku ClassicTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4F3B15F193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Sudoku GameTests" */;
+			buildConfigurationList = D4F3B15F193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Sudoku ClassicTests" */;
 			buildPhases = (
 				D4F3B14E193F777800D11DE2 /* Sources */,
 				D4F3B14F193F777800D11DE2 /* Frameworks */,
@@ -374,9 +374,9 @@
 			dependencies = (
 				D4F3B154193F777800D11DE2 /* PBXTargetDependency */,
 			);
-			name = "Sudoku GameTests";
+			name = "Sudoku ClassicTests";
 			productName = SwiftSnakeTests;
-			productReference = D4F3B152193F777800D11DE2 /* Sudoku Game.temp_caseinsensitive_rename.xctest */;
+			productReference = D4F3B152193F777800D11DE2 /* Sudoku Classic.temp_caseinsensitive_rename.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -405,7 +405,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D4F3B13B193F777800D11DE2 /* Build configuration list for PBXProject "Sudoku Game" */;
+			buildConfigurationList = D4F3B13B193F777800D11DE2 /* Build configuration list for PBXProject "Sudoku Classic" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -418,8 +418,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4F3B13F193F777800D11DE2 /* Sudoku Game */,
-				D4F3B151193F777800D11DE2 /* Sudoku GameTests */,
+				D4F3B13F193F777800D11DE2 /* Sudoku Classic */,
+				D4F3B151193F777800D11DE2 /* Sudoku ClassicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -488,7 +488,7 @@
 /* Begin PBXTargetDependency section */
 		D4F3B154193F777800D11DE2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D4F3B13F193F777800D11DE2 /* Sudoku Game */;
+			target = D4F3B13F193F777800D11DE2 /* Sudoku Classic */;
 			targetProxy = D4F3B153193F777800D11DE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -611,10 +611,10 @@
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.phuongnt2018.sudoku;
-				PRODUCT_NAME = "Sudoku Game.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "Sudoku Classic.temp_caseinsensitive_rename";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSnake/AdManager/Bridging-header.h";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -644,10 +644,10 @@
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.phuongnt2018.sudoku;
-				PRODUCT_NAME = "Sudoku Game.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "Sudoku Classic.temp_caseinsensitive_rename";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSnake/AdManager/Bridging-header.h";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -666,7 +666,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.zonble.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "Sudoku Game.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "Sudoku Classic.temp_caseinsensitive_rename";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftSnake.app/SwiftSnake";
 			};
 			name = Debug;
@@ -682,7 +682,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.zonble.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "Sudoku Game.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "Sudoku Classic.temp_caseinsensitive_rename";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftSnake.app/SwiftSnake";
 			};
 			name = Release;
@@ -690,7 +690,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4F3B13B193F777800D11DE2 /* Build configuration list for PBXProject "Sudoku Game" */ = {
+		D4F3B13B193F777800D11DE2 /* Build configuration list for PBXProject "Sudoku Classic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4F3B15A193F777800D11DE2 /* Debug */,
@@ -699,7 +699,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4F3B15C193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Sudoku Game" */ = {
+		D4F3B15C193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Sudoku Classic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4F3B15D193F777800D11DE2 /* Debug */,
@@ -708,7 +708,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4F3B15F193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Sudoku GameTests" */ = {
+		D4F3B15F193F777800D11DE2 /* Build configuration list for PBXNativeTarget "Sudoku ClassicTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D4F3B160193F777800D11DE2 /* Debug */,
