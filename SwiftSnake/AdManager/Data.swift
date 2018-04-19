@@ -10,7 +10,7 @@ import Foundation
 
 class Data {
     
-    //5120 game
+    //hexspin
     
     //URL setup online
      let AdURL: String = "http://webappchannel.com/fake/hexspin_v5.txt"
