@@ -10,7 +10,7 @@ import Foundation
 
 class Data {
     
-    //5120 game
+    //spinhex
     
     //URL setup online
      let AdURL: String = "http://webappchannel.com/fake/spinhexagon_v5.txt"
