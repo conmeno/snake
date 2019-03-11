@@ -140,7 +140,7 @@
 		96F1292B1B4F887400ADAA87 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
 		96F1292C1B4F887400ADAA87 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		D4429BE4193FDB7A00F1E910 /* SnakeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnakeView.swift; sourceTree = "<group>"; };
-		D4F3B140193F777800D11DE2 /* Spin Hexagon 2016.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spin Hexagon 2016.temp_caseinsensitive_rename.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F3B140193F777800D11DE2 /* Spin Hexagon 2016.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spin Hexagon 2016.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4F3B144193F777800D11DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D4F3B145193F777800D11DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4F3B147193F777800D11DE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -294,7 +294,7 @@
 		D4F3B141193F777800D11DE2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4F3B140193F777800D11DE2 /* Spin Hexagon 2016.temp_caseinsensitive_rename.app */,
+				D4F3B140193F777800D11DE2 /* Spin Hexagon 2016.app */,
 				D4F3B152193F777800D11DE2 /* Spin Hexagon 2016.temp_caseinsensitive_rename.xctest */,
 			);
 			name = Products;
@@ -358,7 +358,7 @@
 			);
 			name = "Spin Hexagon 2016";
 			productName = SwiftSnake;
-			productReference = D4F3B140193F777800D11DE2 /* Spin Hexagon 2016.temp_caseinsensitive_rename.app */;
+			productReference = D4F3B140193F777800D11DE2 /* Spin Hexagon 2016.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D4F3B151193F777800D11DE2 /* Spin Hexagon 2016Tests */ = {
@@ -611,7 +611,7 @@
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HTML5Game3005.Spin-Hexagon";
-				PRODUCT_NAME = "Spin Hexagon 2016.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "Spin Hexagon 2016";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSnake/AdManager/Bridging-header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -644,7 +644,7 @@
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "HTML5Game3005.Spin-Hexagon";
-				PRODUCT_NAME = "Spin Hexagon 2016.temp_caseinsensitive_rename";
+				PRODUCT_NAME = "Spin Hexagon 2016";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftSnake/AdManager/Bridging-header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
