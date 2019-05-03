@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
-               BuildableName = "Hexspin 2016.temp_caseinsensitive_rename.app"
+               BuildableName = "Hexspin 2016.app"
                BlueprintName = "Hexspin 2016"
                ReferencedContainer = "container:Hexspin.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
-            BuildableName = "Hexspin 2016.temp_caseinsensitive_rename.app"
+            BuildableName = "Hexspin 2016.app"
             BlueprintName = "Hexspin 2016"
             ReferencedContainer = "container:Hexspin.xcodeproj">
          </BuildableReference>
@@ -66,7 +66,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
-            BuildableName = "Hexspin 2016.temp_caseinsensitive_rename.app"
+            BuildableName = "Hexspin 2016.app"
             BlueprintName = "Hexspin 2016"
             ReferencedContainer = "container:Hexspin.xcodeproj">
          </BuildableReference>
@@ -85,7 +85,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4F3B13F193F777800D11DE2"
-            BuildableName = "Hexspin 2016.temp_caseinsensitive_rename.app"
+            BuildableName = "Hexspin 2016.app"
             BlueprintName = "Hexspin 2016"
             ReferencedContainer = "container:Hexspin.xcodeproj">
          </BuildableReference>
